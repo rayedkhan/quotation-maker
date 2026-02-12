@@ -1,0 +1,5559 @@
+[
+  {
+    "category": "HCV BIAS",
+    "product_code": "11121480",
+    "product_description": "11.00-20 149/144J SL50+ N16",
+    "nbp_gst_18": 20927.29,
+    "cmp_set": 21300
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11121690",
+    "product_description": "11.00-20 MUSCLEROK-X N18",
+    "nbp_gst_18": 23521.99,
+    "cmp_set": 23950
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11125790",
+    "product_description": "11.00-20 150/146K SLG N18",
+    "nbp_gst_18": 20926.00,
+    "cmp_set": 21300
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11126480",
+    "product_description": "11.00-20 SUPERMILER99 N16",
+    "nbp_gst_18": 19694.44,
+    "cmp_set": 20050
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11128690",
+    "product_description": "11.00-20 SUPERLUG999 N18",
+    "nbp_gst_18": 21161.79,
+    "cmp_set": 21550
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11129890",
+    "product_description": "11.00-20 152/147F MRK STEER N18",
+    "nbp_gst_18": 22114.41,
+    "cmp_set": 22550
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11130780",
+    "product_description": "10.00-20 THE LUG+ N16",
+    "nbp_gst_18": 17950.54,
+    "cmp_set": 18300
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131090",
+    "product_description": "10.00-20 MUSCLEROK-X N18",
+    "nbp_gst_18": 21011.26,
+    "cmp_set": 21400
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131280",
+    "product_description": "10.00-20 SM909 N16",
+    "nbp_gst_18": 17116.24,
+    "cmp_set": 17450
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131480",
+    "product_description": "10.00-20 SL50 PLUS N16",
+    "nbp_gst_18": 18278.69,
+    "cmp_set": 18600
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131510",
+    "product_description": "10.00-20 MRK STEER 147/143F",
+    "nbp_gst_18": 19439.00,
+    "cmp_set": 19700
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131580",
+    "product_description": "10.00-20 MUSCLEROK N16",
+    "nbp_gst_18": 20593.91,
+    "cmp_set": 21000
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131680",
+    "product_description": "10.00-20 SL50+R N16",
+    "nbp_gst_18": 18736.35,
+    "cmp_set": 19050
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11131880",
+    "product_description": "10.00-20 SL707 N16",
+    "nbp_gst_18": 18045.47,
+    "cmp_set": 18350
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11132880",
+    "product_description": "10.00-20 SL50+ RR N16",
+    "nbp_gst_18": 17980.15,
+    "cmp_set": 18300
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11132980",
+    "product_description": "10.00-20 SL50+ STAR N16 146/142K",
+    "nbp_gst_18": 17562.05,
+    "cmp_set": 17900
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11133080",
+    "product_description": "10.00-20 SL707 STAR N16 146/142K",
+    "nbp_gst_18": 17376.03,
+    "cmp_set": 17700
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11133580",
+    "product_description": "10.00-20 M77 N16",
+    "nbp_gst_18": 18089.86,
+    "cmp_set": 18400
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11135180",
+    "product_description": "10.00-20 146/142K SLG 001 N16",
+    "nbp_gst_18": 18510.85,
+    "cmp_set": 18850
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11136480",
+    "product_description": "10.00-20 SM99 N16",
+    "nbp_gst_18": 16929.75,
+    "cmp_set": 17250
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11137680",
+    "product_description": "10.00-20 SL505 N16",
+    "nbp_gst_18": 17515.04,
+    "cmp_set": 17850
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11139900",
+    "product_description": "10.00-20 146/142K SM99 PLUS N16",
+    "nbp_gst_18": 17023.55,
+    "cmp_set": 17350
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11151280",
+    "product_description": "9.00-20 SUPERMILER909 N16",
+    "nbp_gst_18": 14659.60,
+    "cmp_set": 14950
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11151480",
+    "product_description": "9.00-20 SL50 PLUS N16",
+    "nbp_gst_18": 15495.36,
+    "cmp_set": 15800
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11151580",
+    "product_description": "9.00-20 MUSCLEROK N16",
+    "nbp_gst_18": 18062.62,
+    "cmp_set": 18350
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11151680",
+    "product_description": "9.00-20 SL50 PLUS R N16",
+    "nbp_gst_18": 15727.73,
+    "cmp_set": 16000
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11153580",
+    "product_description": "9.00-20 M77 N16",
+    "nbp_gst_18": 15498.96,
+    "cmp_set": 15800
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11155180",
+    "product_description": "9.00-20 142/138K SLG 001 N16",
+    "nbp_gst_18": 15959.79,
+    "cmp_set": 16250
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11156480",
+    "product_description": "9.00-20 SUPERMILER99 N16",
+    "nbp_gst_18": 14566.10,
+    "cmp_set": 14850
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "11158280",
+    "product_description": "9.00-20 SUPERLUG50 N16",
+    "nbp_gst_18": 15263.30,
+    "cmp_set": 15550
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12131290",
+    "product_description": "295/95D20 152/148J SM909",
+    "nbp_gst_18": 17117.09,
+    "cmp_set": 17450
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12131490",
+    "product_description": "295/95D20 152/148J SL50PLUS",
+    "nbp_gst_18": 18279.09,
+    "cmp_set": 18600
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12131890",
+    "product_description": "295/95D20 152/148J SL707",
+    "nbp_gst_18": 18046.74,
+    "cmp_set": 18350
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12132890",
+    "product_description": "295/95D20 SL50+ RR 152/148J",
+    "nbp_gst_18": 17980.35,
+    "cmp_set": 18300
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12132990",
+    "product_description": "295/95D20 SL50+ STAR 152/148J",
+    "nbp_gst_18": 17562.62,
+    "cmp_set": 17900
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12133090",
+    "product_description": "295/95D20 SL707 STAR 152/148J",
+    "nbp_gst_18": 17377.00,
+    "cmp_set": 17700
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12135190",
+    "product_description": "295/95D20 152/148J SLG 001",
+    "nbp_gst_18": 18510.85,
+    "cmp_set": 18850
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12136190",
+    "product_description": "295/95D20 152/148J SL50+R",
+    "nbp_gst_18": 18737.20,
+    "cmp_set": 19050
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12136490",
+    "product_description": "295/95D20 152/148J SM99",
+    "nbp_gst_18": 16931.32,
+    "cmp_set": 17250
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12137690",
+    "product_description": "295/95D20 152/148J SL505",
+    "nbp_gst_18": 17506.96,
+    "cmp_set": 17850
+  },
+  {
+    "category": "HCV BIAS",
+    "product_code": "12139900",
+    "product_description": "295/95D20 SM99 PLUS 152/148J",
+    "nbp_gst_18": 17025.11,
+    "cmp_set": 17350
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11321980",
+    "product_description": "11.00R20 S1R4 R16 TT",
+    "nbp_gst_18": 22738.32,
+    "cmp_set": 23100
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11322580",
+    "product_description": "11.00R20 S3K4 R16 TT",
+    "nbp_gst_18": 24269.44,
+    "cmp_set": 24650
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11324910",
+    "product_description": "11.00R20 150/147K S3C8+ S2 TT R16",
+    "nbp_gst_18": 25384.48,
+    "cmp_set": 25800
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11327380",
+    "product_description": "11.00R20 150/147K S1M4+ TT",
+    "nbp_gst_18": 23804.49,
+    "cmp_set": 24200
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11330680",
+    "product_description": "10.00R20 S1F4+ 146/143K TT",
+    "nbp_gst_18": 21575.22,
+    "cmp_set": 21900
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11331980",
+    "product_description": "10.00R20 S1R4 R16 TT",
+    "nbp_gst_18": 21437.98,
+    "cmp_set": 21800
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11332580",
+    "product_description": "10.00R20 S3K4 R16 TT",
+    "nbp_gst_18": 22319.14,
+    "cmp_set": 22750
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11333180",
+    "product_description": "10.00R20 S3P4 R16 TT",
+    "nbp_gst_18": 22969.33,
+    "cmp_set": 23350
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11333500",
+    "product_description": "10.00R20 S3H8 PLUS 147/143K",
+    "nbp_gst_18": 24641.24,
+    "cmp_set": 25000
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11334980",
+    "product_description": "10.00R20 S3C8 PLUS R16 TT",
+    "nbp_gst_18": 23154.58,
+    "cmp_set": 23500
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11337380",
+    "product_description": "10.00R20 S1M4 PLUS R16 TT",
+    "nbp_gst_18": 22062.86,
+    "cmp_set": 22400
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11351780",
+    "product_description": "9.00R20 S1T4 R16 TT",
+    "nbp_gst_18": 17771.14,
+    "cmp_set": 18050
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11352580",
+    "product_description": "9.00R20 S3K4 R16 TT",
+    "nbp_gst_18": 18793.68,
+    "cmp_set": 19050
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11353580",
+    "product_description": "9.00R20 142/140L S3H8 R16 TT",
+    "nbp_gst_18": 19532.18,
+    "cmp_set": 19800
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11354980",
+    "product_description": "9.00R20 S3C8+ R16 TT 142/140L",
+    "nbp_gst_18": 19071.69,
+    "cmp_set": 19350
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11357380",
+    "product_description": "9.00R20 142/140L S1M4+ R16 TT",
+    "nbp_gst_18": 18142.76,
+    "cmp_set": 18400
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "11358680",
+    "product_description": "9.00R20 S1F4 16PR TT",
+    "nbp_gst_18": 17912.46,
+    "cmp_set": 18200
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12330690",
+    "product_description": "295/90R20 S1F4+ 152/148J",
+    "nbp_gst_18": 21575.22,
+    "cmp_set": 21900
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12331990",
+    "product_description": "295/90R20 152/148J S1R4",
+    "nbp_gst_18": 21437.72,
+    "cmp_set": 21800
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12332590",
+    "product_description": "295/90R20 152/148J S3K4",
+    "nbp_gst_18": 22319.14,
+    "cmp_set": 22750
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12333190",
+    "product_description": "295/90R20 152/148J S3P4",
+    "nbp_gst_18": 22968.67,
+    "cmp_set": 23350
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12334990",
+    "product_description": "295/90R20 152/148J S3C8 PLUS",
+    "nbp_gst_18": 23154.58,
+    "cmp_set": 23500
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12336690",
+    "product_description": "295/90R20 152/148J S241",
+    "nbp_gst_18": 21764.02,
+    "cmp_set": 22100
+  },
+  {
+    "category": "HCV RADIAL",
+    "product_code": "12337390",
+    "product_description": "295/90R20 152/148J S1M4 PLUS",
+    "nbp_gst_18": 22062.86,
+    "cmp_set": 22400
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25386980",
+    "product_description": "11R22.5 S1R4 R16 TL 148/145M",
+    "nbp_gst_18": 19342.22,
+    "cmp_set": 19700
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25387480",
+    "product_description": "11R22.5 S1N4 R16 TL 146/143M",
+    "nbp_gst_18": 20083.85,
+    "cmp_set": 20450
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25388580",
+    "product_description": "11R22.5 S3K4 R16 TL 146/143M",
+    "nbp_gst_18": 20362.00,
+    "cmp_set": 20700
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25394980",
+    "product_description": "295/80R22.5 S3C8+ TL 152/149M",
+    "nbp_gst_18": 22667.27,
+    "cmp_set": 23400
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25397380",
+    "product_description": "295/80R22.5 S1M4+ TL 152/148M R16",
+    "nbp_gst_18": 22064.03,
+    "cmp_set": 22750
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25397880",
+    "product_description": "295/80R22.5 SLM S3J4 R16 TL",
+    "nbp_gst_18": 23124.34,
+    "cmp_set": 23850
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25398480",
+    "product_description": "295/80R22.5 S1R4+ R16 TL",
+    "nbp_gst_18": 21180.35,
+    "cmp_set": 21850
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25398580",
+    "product_description": "295/80R22.5 S3K4 R16 TL 152/148M",
+    "nbp_gst_18": 22434.82,
+    "cmp_set": 23100
+  },
+  {
+    "category": "TRUCK AND BUS TL RAD",
+    "product_code": "25398680",
+    "product_description": "295/80R22.5 S1F4 R16 TL",
+    "nbp_gst_18": 21877.89,
+    "cmp_set": 22550
+  },
+  {
+    "category": "ICV BIAS",
+    "product_code": "11171280",
+    "product_description": "8.25-20 SUPERMILER909 N16",
+    "nbp_gst_18": 12262.23,
+    "cmp_set": 12550
+  },
+  {
+    "category": "ICV BIAS",
+    "product_code": "11171480",
+    "product_description": "8.25-20 SL50 PLUS N16",
+    "nbp_gst_18": 13962.16,
+    "cmp_set": 14250
+  },
+  {
+    "category": "ICV BIAS",
+    "product_code": "11171680",
+    "product_description": "8.25-20 SL50 PLUS-R N16",
+    "nbp_gst_18": 14148.58,
+    "cmp_set": 14450
+  },
+  {
+    "category": "ICV BIAS",
+    "product_code": "11175180",
+    "product_description": "8.25-20 137/132K SLG 001 N16",
+    "nbp_gst_18": 14376.24,
+    "cmp_set": 14700
+  },
+  {
+    "category": "ICV BIAS",
+    "product_code": "11176480",
+    "product_description": "8.25-20 SUPERMILER99 N16",
+    "nbp_gst_18": 12029.73,
+    "cmp_set": 12350
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11371780",
+    "product_description": "8.25R20 S1T4 R16 TT",
+    "nbp_gst_18": 15634.43,
+    "cmp_set": 15900
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11372580",
+    "product_description": "8.25R20 S3K4 R16 TT",
+    "nbp_gst_18": 16377.63,
+    "cmp_set": 16650
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11373580",
+    "product_description": "8.25R20 S3H8 R16 TT",
+    "nbp_gst_18": 17116.22,
+    "cmp_set": 17400
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11374980",
+    "product_description": "8.25R20 S3C8 PLUS R16 137/135K",
+    "nbp_gst_18": 16754.18,
+    "cmp_set": 17050
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11377380",
+    "product_description": "8.25R20 S1M4 PLUS R16",
+    "nbp_gst_18": 15913.79,
+    "cmp_set": 16200
+  },
+  {
+    "category": "ICV RADIAL",
+    "product_code": "11378680",
+    "product_description": "8.25R20 S1F4 R16 137/135K",
+    "nbp_gst_18": 15821.29,
+    "cmp_set": 16100
+  },
+  {
+    "category": "7 50 16 LUG",
+    "product_code": "16111680",
+    "product_description": "7.50-16LT 124/120K SL50+R N16",
+    "nbp_gst_18": 9592.18,
+    "cmp_set": 9800
+  },
+  {
+    "category": "7 50 16 LUG",
+    "product_code": "16111880",
+    "product_description": "7.50-16LT 124/120K SLG707 N16",
+    "nbp_gst_18": 9500.10,
+    "cmp_set": 9725
+  },
+  {
+    "category": "7 50 16 LUG",
+    "product_code": "16115180",
+    "product_description": "7.50-16LT 124/120K SLG 001 N16",
+    "nbp_gst_18": 9580.88,
+    "cmp_set": 9800
+  },
+  {
+    "category": "8 25 16 LUG",
+    "product_code": "12160980",
+    "product_description": "8.25-16LT 129/127K SLG N16",
+    "nbp_gst_18": 11293.99,
+    "cmp_set": 11475
+  },
+  {
+    "category": "8 25 16 LUG",
+    "product_code": "12161680",
+    "product_description": "8.25-16LT SLG 50+R N16 129/127K",
+    "nbp_gst_18": 11293.10,
+    "cmp_set": 11500
+  },
+  {
+    "category": "8 25 16 LUG",
+    "product_code": "12161880",
+    "product_description": "8.25-16LT 129/127K SLG707 N16",
+    "nbp_gst_18": 11199.25,
+    "cmp_set": 11425
+  },
+  {
+    "category": "8 25 16 LUG",
+    "product_code": "12162280",
+    "product_description": "8.25-16LT 129/127K SLG 60 N16",
+    "nbp_gst_18": 11291.31,
+    "cmp_set": 11500
+  },
+  {
+    "category": "8 25 16 LUG",
+    "product_code": "12165180",
+    "product_description": "8.25-16LT 129/127K SLG 001 N16",
+    "nbp_gst_18": 11280.72,
+    "cmp_set": 11500
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "12161280",
+    "product_description": "8.25-16LT 129/127K SM909 N16",
+    "nbp_gst_18": 9908.89,
+    "cmp_set": 10125
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "12166480",
+    "product_description": "8.25-16LT 129/127K SM99 N16",
+    "nbp_gst_18": 9815.36,
+    "cmp_set": 10025
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "12166580",
+    "product_description": "8.25-16LT SM99 PLUS N16 129/127K",
+    "nbp_gst_18": 9958.84,
+    "cmp_set": 10175
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "16111280",
+    "product_description": "7.50-16LT 124/120K SM909 N16",
+    "nbp_gst_18": 8668.17,
+    "cmp_set": 8875
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "16116480",
+    "product_description": "7.50-16LT 124/120K SM99 N16",
+    "nbp_gst_18": 8574.33,
+    "cmp_set": 8800
+  },
+  {
+    "category": "LCV RIB",
+    "product_code": "16116580",
+    "product_description": "7.50-16LT SM99 PLUS N16 124/120K",
+    "nbp_gst_18": 8717.15,
+    "cmp_set": 8925
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16101660",
+    "product_description": "215D15LT 117/114K SLG 50+R N12",
+    "nbp_gst_18": 5676.33,
+    "cmp_set": 5900
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16111670",
+    "product_description": "7.50-15LT LV SLG 50+R N14 121/117K",
+    "nbp_gst_18": 7984.33,
+    "cmp_set": 8200
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16112670",
+    "product_description": "7.50-15LT SL50+R N14 SV",
+    "nbp_gst_18": 7723.36,
+    "cmp_set": 7925
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16120270",
+    "product_description": "7.00-16 SUPERMILER909 SV N14",
+    "nbp_gst_18": 7377.54,
+    "cmp_set": 7600
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16121270",
+    "product_description": "7.00-16 SUPERMILER909 LV N14",
+    "nbp_gst_18": 7660.59,
+    "cmp_set": 7875
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16121570",
+    "product_description": "7.00-16LT SV SLG 50 N14 118/113K",
+    "nbp_gst_18": 7949.52,
+    "cmp_set": 8150
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16125470",
+    "product_description": "7.00-16LT SM99 N14 SV 118/113K",
+    "nbp_gst_18": 7286.32,
+    "cmp_set": 7500
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16126470",
+    "product_description": "7.00-16LT SM99 N14 LV 118/113K",
+    "nbp_gst_18": 7568.01,
+    "cmp_set": 7775
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16128270",
+    "product_description": "7.00-16LT LV SLG 50 N14 118/113K",
+    "nbp_gst_18": 8232.57,
+    "cmp_set": 8425
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16141250",
+    "product_description": "7.00-15LT SV SM909 N10 110/105K",
+    "nbp_gst_18": 6731.49,
+    "cmp_set": 6950
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16141350",
+    "product_description": "7.00-15 SM909 LV N10",
+    "nbp_gst_18": 6992.40,
+    "cmp_set": 7175
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16141660",
+    "product_description": "7.00-15LT LV SLG 50+R N12 114/109K",
+    "nbp_gst_18": 7796.92,
+    "cmp_set": 8000
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16141760",
+    "product_description": "7.00-15LT SV SLG 50+R N12 114/109K",
+    "nbp_gst_18": 7535.95,
+    "cmp_set": 7725
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16146450",
+    "product_description": "7.00-15 SM99 SV N10",
+    "nbp_gst_18": 6543.54,
+    "cmp_set": 6775
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16146550",
+    "product_description": "7.00-15LT 110/105K SM99 N10 LV",
+    "nbp_gst_18": 6804.13,
+    "cmp_set": 7050
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16171200",
+    "product_description": "195/80D15LT 102/99K SM909 N8",
+    "nbp_gst_18": 5245.74,
+    "cmp_set": 5475
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16171640",
+    "product_description": "195/80D15LT 102/99K SL50+R N8",
+    "nbp_gst_18": 5621.38,
+    "cmp_set": 5850
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16183140",
+    "product_description": "165D14LT SVL N8",
+    "nbp_gst_18": 4075.53,
+    "cmp_set": 4325
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16183540",
+    "product_description": "185D14LT 102/100K SVR N8",
+    "nbp_gst_18": 4562.74,
+    "cmp_set": 4775
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16183740",
+    "product_description": "185D14LT 102/100K SVL N8",
+    "nbp_gst_18": 4983.95,
+    "cmp_set": 5200
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16183840",
+    "product_description": "185D14LT 102/100K SVL EXTRA N8",
+    "nbp_gst_18": 5061.68,
+    "cmp_set": 5300
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16183940",
+    "product_description": "165D14LT SVR N8 97/95K",
+    "nbp_gst_18": 3802.30,
+    "cmp_set": 4050
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16184040",
+    "product_description": "185D14LT 102/100K SVL STAR N8",
+    "nbp_gst_18": 4984.33,
+    "cmp_set": 5200
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16196560",
+    "product_description": "215/80D14LT SAVARILUG N10",
+    "nbp_gst_18": 5954.53,
+    "cmp_set": 6175
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "16196650",
+    "product_description": "LT215/80D14 SML N10",
+    "nbp_gst_18": 5620.30,
+    "cmp_set": 5850
+  },
+  {
+    "category": "PICK UP BIAS",
+    "product_code": "19153340",
+    "product_description": "195D14LT 106/104K SVL N8",
+    "nbp_gst_18": 5150.22,
+    "cmp_set": 5375
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16311160",
+    "product_description": "7.50R15LT M157 R12 TT LV 119/114L",
+    "nbp_gst_18": 8457.75,
+    "cmp_set": 8650
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16311260",
+    "product_description": "7.50R15LT M157 R12 TT SV 119/114L",
+    "nbp_gst_18": 8196.65,
+    "cmp_set": 8375
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16321060",
+    "product_description": "7.00R16LT 115/110M SMR M157 TT LV",
+    "nbp_gst_18": 7984.10,
+    "cmp_set": 8200
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16321160",
+    "product_description": "7.00R16LT SMR M157-SV TT 115/110M",
+    "nbp_gst_18": 7701.04,
+    "cmp_set": 7925
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16328670",
+    "product_description": "7.00R16LT S1F4 R14 LV 118/113M",
+    "nbp_gst_18": 10120.07,
+    "cmp_set": 10325
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16328770",
+    "product_description": "7.00R16LT S1F4 R14 SV 118/113M",
+    "nbp_gst_18": 9837.02,
+    "cmp_set": 10025
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16330640",
+    "product_description": "225/75R16LT SMR M157 TL 121/120S",
+    "nbp_gst_18": 7220.27,
+    "cmp_set": 7450
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340040",
+    "product_description": "185R14LT 107/105R SMR M157 TL R10",
+    "nbp_gst_18": 4863.50,
+    "cmp_set": 5100
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340160",
+    "product_description": "7.00R15LT M151+ SV R12 TT 114/109L",
+    "nbp_gst_18": 8059.42,
+    "cmp_set": 8250
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340180",
+    "product_description": "7.00R15LT M151+ R12 LV 114/109L",
+    "nbp_gst_18": 8320.48,
+    "cmp_set": 8525
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340800",
+    "product_description": "185R14LT 107/105R R10 TL SMR M151",
+    "nbp_gst_18": 4790.70,
+    "cmp_set": 5000
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340810",
+    "product_description": "185R14LT 107/105R TT SMR M151 R10",
+    "nbp_gst_18": 5069.61,
+    "cmp_set": 5300
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340820",
+    "product_description": "185R14LT 107/105R SMR M151 TL LRT2",
+    "nbp_gst_18": 4696.02,
+    "cmp_set": 4925
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16340960",
+    "product_description": "195R14LT SMR M151 TL 106/104Q",
+    "nbp_gst_18": 4884.37,
+    "cmp_set": 5100
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16341020",
+    "product_description": "195R15LT SMR-M160 TL 107/105Q",
+    "nbp_gst_18": 5482.12,
+    "cmp_set": 5700
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16341030",
+    "product_description": "195R15LT SMR-M160 TT 107/105Q",
+    "nbp_gst_18": 5927.15,
+    "cmp_set": 6125
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16341050",
+    "product_description": "195R15LT SMRM165TT 107/105Q",
+    "nbp_gst_18": 5926.65,
+    "cmp_set": 6125
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16342100",
+    "product_description": "7.00R15LT SMR M157 SV 114/109L R12",
+    "nbp_gst_18": 8061.58,
+    "cmp_set": 8250
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350020",
+    "product_description": "215/70R15LT SMR M159 TL 109/107S",
+    "nbp_gst_18": 5430.14,
+    "cmp_set": 5600
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350220",
+    "product_description": "215/75R15LT SMR M157 TT 115/113Q",
+    "nbp_gst_18": 6133.06,
+    "cmp_set": 6350
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350240",
+    "product_description": "215/75R15LT SMR M157 TL 115/113Q",
+    "nbp_gst_18": 5584.79,
+    "cmp_set": 5800
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350710",
+    "product_description": "LT215R14 ZQT R10 TT",
+    "nbp_gst_18": 6380.41,
+    "cmp_set": 6575
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350830",
+    "product_description": "215/75R16LT113/111SM170TT",
+    "nbp_gst_18": 7937.69,
+    "cmp_set": 8150
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16350960",
+    "product_description": "215/75R16LT SMR M170 TL 116/114S",
+    "nbp_gst_18": 7052.04,
+    "cmp_set": 7275
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16351300",
+    "product_description": "215/75R16LT M170 TT N10 116/114S",
+    "nbp_gst_18": 7889.85,
+    "cmp_set": 8100
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "16360560",
+    "product_description": "205R16LT 110/108S SMR M159 TL",
+    "nbp_gst_18": 5812.36,
+    "cmp_set": 6025
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "18340600",
+    "product_description": "165R14LT TL 97/95Q SMR M154",
+    "nbp_gst_18": 3880.26,
+    "cmp_set": 4100
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "18340620",
+    "product_description": "165R14LT TL 97/95Q SMR M154 LRT2",
+    "nbp_gst_18": 3834.02,
+    "cmp_set": 4050
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "18340650",
+    "product_description": "165R14LT TT 97/95Q SMR M154",
+    "nbp_gst_18": 4073.91,
+    "cmp_set": 4275
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "18360600",
+    "product_description": "175R14LT 99/98Q SMR M154TL",
+    "nbp_gst_18": 3937.48,
+    "cmp_set": 4175
+  },
+  {
+    "category": "PICK UP RADIALS",
+    "product_code": "18360610",
+    "product_description": "175R14LT 99/98Q SMR M154 TT",
+    "nbp_gst_18": 4191.26,
+    "cmp_set": 4425
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12361700",
+    "product_description": "8.25R16LT S1T4-LR 129/127L R16",
+    "nbp_gst_18": 12384.23,
+    "cmp_set": 12525
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12361780",
+    "product_description": "8.25R16LT S1T4 129/127L R16",
+    "nbp_gst_18": 12430.58,
+    "cmp_set": 12575
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12362580",
+    "product_description": "8.25R16LT S3K4 129/127L R16",
+    "nbp_gst_18": 12768.58,
+    "cmp_set": 12975
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12364980",
+    "product_description": "8.25R16LT SLM S3C8+ 129/127L R16",
+    "nbp_gst_18": 12770.03,
+    "cmp_set": 12975
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12367380",
+    "product_description": "8.25R16LT S1M4 PLUS R16 129/127L",
+    "nbp_gst_18": 12522.67,
+    "cmp_set": 12700
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12368680",
+    "product_description": "8.25R16LT S1F4 R16 129/127L",
+    "nbp_gst_18": 12474.87,
+    "cmp_set": 12600
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12371970",
+    "product_description": "235/75R17.5 132/130M S1R4 TL",
+    "nbp_gst_18": 13756.24,
+    "cmp_set": 14000
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12378570",
+    "product_description": "235/75R17.5 LT S3K4 R14 TL",
+    "nbp_gst_18": 14187.29,
+    "cmp_set": 14450
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12378670",
+    "product_description": "235/75R17.5LT S1F4 TL 132/130M",
+    "nbp_gst_18": 13824.65,
+    "cmp_set": 14100
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12382570",
+    "product_description": "225/75R17.5 129/127M S3K4 TL",
+    "nbp_gst_18": 13360.75,
+    "cmp_set": 13575
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12388270",
+    "product_description": "225/75R17.5 129/127M S1R4 TL",
+    "nbp_gst_18": 12979.44,
+    "cmp_set": 13225
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12391970",
+    "product_description": "215/75R17.5 126/124M S1R4 R14 TL",
+    "nbp_gst_18": 11938.16,
+    "cmp_set": 12150
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12391980",
+    "product_description": "215/75R17.5 135/133J S1R4 R16 TL",
+    "nbp_gst_18": 12137.07,
+    "cmp_set": 12350
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12392570",
+    "product_description": "215/75R17.5 126/124M S3K4 R14 TL",
+    "nbp_gst_18": 12460.16,
+    "cmp_set": 12675
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12561980",
+    "product_description": "8.25R16LT S1F4 LR 129/127L R16",
+    "nbp_gst_18": 12428.88,
+    "cmp_set": 12625
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12562580",
+    "product_description": "8.25R16LT S3K4 LR 129/127L R16",
+    "nbp_gst_18": 12721.91,
+    "cmp_set": 12950
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12571970",
+    "product_description": "235/75R17.5 S1R4 TL LR 132/130M",
+    "nbp_gst_18": 13697.48,
+    "cmp_set": 13950
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12572570",
+    "product_description": "235/75R17.5 S3K4 LR TL 132/130M R14",
+    "nbp_gst_18": 14000.84,
+    "cmp_set": 14285
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12581970",
+    "product_description": "225/75R17.5 S1R4 LR TL 129/127M R14",
+    "nbp_gst_18": 12932.36,
+    "cmp_set": 13180
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12582570",
+    "product_description": "225/75R17.5 S3K4 LR TL 129/127M R14",
+    "nbp_gst_18": 13314.75,
+    "cmp_set": 13550
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12591970",
+    "product_description": "215/75R17.5 S1R4 LR TL 126/124M R14",
+    "nbp_gst_18": 11894.45,
+    "cmp_set": 12100
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "12592570",
+    "product_description": "215/75R17.5 S3K4 LR TL 126/124M R14",
+    "nbp_gst_18": 12412.67,
+    "cmp_set": 12625
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "16312580",
+    "product_description": "7.50R16LT S3K4 R16 124/120M",
+    "nbp_gst_18": 11277.94,
+    "cmp_set": 11475
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "16314980",
+    "product_description": "7.50R16LT SLM S3C8+ 124/120M R16",
+    "nbp_gst_18": 11229.72,
+    "cmp_set": 11475
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "16317370",
+    "product_description": "7.50R16LT S1M4 PLUS R14 122/118L",
+    "nbp_gst_18": 10957.42,
+    "cmp_set": 11200
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "16317380",
+    "product_description": "7.50R16LT S1M4 PLUS R16 124/120M",
+    "nbp_gst_18": 10094.88,
+    "cmp_set": 10300
+  },
+  {
+    "category": "LT RADIALS",
+    "product_code": "16318680",
+    "product_description": "7.50R16LT S1F4 R16 124/120M",
+    "nbp_gst_18": 10904.92,
+    "cmp_set": 11100
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "18173540",
+    "product_description": "165D13LT SVR N8",
+    "nbp_gst_18": 3377.72,
+    "cmp_set": 3575
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "18173740",
+    "product_description": "165D13LT SVL N8",
+    "nbp_gst_18": 3560.54,
+    "cmp_set": 3775
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19133140",
+    "product_description": "155D12LT SVR EXTRA 88/86K N8",
+    "nbp_gst_18": 2801.92,
+    "cmp_set": 2950
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19133540",
+    "product_description": "155D12LT 88/86K SVR N8",
+    "nbp_gst_18": 2710.27,
+    "cmp_set": 2850
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19133740",
+    "product_description": "155D12LT 88/86K SVL N8",
+    "nbp_gst_18": 2946.89,
+    "cmp_set": 3125
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19133840",
+    "product_description": "155D12LT 88/86K SVL EXTRA",
+    "nbp_gst_18": 3038.75,
+    "cmp_set": 3225
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19143540",
+    "product_description": "165D12 LT SAVARI N8",
+    "nbp_gst_18": 3038.49,
+    "cmp_set": 3250
+  },
+  {
+    "category": "SCV 4W BIAS 12\"/13\"",
+    "product_code": "19143740",
+    "product_description": "165D12LT SAVARI LUG N8",
+    "nbp_gst_18": 3398.93,
+    "cmp_set": 3575
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18311010",
+    "product_description": "155R13LT 90/89L SMR-M154",
+    "nbp_gst_18": 3483.02,
+    "cmp_set": 3650
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18311020",
+    "product_description": "155R13LT 90/89L M154 TL",
+    "nbp_gst_18": 3288.88,
+    "cmp_set": 3500
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18311040",
+    "product_description": "155R13LT SMR M154 LR TL 90/89L",
+    "nbp_gst_18": 3289.11,
+    "cmp_set": 3500
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18311180",
+    "product_description": "155R13LT TL SMR M154 LRT2 90/89L",
+    "nbp_gst_18": 3195.87,
+    "cmp_set": 3400
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18360650",
+    "product_description": "145R12LT 86/84Q SMR M154 TT",
+    "nbp_gst_18": 2798.45,
+    "cmp_set": 2975
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18360660",
+    "product_description": "145R12LT 86/84Q SMR TL M154",
+    "nbp_gst_18": 2631.98,
+    "cmp_set": 2875
+  },
+  {
+    "category": "SCV 4W RADIAL 12\"/13",
+    "product_code": "18362040",
+    "product_description": "145R12LT SMR M162 TL (MM) 86/84Q",
+    "nbp_gst_18": 2850.64,
+    "cmp_set": 3000
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26120050",
+    "product_description": "4.00-10 79F SAVARI PLUS N6",
+    "nbp_gst_18": 1690.29,
+    "cmp_set": 1825
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26120830",
+    "product_description": "4.00-10 79F AM99 N6 TL LRR",
+    "nbp_gst_18": 1434.88,
+    "cmp_set": 1575
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26120930",
+    "product_description": "4.00-10 AUTOMILER99 N6",
+    "nbp_gst_18": 1526.58,
+    "cmp_set": 1675
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26130930",
+    "product_description": "4.00-8 AUTOMILER84 N6",
+    "nbp_gst_18": 1071.38,
+    "cmp_set": 1175
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26130940",
+    "product_description": "4.00-8 76F AML 84 TL LRR",
+    "nbp_gst_18": 1278.38,
+    "cmp_set": 1350
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26131030",
+    "product_description": "4.00-8 76E AUTOMILER99 N6",
+    "nbp_gst_18": 1133.39,
+    "cmp_set": 1250
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26133030",
+    "product_description": "4.00-8 SAVARI N6",
+    "nbp_gst_18": 1104.72,
+    "cmp_set": 1200
+  },
+  {
+    "category": "AUTO",
+    "product_code": "26136420",
+    "product_description": "4.00-8 TRIPLEPLUS N4",
+    "nbp_gst_18": 973.68,
+    "cmp_set": 1075
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "21174210",
+    "product_description": "90/90-12 64B E-SAVARI TT",
+    "nbp_gst_18": 789.00,
+    "cmp_set": 875
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "21174410",
+    "product_description": "90/90-12 64B E-SAVARI PLUS",
+    "nbp_gst_18": 873.39,
+    "cmp_set": 950
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "26174220",
+    "product_description": "3.75-12 66E E-SAVARI N4",
+    "nbp_gst_18": 968.07,
+    "cmp_set": 1075
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "26174230",
+    "product_description": "3.75-12 76B E-SAVARI N6",
+    "nbp_gst_18": 1172.12,
+    "cmp_set": 1275
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "26174420",
+    "product_description": "3.75-12 66E E-SAVARI PLUS N4",
+    "nbp_gst_18": 1004.11,
+    "cmp_set": 1125
+  },
+  {
+    "category": "SCV-ER",
+    "product_code": "26175020",
+    "product_description": "4.00-12 83F E-SAVARI M N6",
+    "nbp_gst_18": 1253.41,
+    "cmp_set": 1375
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "19120040",
+    "product_description": "130/80D12 90F SAVARI N8 TT",
+    "nbp_gst_18": 2209.23,
+    "cmp_set": 2375
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "19122040",
+    "product_description": "120/80D12 86F SAVARI N8 TT",
+    "nbp_gst_18": 2026.80,
+    "cmp_set": 2200
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26140340",
+    "product_description": "4.50-10 85E SAVARI N8",
+    "nbp_gst_18": 2135.19,
+    "cmp_set": 2250
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26140940",
+    "product_description": "4.50-10 85E AUTOMILER99 N8 TT",
+    "nbp_gst_18": 2205.40,
+    "cmp_set": 2325
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26143040",
+    "product_description": "4.50-10 SAVARI 85E N8",
+    "nbp_gst_18": 2135.32,
+    "cmp_set": 2250
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26143140",
+    "product_description": "4.50-10 SAVARI TREK N8",
+    "nbp_gst_18": 2220.93,
+    "cmp_set": 2400
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26143240",
+    "product_description": "4.50-10 85F SAVARI N8 TL",
+    "nbp_gst_18": 1907.38,
+    "cmp_set": 2075
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26143340",
+    "product_description": "4.50-10 SVL 85E N8 TT",
+    "nbp_gst_18": 2222.55,
+    "cmp_set": 2400
+  },
+  {
+    "category": "SCV 3W BIAS",
+    "product_code": "26153340",
+    "product_description": "5.00-10 SAVARILUG N8",
+    "nbp_gst_18": 2279.51,
+    "cmp_set": 2500
+  },
+  {
+    "category": "SCV 3W RADIALS",
+    "product_code": "18332100",
+    "product_description": "120/80R12 86F SMR M154 TL LRR",
+    "nbp_gst_18": 2166.05,
+    "cmp_set": 2350
+  },
+  {
+    "category": "SCV 3W RADIALS",
+    "product_code": "18332180",
+    "product_description": "120/80R12 74F SMR M147 TL LRR",
+    "nbp_gst_18": 1844.74,
+    "cmp_set": 2025
+  },
+  {
+    "category": "SCV 3W RADIALS",
+    "product_code": "19311040",
+    "product_description": "130/80R12 90F SMR M154 TL LRR MOD",
+    "nbp_gst_18": 2487.64,
+    "cmp_set": 2650
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16330700",
+    "product_description": "235/65R17 104H WST-X TL",
+    "nbp_gst_18": 9691.76,
+    "cmp_set": 10125
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16330720",
+    "product_description": "235/65R17 104H WSL TL",
+    "nbp_gst_18": 9763.50,
+    "cmp_set": 10350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16330740",
+    "product_description": "235/65R17 104H WAT TL",
+    "nbp_gst_18": 9689.09,
+    "cmp_set": 10300
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331030",
+    "product_description": "235/75R15 105S ZQT TT",
+    "nbp_gst_18": 6367.61,
+    "cmp_set": 6725
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331070",
+    "product_description": "235/75R15 WAT TT",
+    "nbp_gst_18": 6408.63,
+    "cmp_set": 6850
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331080",
+    "product_description": "235/75R15 105S WAT TL",
+    "nbp_gst_18": 6245.22,
+    "cmp_set": 6725
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331220",
+    "product_description": "245/70R16 111S WAS TL",
+    "nbp_gst_18": 6565.76,
+    "cmp_set": 7175
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331430",
+    "product_description": "215/60R17 96H WST-R TL",
+    "nbp_gst_18": 6648.77,
+    "cmp_set": 7275
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331580",
+    "product_description": "235/70R16 105S WAT TL",
+    "nbp_gst_18": 6510.23,
+    "cmp_set": 7075
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331620",
+    "product_description": "265/65R17 112T WAT TL",
+    "nbp_gst_18": 10032.77,
+    "cmp_set": 11050
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16331660",
+    "product_description": "235/70R16 TL 105P WOR - DOM",
+    "nbp_gst_18": 8875.17,
+    "cmp_set": 9575
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16332040",
+    "product_description": "265/70R15 112S WAS TL",
+    "nbp_gst_18": 6532.77,
+    "cmp_set": 7500
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16333040",
+    "product_description": "265/70R16 112H WAT TL",
+    "nbp_gst_18": 7048.28,
+    "cmp_set": 7400
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16335820",
+    "product_description": "255/80R15 TL 112P WOR - DOM",
+    "nbp_gst_18": 9126.59,
+    "cmp_set": 9650
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16336000",
+    "product_description": "255/65 R16 109H WAT TL",
+    "nbp_gst_18": 6691.04,
+    "cmp_set": 7050
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16336320",
+    "product_description": "235/65R16LT 121/119R CITIBUS UA23 TL",
+    "nbp_gst_18": 7112.99,
+    "cmp_set": 7550
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16336620",
+    "product_description": "265/65R17 112V MARKUS TL",
+    "nbp_gst_18": 10546.24,
+    "cmp_set": 11800
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16337260",
+    "product_description": "225/60R17 99V MARKUS TL",
+    "nbp_gst_18": 8640.04,
+    "cmp_set": 9750
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16341470",
+    "product_description": "185/85R16 LT MMT XT 105/103Q",
+    "nbp_gst_18": 5139.10,
+    "cmp_set": 5475
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16345020",
+    "product_description": "235/60R16 104V WSP-X TL",
+    "nbp_gst_18": 7104.75,
+    "cmp_set": 7825
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350270",
+    "product_description": "215/75R15 WANDERER XT TT",
+    "nbp_gst_18": 5700.79,
+    "cmp_set": 6075
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350280",
+    "product_description": "215/75R15 WANDERER XT TL",
+    "nbp_gst_18": 5510.57,
+    "cmp_set": 5900
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350470",
+    "product_description": "215/75R15LT MMT XA1 TT 115/113S",
+    "nbp_gst_18": 5761.88,
+    "cmp_set": 6075
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350480",
+    "product_description": "215/75R15LT MMT XA1 TL",
+    "nbp_gst_18": 5576.82,
+    "cmp_set": 5900
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350620",
+    "product_description": "215/65R16 98H WSP TL",
+    "nbp_gst_18": 6715.06,
+    "cmp_set": 7350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16350680",
+    "product_description": "215/60R16 95H WST A1 ET TL",
+    "nbp_gst_18": 5944.37,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16351380",
+    "product_description": "215/55R17 94V WST A5 TL",
+    "nbp_gst_18": 8427.86,
+    "cmp_set": 9025
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16352200",
+    "product_description": "215/75R15 100S ZIGMA GP-S TL",
+    "nbp_gst_18": 5634.90,
+    "cmp_set": 6075
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16352620",
+    "product_description": "215/65 R16 98H WST TL",
+    "nbp_gst_18": 6541.92,
+    "cmp_set": 7175
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16353420",
+    "product_description": "215/60R16 95H WST A6 TL",
+    "nbp_gst_18": 5942.18,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16353760",
+    "product_description": "215/60R16 95H WST N2ET TL",
+    "nbp_gst_18": 5942.21,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16353820",
+    "product_description": "215/60R16 95H ZIGMA GP-S TL",
+    "nbp_gst_18": 6511.45,
+    "cmp_set": 7275
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16353880",
+    "product_description": "215/60R16 95H WST C6 ET TL",
+    "nbp_gst_18": 5942.98,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16355050",
+    "product_description": "215/75R15LT CITIBUS TT UA23 115/1139",
+    "nbp_gst_18": 6053.04,
+    "cmp_set": 6450
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16355060",
+    "product_description": "215/75R15LT CITIBUS TL UA23 115/1139",
+    "nbp_gst_18": 5862.82,
+    "cmp_set": 6250
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16360680",
+    "product_description": "205/65R15 94H CITIBUS STL",
+    "nbp_gst_18": 5055.84,
+    "cmp_set": 5525
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16361600",
+    "product_description": "205/60R16 92H WST ET TL",
+    "nbp_gst_18": 5682.97,
+    "cmp_set": 6150
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16363160",
+    "product_description": "205/65R16 95H WST-X1 ET TL",
+    "nbp_gst_18": 5029.29,
+    "cmp_set": 5650
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16363240",
+    "product_description": "205/65R16 95H WST X2 ET TL",
+    "nbp_gst_18": 5028.73,
+    "cmp_set": 5650
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16363320",
+    "product_description": "205/65R16 95H ZIGMA GP-S TL",
+    "nbp_gst_18": 5373.77,
+    "cmp_set": 5975
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16363340",
+    "product_description": "205/60R16 92H ZIGMA GP-S TL",
+    "nbp_gst_18": 5774.04,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16363480",
+    "product_description": "205/65R16 99H CITIBUS S TL",
+    "nbp_gst_18": 5094.84,
+    "cmp_set": 5600
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16367300",
+    "product_description": "205/55R17 91H WST A2 ET TL",
+    "nbp_gst_18": 5759.36,
+    "cmp_set": 6450
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16370720",
+    "product_description": "195/70R14 95Q ZQT TT",
+    "nbp_gst_18": 4406.30,
+    "cmp_set": 4775
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16372460",
+    "product_description": "195/60R16 89H WST AIN1 TL",
+    "nbp_gst_18": 5367.96,
+    "cmp_set": 5800
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16375020",
+    "product_description": "215/65R17 99V MARKUS TL",
+    "nbp_gst_18": 9325.44,
+    "cmp_set": 10400
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16395240",
+    "product_description": "245/65R17 107H WAS B4 TL",
+    "nbp_gst_18": 9792.61,
+    "cmp_set": 10500
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16397040",
+    "product_description": "245/75R16 111T WANDERER A/T TL",
+    "nbp_gst_18": 6335.24,
+    "cmp_set": 7000
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16560610",
+    "product_description": "205/65 R15 94H ZTX-S TT",
+    "nbp_gst_18": 5341.93,
+    "cmp_set": 5800
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16560620",
+    "product_description": "205/65 R15 94H ZTX-S TL",
+    "nbp_gst_18": 5078.60,
+    "cmp_set": 5525
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "16563100",
+    "product_description": "205/65R16 95H ZTX-S TL",
+    "nbp_gst_18": 4995.90,
+    "cmp_set": 5525
+  },
+  {
+    "category": "SUV RADIAL",
+    "product_code": "19332040",
+    "product_description": "285/65R17 116H WHT A1 TL",
+    "nbp_gst_18": 10065.81,
+    "cmp_set": 11050
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16330220",
+    "product_description": "225/55R18 98V MARKUS TL",
+    "nbp_gst_18": 10469.16,
+    "cmp_set": 11700
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16331900",
+    "product_description": "235/60R18 103H WST-A1 TL",
+    "nbp_gst_18": 10219.75,
+    "cmp_set": 11500
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332520",
+    "product_description": "255/60R19 109H WAT A5 TL ROL",
+    "nbp_gst_18": 9765.66,
+    "cmp_set": 10600
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332640",
+    "product_description": "265/60R18 110V MARKUS TL",
+    "nbp_gst_18": 12494.10,
+    "cmp_set": 14100
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332660",
+    "product_description": "265/60R18 110H WAT ROWL TL",
+    "nbp_gst_18": 11834.07,
+    "cmp_set": 13800
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332840",
+    "product_description": "255/60R18 108H WAS B4 TL",
+    "nbp_gst_18": 11240.72,
+    "cmp_set": 12250
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332880",
+    "product_description": "265/60R18 110H WAT TL",
+    "nbp_gst_18": 11715.82,
+    "cmp_set": 13250
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16332920",
+    "product_description": "255/60R18 108V MARKUS TL",
+    "nbp_gst_18": 12820.47,
+    "cmp_set": 14275
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16334720",
+    "product_description": "235/50R18 97V MARKUS TL",
+    "nbp_gst_18": 10587.66,
+    "cmp_set": 11975
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16336560",
+    "product_description": "255/65R18 111T WAT A3 ROWL TL",
+    "nbp_gst_18": 8057.61,
+    "cmp_set": 8650
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16336580",
+    "product_description": "255/65R18 111H WHT C5 TL",
+    "nbp_gst_18": 6874.21,
+    "cmp_set": 7450
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16336680",
+    "product_description": "255/65R18 WAT A3 TL ROL 111T",
+    "nbp_gst_18": 7524.99,
+    "cmp_set": 8100
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16339260",
+    "product_description": "225/50R18 95V MARKUS TL",
+    "nbp_gst_18": 10291.45,
+    "cmp_set": 11600
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16351520",
+    "product_description": "215/55R18 95V WST ET A5 TL",
+    "nbp_gst_18": 6747.45,
+    "cmp_set": 7350
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16381100",
+    "product_description": "235/55R18 100V MARKUS TL",
+    "nbp_gst_18": 12541.07,
+    "cmp_set": 13800
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16391020",
+    "product_description": "245/55R19 103H MKS A7 TL WFA",
+    "nbp_gst_18": 13007.92,
+    "cmp_set": 14350
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16391030",
+    "product_description": "245/55R19 103H MKS A7 TL",
+    "nbp_gst_18": 12151.64,
+    "cmp_set": 13350
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16393000",
+    "product_description": "235/55R19 105T WSL TL",
+    "nbp_gst_18": 11074.40,
+    "cmp_set": 11925
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16393020",
+    "product_description": "235/55R19 101V MARKUS TL",
+    "nbp_gst_18": 12076.96,
+    "cmp_set": 13800
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16398020",
+    "product_description": "275/50R20 113W MARKUS TL",
+    "nbp_gst_18": 15610.57,
+    "cmp_set": 17500
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16398040",
+    "product_description": "245/50R20 105V MKS UHP TL WFA",
+    "nbp_gst_18": 14423.86,
+    "cmp_set": 16100
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16398050",
+    "product_description": "245/50R20 105V MKS UHP TL",
+    "nbp_gst_18": 13538.31,
+    "cmp_set": 15200
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "16399020",
+    "product_description": "245/55R19 103V WST B5 TL",
+    "nbp_gst_18": 11148.30,
+    "cmp_set": 12050
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "18311000",
+    "product_description": "T155/90R18 113M TEMPSPAR TL",
+    "nbp_gst_18": 3521.19,
+    "cmp_set": 3850
+  },
+  {
+    "category": "SUV RADIAL 18\" AND A",
+    "product_code": "19331320",
+    "product_description": "285/60R18 120H WHT A2 TL EXP",
+    "nbp_gst_18": 12305.53,
+    "cmp_set": 13350
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18310860",
+    "product_description": "155/65R12 71S ZLX TL",
+    "nbp_gst_18": 2224.85,
+    "cmp_set": 2525
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18310960",
+    "product_description": "155/70R12 73T ZWYDE TL",
+    "nbp_gst_18": 2619.52,
+    "cmp_set": 2900
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18320220",
+    "product_description": "135/70R12 65S ZLX TL",
+    "nbp_gst_18": 1892.61,
+    "cmp_set": 2150
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18340140",
+    "product_description": "165/65R12 75S ZVTS-A1R TL",
+    "nbp_gst_18": 2716.44,
+    "cmp_set": 3075
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360300",
+    "product_description": "145/80R12 74T ZLX TL",
+    "nbp_gst_18": 2466.18,
+    "cmp_set": 2750
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360330",
+    "product_description": "145/80R12 74T ZVTS X1 TT",
+    "nbp_gst_18": 2477.64,
+    "cmp_set": 2650
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360340",
+    "product_description": "145/80R12 74T ZVTS X1 TL",
+    "nbp_gst_18": 2384.51,
+    "cmp_set": 2575
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360370",
+    "product_description": "145/80R12 74T ZTX A1 TT",
+    "nbp_gst_18": 2625.12,
+    "cmp_set": 2850
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360380",
+    "product_description": "145/80R12 74T ZTX A1 TL",
+    "nbp_gst_18": 2431.29,
+    "cmp_set": 2650
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360510",
+    "product_description": "145R12LT MMT XA1 TT - 80/78Q",
+    "nbp_gst_18": 2559.73,
+    "cmp_set": 2750
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360520",
+    "product_description": "145R12LT MMT XA1 TL - 80/78Q",
+    "nbp_gst_18": 2384.57,
+    "cmp_set": 2625
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360770",
+    "product_description": "145/70R12 69S ZLX TT",
+    "nbp_gst_18": 2329.47,
+    "cmp_set": 2525
+  },
+  {
+    "category": "CAR RADIAL 12\"",
+    "product_code": "18360780",
+    "product_description": "145/70R12 69S ZLX TL",
+    "nbp_gst_18": 2195.59,
+    "cmp_set": 2350
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18310460",
+    "product_description": "155/80R13 79S ZVTS-X1 TL",
+    "nbp_gst_18": 3140.33,
+    "cmp_set": 3400
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18310480",
+    "product_description": "155/80R13 79T ZLX TL",
+    "nbp_gst_18": 3329.62,
+    "cmp_set": 3675
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18310560",
+    "product_description": "155/80R13 79T ZTX-A1 TL",
+    "nbp_gst_18": 3186.38,
+    "cmp_set": 3500
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18310940",
+    "product_description": "155/70R13 75T ZLX TL",
+    "nbp_gst_18": 3089.91,
+    "cmp_set": 3450
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311060",
+    "product_description": "155R13LT 90/89S MMT XA1 TL",
+    "nbp_gst_18": 3233.68,
+    "cmp_set": 3500
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311100",
+    "product_description": "155/65R13 73T ZLX TL",
+    "nbp_gst_18": 3003.37,
+    "cmp_set": 3350
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311130",
+    "product_description": "155/70R13 75T ZVTS-X1 TT",
+    "nbp_gst_18": 2939.11,
+    "cmp_set": 3225
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311140",
+    "product_description": "155/70R13 75T ZVTS-X1 TL",
+    "nbp_gst_18": 2834.74,
+    "cmp_set": 3125
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311310",
+    "product_description": "155/70R13 75T ZTX-A1 TT",
+    "nbp_gst_18": 3129.99,
+    "cmp_set": 3400
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18311320",
+    "product_description": "155/70R13 75T ZTX-A1 TL",
+    "nbp_gst_18": 3038.66,
+    "cmp_set": 3300
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18312920",
+    "product_description": "155/65R13 73T ZVTS-X1 TL",
+    "nbp_gst_18": 2891.22,
+    "cmp_set": 3175
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18340370",
+    "product_description": "165/65R13 77T ZTX-A1 TT",
+    "nbp_gst_18": 3160.37,
+    "cmp_set": 3450
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18340380",
+    "product_description": "165/65R13 77T ZTX-A1 TL",
+    "nbp_gst_18": 3031.13,
+    "cmp_set": 3300
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18340410",
+    "product_description": "165/65R13 77T ZLX TT",
+    "nbp_gst_18": 3252.44,
+    "cmp_set": 3575
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18340420",
+    "product_description": "165/65R13 77T ZLX TL",
+    "nbp_gst_18": 3126.98,
+    "cmp_set": 3450
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18350460",
+    "product_description": "145/80R13 75T ZVTS-X1 TL",
+    "nbp_gst_18": 2674.29,
+    "cmp_set": 2900
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18350500",
+    "product_description": "145/80R13 75T ZLX TL",
+    "nbp_gst_18": 2812.67,
+    "cmp_set": 3200
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18350600",
+    "product_description": "145/80R13 75T ZTX-A1 TL",
+    "nbp_gst_18": 2853.61,
+    "cmp_set": 3125
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18360850",
+    "product_description": "145/70R13 71T ZVTS X1 TT",
+    "nbp_gst_18": 2683.09,
+    "cmp_set": 2975
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18360860",
+    "product_description": "145/70 R13 71T ZVTS X1 TL",
+    "nbp_gst_18": 2552.86,
+    "cmp_set": 2850
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18360920",
+    "product_description": "145/70R13 71T ZLX TL",
+    "nbp_gst_18": 2850.67,
+    "cmp_set": 3200
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18371220",
+    "product_description": "175/70R13 82T ZLX TL",
+    "nbp_gst_18": 3519.48,
+    "cmp_set": 3850
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18380940",
+    "product_description": "175/60R13 77T ZWYDE TL",
+    "nbp_gst_18": 2951.22,
+    "cmp_set": 3200
+  },
+  {
+    "category": "CAR RADIAL 13\"",
+    "product_code": "18380960",
+    "product_description": "175/50R13 76V ZWYDE A7 TL",
+    "nbp_gst_18": 3053.88,
+    "cmp_set": 3400
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18310200",
+    "product_description": "155/65R14 75S ZVTS A1 TL",
+    "nbp_gst_18": 2890.25,
+    "cmp_set": 3125
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18310240",
+    "product_description": "155/65R14 75S ZLX TL",
+    "nbp_gst_18": 2965.50,
+    "cmp_set": 3300
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18310280",
+    "product_description": "155/70R14 77T ZLX TL",
+    "nbp_gst_18": 3369.43,
+    "cmp_set": 3725
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18340260",
+    "product_description": "165/65R14 79T ZTX A1 TL",
+    "nbp_gst_18": 3490.05,
+    "cmp_set": 3775
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18340280",
+    "product_description": "165/65R14 79H ZLX TL",
+    "nbp_gst_18": 3566.86,
+    "cmp_set": 3950
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18340400",
+    "product_description": "165/80R14 85T ZLX TL",
+    "nbp_gst_18": 3466.50,
+    "cmp_set": 3900
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18340960",
+    "product_description": "165/65R14 79H ZVTV TL",
+    "nbp_gst_18": 3336.02,
+    "cmp_set": 3575
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18341040",
+    "product_description": "165/70R14 81T ZLX TL",
+    "nbp_gst_18": 3171.36,
+    "cmp_set": 3575
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18341060",
+    "product_description": "165/70R14 81S ZVTV A1 TL",
+    "nbp_gst_18": 3063.74,
+    "cmp_set": 3350
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18341080",
+    "product_description": "165/70R14 81T ZVTS-A2 TL",
+    "nbp_gst_18": 3028.67,
+    "cmp_set": 3350
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18342020",
+    "product_description": "165/80R14 85T ZTX-A1 TL",
+    "nbp_gst_18": 3266.33,
+    "cmp_set": 3525
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18342400",
+    "product_description": "165/80R14 85T ZVTV A4 RN TL",
+    "nbp_gst_18": 3264.36,
+    "cmp_set": 3525
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18342620",
+    "product_description": "165/80R14 85T ET GCA1 TL",
+    "nbp_gst_18": 3264.37,
+    "cmp_set": 3525
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18390180",
+    "product_description": "175/70R14 84T ZVTV TL",
+    "nbp_gst_18": 3871.06,
+    "cmp_set": 4225
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18390260",
+    "product_description": "175/70R14 84H ZLX TL",
+    "nbp_gst_18": 4049.17,
+    "cmp_set": 4500
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18390300",
+    "product_description": "175/70R14 84H ZTX-A1 TL",
+    "nbp_gst_18": 4007.08,
+    "cmp_set": 4400
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391000",
+    "product_description": "185/65R14 86H ZTX A1 TL",
+    "nbp_gst_18": 3895.35,
+    "cmp_set": 4225
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391120",
+    "product_description": "185/70R14 88T Z.L.O. TL",
+    "nbp_gst_18": 4192.14,
+    "cmp_set": 4650
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391160",
+    "product_description": "185/70R14 88H ZTX-A1 TL",
+    "nbp_gst_18": 3842.40,
+    "cmp_set": 4225
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391220",
+    "product_description": "185/65R14 86H ZVTS A1 TL",
+    "nbp_gst_18": 3843.25,
+    "cmp_set": 4125
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391300",
+    "product_description": "185/70R14 88H ZLX TL",
+    "nbp_gst_18": 3995.17,
+    "cmp_set": 4400
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "18391400",
+    "product_description": "185/65R14 86H ZLX TL",
+    "nbp_gst_18": 4054.79,
+    "cmp_set": 4500
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "19360300",
+    "product_description": "175/65R14 82H ZLX TL",
+    "nbp_gst_18": 4315.99,
+    "cmp_set": 4700
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "19364600",
+    "product_description": "175/65R14 82H ZVTV-A1 TLS",
+    "nbp_gst_18": 4010.58,
+    "cmp_set": 4275
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "19364800",
+    "product_description": "175/65R14 82H ZTX A1 TL",
+    "nbp_gst_18": 4210.26,
+    "cmp_set": 4550
+  },
+  {
+    "category": "CAR RADIAL 14\"",
+    "product_code": "19364880",
+    "product_description": "175/65R14 ZVTV-A1 TL REINF 86T",
+    "nbp_gst_18": 4009.67,
+    "cmp_set": 4275
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16330380",
+    "product_description": "225/55 ZR17 97W PFZ CLX1 TL",
+    "nbp_gst_18": 9111.42,
+    "cmp_set": 10125
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16330860",
+    "product_description": "225/45R17 91W PFZ CLX1 TL",
+    "nbp_gst_18": 9108.32,
+    "cmp_set": 10500
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16330900",
+    "product_description": "225/55R16 95W PFZ CLX1TL",
+    "nbp_gst_18": 8672.84,
+    "cmp_set": 9950
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16331840",
+    "product_description": "235/55ZR17 99Y PFZ CLY1 TL",
+    "nbp_gst_18": 9938.43,
+    "cmp_set": 11050
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16332360",
+    "product_description": "225/50R17 98V ET GCA4 TL",
+    "nbp_gst_18": 8280.34,
+    "cmp_set": 9025
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16351220",
+    "product_description": "215/55R17 94V PFZ CLY1TL",
+    "nbp_gst_18": 8944.09,
+    "cmp_set": 9850
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16356680",
+    "product_description": "215/60R16 95V PFZ CLX1TL",
+    "nbp_gst_18": 6672.73,
+    "cmp_set": 7450
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16361220",
+    "product_description": "205/60R16 92V PFZ CLX1TL",
+    "nbp_gst_18": 6295.55,
+    "cmp_set": 7075
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16361320",
+    "product_description": "205/55R15 88H ZSPORT TL",
+    "nbp_gst_18": 5346.44,
+    "cmp_set": 6075
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16361420",
+    "product_description": "205/55R16 91V PFZ CLX1TL",
+    "nbp_gst_18": 6884.60,
+    "cmp_set": 7900
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16367100",
+    "product_description": "205/55R16 91H ET GCA4 TL",
+    "nbp_gst_18": 6745.04,
+    "cmp_set": 7350
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16370120",
+    "product_description": "195/55R16 91V PFZ CLX1 TL",
+    "nbp_gst_18": 6676.84,
+    "cmp_set": 7275
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16370180",
+    "product_description": "195/55R16 87H ZVTV-A1 ET TL",
+    "nbp_gst_18": 6001.04,
+    "cmp_set": 6350
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16370640",
+    "product_description": "195/65R15 91V PFZ CLX1TL",
+    "nbp_gst_18": 5193.94,
+    "cmp_set": 6025
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16371000",
+    "product_description": "195/60R15 88V PFZ CLX1TL",
+    "nbp_gst_18": 5385.59,
+    "cmp_set": 6075
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16371140",
+    "product_description": "195/60R15 88H ZSPORT TL",
+    "nbp_gst_18": 5235.25,
+    "cmp_set": 5900
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16371220",
+    "product_description": "195/55R16 87H ZLX TL",
+    "nbp_gst_18": 6331.74,
+    "cmp_set": 6800
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16377320",
+    "product_description": "195/65R15 91H ET GCA4 TL",
+    "nbp_gst_18": 5015.01,
+    "cmp_set": 5600
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16380900",
+    "product_description": "245/50R18 100W PFZ CLY1 TL",
+    "nbp_gst_18": 11024.60,
+    "cmp_set": 12425
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16390120",
+    "product_description": "245/45ZR17 95Y PFZ CLY1TL",
+    "nbp_gst_18": 10333.53,
+    "cmp_set": 11500
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16390180",
+    "product_description": "245/45ZR18 100Y PFZ CLY1TL",
+    "nbp_gst_18": 12297.18,
+    "cmp_set": 13075
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16391800",
+    "product_description": "245/40ZR18 93Y PFZ CLY1TL",
+    "nbp_gst_18": 10645.46,
+    "cmp_set": 11975
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "16398060",
+    "product_description": "275/45ZR20 110Y PFZ CLY1 TL",
+    "nbp_gst_18": 13134.47,
+    "cmp_set": 14750
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18340220",
+    "product_description": "165/80R15 86S ZVTS TT",
+    "nbp_gst_18": 3783.12,
+    "cmp_set": 3950
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18380260",
+    "product_description": "175/60R15 81T ZVTV A4 ET TL",
+    "nbp_gst_18": 4226.63,
+    "cmp_set": 4700
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18380320",
+    "product_description": "175/60R15 81H ZTX A1 TL",
+    "nbp_gst_18": 4398.86,
+    "cmp_set": 4875
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18380340",
+    "product_description": "175/60R15 81H ZLX TL",
+    "nbp_gst_18": 4463.96,
+    "cmp_set": 4950
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18382620",
+    "product_description": "185/60R15 84H ZLX TL",
+    "nbp_gst_18": 4414.66,
+    "cmp_set": 4875
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18382680",
+    "product_description": "185/60R15 84H ZTX-A1 TL",
+    "nbp_gst_18": 4445.12,
+    "cmp_set": 4775
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18382820",
+    "product_description": "185/60R15 84H ZVTV-A4 TL",
+    "nbp_gst_18": 4257.04,
+    "cmp_set": 4550
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18383460",
+    "product_description": "185/65R15 88T ZVTV-A1 ET STL",
+    "nbp_gst_18": 4535.80,
+    "cmp_set": 4875
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18384100",
+    "product_description": "185/65R15 88H ZLX TL",
+    "nbp_gst_18": 4848.91,
+    "cmp_set": 5325
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18385100",
+    "product_description": "185/65R15 88H ZTX-A1 TL",
+    "nbp_gst_18": 4738.64,
+    "cmp_set": 5100
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18387020",
+    "product_description": "185/55R16 83H ZLX TL",
+    "nbp_gst_18": 5440.37,
+    "cmp_set": 5975
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18387040",
+    "product_description": "185/60R16 86H ET GCA6 TL",
+    "nbp_gst_18": 4356.85,
+    "cmp_set": 4700
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "18392020",
+    "product_description": "185/70R15 89H ET GCA6 TL",
+    "nbp_gst_18": 4034.32,
+    "cmp_set": 4325
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "19364560",
+    "product_description": "175/65R15 84H ZLX TL",
+    "nbp_gst_18": 4494.12,
+    "cmp_set": 4950
+  },
+  {
+    "category": "CAR RADIAL >=15\"",
+    "product_code": "19364660",
+    "product_description": "175/65R15 84T ZVTV A2 TL",
+    "nbp_gst_18": 4206.21,
+    "cmp_set": 4500
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "16172420",
+    "product_description": "F78-15 ESTATE N4",
+    "nbp_gst_18": 4350.03,
+    "cmp_set": 4600
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "16173530",
+    "product_description": "F78-15LT ESTATE N6",
+    "nbp_gst_18": 4805.32,
+    "cmp_set": 5050
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "17110140",
+    "product_description": "6.00-16 98/94J TWT N8",
+    "nbp_gst_18": 4612.53,
+    "cmp_set": 4875
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "17115130",
+    "product_description": "6.00-16 NDMS N6",
+    "nbp_gst_18": 4576.12,
+    "cmp_set": 4875
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "17116040",
+    "product_description": "6.00-16 BIGROVER N8",
+    "nbp_gst_18": 5350.34,
+    "cmp_set": 5600
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "17131540",
+    "product_description": "6.40-15 SUPERTREKKER N8",
+    "nbp_gst_18": 5053.17,
+    "cmp_set": 5325
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "18143730",
+    "product_description": "5.90-15 81L MLD N6",
+    "nbp_gst_18": 3936.71,
+    "cmp_set": 4175
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "18151530",
+    "product_description": "5.60-14 SUPERTREKKER N6",
+    "nbp_gst_18": 3346.69,
+    "cmp_set": 3575
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "18163930",
+    "product_description": "5.20-14 MRFLEGEND CD N6",
+    "nbp_gst_18": 3375.20,
+    "cmp_set": 3575
+  },
+  {
+    "category": "PASSENGER BIAS",
+    "product_code": "19116640",
+    "product_description": "4.50-12ULT 77/75J SM12 N8",
+    "nbp_gst_18": 2444.66,
+    "cmp_set": 2650
+  },
+  {
+    "category": "MCC",
+    "product_code": "20131350",
+    "product_description": "3.00-18 NGP PLUS-V2 N6",
+    "nbp_gst_18": 1329.36,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20131360",
+    "product_description": "3.00-18 NGP PLUS-V2 N6 TL",
+    "nbp_gst_18": 1271.97,
+    "cmp_set": 1450
+  },
+  {
+    "category": "MCC",
+    "product_code": "20134230",
+    "product_description": "3.00-18 EZEERIDE N6 TT",
+    "nbp_gst_18": 1413.77,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCC",
+    "product_code": "20134240",
+    "product_description": "3.00-18 EZEERIDE N6TL",
+    "nbp_gst_18": 1356.04,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20136130",
+    "product_description": "3.00-18 NYLOGRIP ZPR-C N6",
+    "nbp_gst_18": 1341.18,
+    "cmp_set": 1575
+  },
+  {
+    "category": "MCC",
+    "product_code": "20139330",
+    "product_description": "3.00-18 52P MGP MOTO-D N6",
+    "nbp_gst_18": 1405.51,
+    "cmp_set": 1650
+  },
+  {
+    "category": "MCC",
+    "product_code": "20139470",
+    "product_description": "3.00-18 52P MET-M+ N6 TT",
+    "nbp_gst_18": 1428.61,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCC",
+    "product_code": "20139480",
+    "product_description": "3.00-18 52P MET-M+ N6 TL",
+    "nbp_gst_18": 1370.07,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20181430",
+    "product_description": "3.00-17 50P NGP PLUS-V2 N6",
+    "nbp_gst_18": 1243.97,
+    "cmp_set": 1450
+  },
+  {
+    "category": "MCC",
+    "product_code": "20181440",
+    "product_description": "3.00-17 50P NGP+ V2 N6 TL",
+    "nbp_gst_18": 1183.14,
+    "cmp_set": 1350
+  },
+  {
+    "category": "MCC",
+    "product_code": "20183060",
+    "product_description": "100/80-18 53P ZAPPER-Q TL",
+    "nbp_gst_18": 1463.21,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCC",
+    "product_code": "20184230",
+    "product_description": "3.00-17 EZEERIDE N6 TT",
+    "nbp_gst_18": 1325.66,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20184240",
+    "product_description": "3.00-17 EZEERIDE N6 TL",
+    "nbp_gst_18": 1267.28,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCC",
+    "product_code": "20186140",
+    "product_description": "3.00-17 50P NGP ZPR-C",
+    "nbp_gst_18": 1277.51,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCC",
+    "product_code": "20189330",
+    "product_description": "3.00-17 50P MGP MOTO-D N6",
+    "nbp_gst_18": 1344.49,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20189470",
+    "product_description": "3.00-17 50P MGP MET-M+ N6",
+    "nbp_gst_18": 1361.44,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20189480",
+    "product_description": "3.00-17 50P MET-M+ TL N6",
+    "nbp_gst_18": 1305.70,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856240",
+    "product_description": "80/100-18 47P NGP ZFS TL",
+    "nbp_gst_18": 1243.41,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856280",
+    "product_description": "70/100-17 40P NGP ZFS TL",
+    "nbp_gst_18": 965.73,
+    "cmp_set": 1175
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856300",
+    "product_description": "80/100-17 53P NGP ZYM TL",
+    "nbp_gst_18": 1028.64,
+    "cmp_set": 1225
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856380",
+    "product_description": "80/100-18 47P NGP ZFQ TL",
+    "nbp_gst_18": 1243.08,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856500",
+    "product_description": "80/100-18 54P NGP ZRY TL",
+    "nbp_gst_18": 1312.85,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856600",
+    "product_description": "80/100-18 54P ZAPER-Yg TL",
+    "nbp_gst_18": 1312.61,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856700",
+    "product_description": "80/100-18 54P NGP PLUS-V2 TL",
+    "nbp_gst_18": 1289.36,
+    "cmp_set": 1525
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856760",
+    "product_description": "80/100-18 54P EZEERIDE TL",
+    "nbp_gst_18": 1335.45,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856900",
+    "product_description": "80/100-18 47P EZEERIDE-F TL",
+    "nbp_gst_18": 1294.21,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20856980",
+    "product_description": "80/100-18 TL MGP MET-M+ 54P",
+    "nbp_gst_18": 1444.93,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCC",
+    "product_code": "20857020",
+    "product_description": "80/100-18 47P MET-FM1+ TL",
+    "nbp_gst_18": 1354.38,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "20857140",
+    "product_description": "80/100-18 54P ZAPPER C1-LR TL (AAEL)",
+    "nbp_gst_18": 1334.75,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "20857220",
+    "product_description": "80/100-18 47P ZFS TL - AAEL LRR",
+    "nbp_gst_18": 1265.45,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCC",
+    "product_code": "20857420",
+    "product_description": "80/100-18 54P ZPR-C1-U TL",
+    "nbp_gst_18": 1326.44,
+    "cmp_set": 1575
+  },
+  {
+    "category": "MCC",
+    "product_code": "20864200",
+    "product_description": "90/90-18 51P NGP ZRP TL",
+    "nbp_gst_18": 1466.52,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCC",
+    "product_code": "27152200",
+    "product_description": "2.75-17 41P RIB N4",
+    "nbp_gst_18": 1077.54,
+    "cmp_set": 1275
+  },
+  {
+    "category": "MCC",
+    "product_code": "27154250",
+    "product_description": "2.75-17 EZEERIDE-F N4 TT",
+    "nbp_gst_18": 1182.97,
+    "cmp_set": 1425
+  },
+  {
+    "category": "MCC",
+    "product_code": "27154320",
+    "product_description": "2.75-17 41P ZFS N4 TL",
+    "nbp_gst_18": 1002.47,
+    "cmp_set": 1200
+  },
+  {
+    "category": "MCC",
+    "product_code": "27155220",
+    "product_description": "2.75-17 NGP ZFS N4 TT",
+    "nbp_gst_18": 1078.06,
+    "cmp_set": 1300
+  },
+  {
+    "category": "MCC",
+    "product_code": "27159630",
+    "product_description": "2.75-17 41P MGP MET-FM1",
+    "nbp_gst_18": 1179.50,
+    "cmp_set": 1425
+  },
+  {
+    "category": "MCC",
+    "product_code": "27161350",
+    "product_description": "2.75-18 48P NGP PLUS-V2 N6",
+    "nbp_gst_18": 1228.87,
+    "cmp_set": 1450
+  },
+  {
+    "category": "MCC",
+    "product_code": "27161360",
+    "product_description": "2.75-18 NGP PLUS-V2 N6 TL",
+    "nbp_gst_18": 1163.28,
+    "cmp_set": 1350
+  },
+  {
+    "category": "MCC",
+    "product_code": "27162240",
+    "product_description": "2.75-18 42P RIB N4",
+    "nbp_gst_18": 1173.89,
+    "cmp_set": 1350
+  },
+  {
+    "category": "MCC",
+    "product_code": "27162620",
+    "product_description": "2.75-18 NGRIP ZRRF N4",
+    "nbp_gst_18": 1259.24,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCC",
+    "product_code": "27164050",
+    "product_description": "2.75-18 42P ZPR KURVE-F",
+    "nbp_gst_18": 1278.52,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCC",
+    "product_code": "27164230",
+    "product_description": "2.75-18 EZEERIDE N6 TT",
+    "nbp_gst_18": 1308.46,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "27164240",
+    "product_description": "2.75-18 EZEERIDE N6 TL",
+    "nbp_gst_18": 1245.02,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCC",
+    "product_code": "27164250",
+    "product_description": "2.75-18 EZEERIDE-F N4 TT",
+    "nbp_gst_18": 1257.11,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCC",
+    "product_code": "27165200",
+    "product_description": "2.75-18 42P NGP ZAPPER-FS N4",
+    "nbp_gst_18": 1170.34,
+    "cmp_set": 1400
+  },
+  {
+    "category": "MCC",
+    "product_code": "27166230",
+    "product_description": "2.75-18 NGRIP ZRY N6",
+    "nbp_gst_18": 1234.82,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCC",
+    "product_code": "27169330",
+    "product_description": "2.75-18 50L MGP MOTO-D N6",
+    "nbp_gst_18": 1321.04,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "27169510",
+    "product_description": "2.75-18 48P MGP MET-M+ N6 TT",
+    "nbp_gst_18": 1361.40,
+    "cmp_set": 1600
+  },
+  {
+    "category": "MCC",
+    "product_code": "27169520",
+    "product_description": "2.75-18 48P MET-M+ N6 TL",
+    "nbp_gst_18": 1311.04,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCC",
+    "product_code": "27171520",
+    "product_description": "2.50-18 NYLORIB(YAMAHA) N4",
+    "nbp_gst_18": 1125.99,
+    "cmp_set": 1350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20073020",
+    "product_description": "110/90-19 62M MGP MOCROSS MMX4 TT",
+    "nbp_gst_18": 4296.62,
+    "cmp_set": 4700
+  },
+  {
+    "category": "MCH",
+    "product_code": "20076530",
+    "product_description": "110/90-19 62P MGP MET TT",
+    "nbp_gst_18": 2032.40,
+    "cmp_set": 2375
+  },
+  {
+    "category": "MCH",
+    "product_code": "20076540",
+    "product_description": "110/90-19 62P MGP MET TL",
+    "nbp_gst_18": 1938.59,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20082000",
+    "product_description": "110/90-18 61P NGP ZRY-e TL",
+    "nbp_gst_18": 1652.75,
+    "cmp_set": 1925
+  },
+  {
+    "category": "MCH",
+    "product_code": "20084400",
+    "product_description": "110/90-18 61P NGP ZRQ TT",
+    "nbp_gst_18": 1850.79,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20089110",
+    "product_description": "110/90-18 TT MOGRIP METEOR-M 61P",
+    "nbp_gst_18": 2032.95,
+    "cmp_set": 2350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20089120",
+    "product_description": "110/90-18 TL MOGRIP METEOR-M 61P",
+    "nbp_gst_18": 1932.27,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20112420",
+    "product_description": "3.25-19 RIB ABS N4",
+    "nbp_gst_18": 1350.18,
+    "cmp_set": 1575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20112530",
+    "product_description": "3.25-19 NGP PLUS ABS N6",
+    "nbp_gst_18": 1420.51,
+    "cmp_set": 1675
+  },
+  {
+    "category": "MCH",
+    "product_code": "20113300",
+    "product_description": "3.25-19 EZEERIDE-F N4 TT",
+    "nbp_gst_18": 1472.59,
+    "cmp_set": 1725
+  },
+  {
+    "category": "MCH",
+    "product_code": "20113320",
+    "product_description": "3.25-19 60P EZEERIDE TT",
+    "nbp_gst_18": 1582.96,
+    "cmp_set": 1800
+  },
+  {
+    "category": "MCH",
+    "product_code": "20142020",
+    "product_description": "3.25-16 MGP MOCROSS MMX2 TT",
+    "nbp_gst_18": 2260.07,
+    "cmp_set": 2625
+  },
+  {
+    "category": "MCH",
+    "product_code": "20149320",
+    "product_description": "3.25-16 MOGRIP MOTO-D N4",
+    "nbp_gst_18": 1446.39,
+    "cmp_set": 1775
+  },
+  {
+    "category": "MCH",
+    "product_code": "20161100",
+    "product_description": "90/90-21 54H MGP MET-FM TT",
+    "nbp_gst_18": 2340.59,
+    "cmp_set": 2950
+  },
+  {
+    "category": "MCH",
+    "product_code": "20161210",
+    "product_description": "90/90-21 54M MGP MOCROSS MMX3 TT",
+    "nbp_gst_18": 2945.13,
+    "cmp_set": 3350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20161310",
+    "product_description": "90/90-21 54M MGP MOCROSS MMX3-A TT",
+    "nbp_gst_18": 2944.45,
+    "cmp_set": 3350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20171330",
+    "product_description": "3.50-19 63P NYLOGRIP PLUS V2",
+    "nbp_gst_18": 1576.94,
+    "cmp_set": 1750
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173000",
+    "product_description": "90/90-19 52P NGP ZFM TT",
+    "nbp_gst_18": 1617.52,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173040",
+    "product_description": "90/90-19 52P NGP ZFM TL",
+    "nbp_gst_18": 1561.13,
+    "cmp_set": 1825
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173050",
+    "product_description": "100/90-19 57P ZAPPER-FS",
+    "nbp_gst_18": 1860.77,
+    "cmp_set": 2250
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173100",
+    "product_description": "100/90-19 ZPR KURVE-F1 TL 57H",
+    "nbp_gst_18": 1868.59,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173120",
+    "product_description": "100/90-19 ZAPPER-FS TL 57H",
+    "nbp_gst_18": 1669.82,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173140",
+    "product_description": "100/90-19 57S MET-FM2 TL",
+    "nbp_gst_18": 1919.71,
+    "cmp_set": 2250
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173180",
+    "product_description": "100/90-19 57S ZPR KURVE-F1 TL",
+    "nbp_gst_18": 1868.15,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173220",
+    "product_description": "100/90-19 57H ZPR KURVE-F TL",
+    "nbp_gst_18": 1868.15,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173240",
+    "product_description": "100/90-19 57H NYLOREX-F TL",
+    "nbp_gst_18": 1920.25,
+    "cmp_set": 2250
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173360",
+    "product_description": "100/90-19 57H NYLOHIGH-FN TL-P5AB",
+    "nbp_gst_18": 1756.00,
+    "cmp_set": 2050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173420",
+    "product_description": "100/90-19 57H ZFS TL-K0ZF",
+    "nbp_gst_18": 1670.27,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20173460",
+    "product_description": "100/90-19 57M MGP MOCROSS MMX4 TT",
+    "nbp_gst_18": 3323.42,
+    "cmp_set": 3775
+  },
+  {
+    "category": "MCH",
+    "product_code": "20181290",
+    "product_description": "100/90-17 55P NGP PLUS TT",
+    "nbp_gst_18": 1551.26,
+    "cmp_set": 1875
+  },
+  {
+    "category": "MCH",
+    "product_code": "20181300",
+    "product_description": "100/90-17 55P NGP PLUS TL",
+    "nbp_gst_18": 1466.54,
+    "cmp_set": 1725
+  },
+  {
+    "category": "MCH",
+    "product_code": "20181520",
+    "product_description": "100/90-18 56P MGP MET TL",
+    "nbp_gst_18": 1655.05,
+    "cmp_set": 1925
+  },
+  {
+    "category": "MCH",
+    "product_code": "20184030",
+    "product_description": "100/90-18 56P NGP ZRY N6",
+    "nbp_gst_18": 1604.26,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20184040",
+    "product_description": "100/90-18 56P NGP ZRY TL",
+    "nbp_gst_18": 1522.75,
+    "cmp_set": 1775
+  },
+  {
+    "category": "MCH",
+    "product_code": "20184100",
+    "product_description": "100/90-18 56P ZAPPER-Yg TL",
+    "nbp_gst_18": 1522.55,
+    "cmp_set": 1775
+  },
+  {
+    "category": "MCH",
+    "product_code": "20184420",
+    "product_description": "100/90-18 56P NGP ZRQ TL",
+    "nbp_gst_18": 1695.17,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20185100",
+    "product_description": "100/90-18 56P MSR-X TL",
+    "nbp_gst_18": 1840.90,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20185620",
+    "product_description": "100/90-18 56S ZAPPER-FH TL",
+    "nbp_gst_18": 1631.54,
+    "cmp_set": 1925
+  },
+  {
+    "category": "MCH",
+    "product_code": "20185660",
+    "product_description": "100/90-18 56H ZPR HYKE F TL-RAAA",
+    "nbp_gst_18": 2182.94,
+    "cmp_set": 2575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186020",
+    "product_description": "100/90-17 55P NGP ZRC1 TL",
+    "nbp_gst_18": 1498.56,
+    "cmp_set": 1775
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186100",
+    "product_description": "100/90-17 55P NGP ZRC TT",
+    "nbp_gst_18": 1583.84,
+    "cmp_set": 1925
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186180",
+    "product_description": "100/90-17 55P NGP ZRQ TL",
+    "nbp_gst_18": 1694.39,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186220",
+    "product_description": "100/90-17 55P MSR-X TL",
+    "nbp_gst_18": 1843.27,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186330",
+    "product_description": "100/90-17 55P MGP MOTO-D",
+    "nbp_gst_18": 1719.41,
+    "cmp_set": 2050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20186540",
+    "product_description": "100/90-17 55P MGP MET TL",
+    "nbp_gst_18": 1654.80,
+    "cmp_set": 1925
+  },
+  {
+    "category": "MCH",
+    "product_code": "20189640",
+    "product_description": "100/90-17 55P MGP MET-M TL",
+    "nbp_gst_18": 1751.14,
+    "cmp_set": 2050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20189740",
+    "product_description": "100/90-18 56P MGP MET-M TL",
+    "nbp_gst_18": 1754.72,
+    "cmp_set": 2050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20194000",
+    "product_description": "130/90-15 66P NGP ZRY TT",
+    "nbp_gst_18": 1911.27,
+    "cmp_set": 2300
+  },
+  {
+    "category": "MCH",
+    "product_code": "20194020",
+    "product_description": "130/90-15 66P NGP ZRY TL",
+    "nbp_gst_18": 1861.67,
+    "cmp_set": 2150
+  },
+  {
+    "category": "MCH",
+    "product_code": "20195000",
+    "product_description": "90/80-17 46P NGP ZFY1 TL",
+    "nbp_gst_18": 1248.80,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCH",
+    "product_code": "20195040",
+    "product_description": "90/80-17 46P ZPR-ES TL",
+    "nbp_gst_18": 1249.66,
+    "cmp_set": 1500
+  },
+  {
+    "category": "MCH",
+    "product_code": "20195200",
+    "product_description": "90/90-17 49P NGP ZFS TT",
+    "nbp_gst_18": 1378.42,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCH",
+    "product_code": "20195500",
+    "product_description": "90/90-17 49P MASSETER-FX TL",
+    "nbp_gst_18": 1643.88,
+    "cmp_set": 2000
+  },
+  {
+    "category": "MCH",
+    "product_code": "20261020",
+    "product_description": "100/80-16 50P ZFS TL",
+    "nbp_gst_18": 1393.47,
+    "cmp_set": 1700
+  },
+  {
+    "category": "MCH",
+    "product_code": "20453020",
+    "product_description": "80/100-21 51P MGP MOCROSS MMX3 TT",
+    "nbp_gst_18": 2741.20,
+    "cmp_set": 3175
+  },
+  {
+    "category": "MCH",
+    "product_code": "20621010",
+    "product_description": "120/80-17 61M MGP MOCROSS MMX4 TT",
+    "nbp_gst_18": 3613.33,
+    "cmp_set": 4050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20626120",
+    "product_description": "120/80-17 61P ZRC TL EXP",
+    "nbp_gst_18": 1928.54,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "20695220",
+    "product_description": "90/90-17 49P ZFS TL EXP",
+    "nbp_gst_18": 1317.23,
+    "cmp_set": 1550
+  },
+  {
+    "category": "MCH",
+    "product_code": "20812040",
+    "product_description": "110/70-17 54S ZPR-FX2 TL",
+    "nbp_gst_18": 1633.93,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20815500",
+    "product_description": "110/70-17 54H MSR FX - TL",
+    "nbp_gst_18": 1950.21,
+    "cmp_set": 2250
+  },
+  {
+    "category": "MCH",
+    "product_code": "20815620",
+    "product_description": "110/70-17 54S ZPR KURVE-F TL",
+    "nbp_gst_18": 1681.27,
+    "cmp_set": 2025
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816000",
+    "product_description": "110/70-17 54S NGP ZFY TL",
+    "nbp_gst_18": 1634.07,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816040",
+    "product_description": "110/70-17 54H NGP ZFY TL",
+    "nbp_gst_18": 1633.85,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816080",
+    "product_description": "110/70-17 54H ZFY TL REP",
+    "nbp_gst_18": 1633.92,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816120",
+    "product_description": "110/80-17 57P ZRC TL",
+    "nbp_gst_18": 1541.70,
+    "cmp_set": 1875
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816140",
+    "product_description": "110/80-17 57P ZRC-B TL",
+    "nbp_gst_18": 1542.07,
+    "cmp_set": 1875
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816160",
+    "product_description": "110/80-17 57P MGP MET-M TL",
+    "nbp_gst_18": 1767.89,
+    "cmp_set": 2050
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816300",
+    "product_description": "110/70-17 54S ZPR FY2 TL",
+    "nbp_gst_18": 1634.46,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816320",
+    "product_description": "110/70-17 54P ZAPPER-FM TL",
+    "nbp_gst_18": 1633.91,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20816340",
+    "product_description": "110/70-17 54H ZPR FY2 TL",
+    "nbp_gst_18": 1634.49,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20825200",
+    "product_description": "120/80-17 61P MSR-X (2) TL",
+    "nbp_gst_18": 2704.96,
+    "cmp_set": 3025
+  },
+  {
+    "category": "MCH",
+    "product_code": "20826100",
+    "product_description": "120/80-17 61P ZRC TT",
+    "nbp_gst_18": 1952.94,
+    "cmp_set": 2350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20829200",
+    "product_description": "120/80-17 61P MGP MET TL",
+    "nbp_gst_18": 2101.56,
+    "cmp_set": 2425
+  },
+  {
+    "category": "MCH",
+    "product_code": "20829440",
+    "product_description": "120/80-17 61P MGP MET-M TL",
+    "nbp_gst_18": 2264.07,
+    "cmp_set": 2575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20831100",
+    "product_description": "120/90-17 64H MGP MET-M TT",
+    "nbp_gst_18": 2819.79,
+    "cmp_set": 3425
+  },
+  {
+    "category": "MCH",
+    "product_code": "20841010",
+    "product_description": "120/80-18 62M MGP MOCROSS MMX4 TT",
+    "nbp_gst_18": 3807.30,
+    "cmp_set": 4225
+  },
+  {
+    "category": "MCH",
+    "product_code": "20846110",
+    "product_description": "120/80-18 62P ZRC TT",
+    "nbp_gst_18": 1975.55,
+    "cmp_set": 2325
+  },
+  {
+    "category": "MCH",
+    "product_code": "20846120",
+    "product_description": "120/80-18 62P ZRC TL",
+    "nbp_gst_18": 1905.21,
+    "cmp_set": 2150
+  },
+  {
+    "category": "MCH",
+    "product_code": "20849100",
+    "product_description": "120/80-18 62P MGP MET-M TL",
+    "nbp_gst_18": 2255.15,
+    "cmp_set": 2525
+  },
+  {
+    "category": "MCH",
+    "product_code": "20856120",
+    "product_description": "80/100-17 46P NGP ZFS1 TL",
+    "nbp_gst_18": 1205.60,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCH",
+    "product_code": "20856260",
+    "product_description": "80/100-17 46P NGP ZFQ TL",
+    "nbp_gst_18": 1205.33,
+    "cmp_set": 1475
+  },
+  {
+    "category": "MCH",
+    "product_code": "20865200",
+    "product_description": "90/90-18 51P NGP ZFS TT",
+    "nbp_gst_18": 1530.57,
+    "cmp_set": 1825
+  },
+  {
+    "category": "MCH",
+    "product_code": "20865220",
+    "product_description": "90/90-18 51P NGP ZFS TL",
+    "nbp_gst_18": 1325.76,
+    "cmp_set": 1575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20867100",
+    "product_description": "90/90-18 51P ZPR KURVE-F TL",
+    "nbp_gst_18": 1340.33,
+    "cmp_set": 1575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20884460",
+    "product_description": "100/80-17 52P ZFY2 TL",
+    "nbp_gst_18": 1446.61,
+    "cmp_set": 1750
+  },
+  {
+    "category": "MCH",
+    "product_code": "20884480",
+    "product_description": "100/80-17 52H NGP ZFS TL",
+    "nbp_gst_18": 1532.93,
+    "cmp_set": 2350
+  },
+  {
+    "category": "MCH",
+    "product_code": "20884520",
+    "product_description": "100/80-17 52P ZFQ TL",
+    "nbp_gst_18": 1446.11,
+    "cmp_set": 1750
+  },
+  {
+    "category": "MCH",
+    "product_code": "20884840",
+    "product_description": "100/80-17 52H ZPR FYM2 TL",
+    "nbp_gst_18": 1445.81,
+    "cmp_set": 1750
+  },
+  {
+    "category": "MCH",
+    "product_code": "20885520",
+    "product_description": "100/80-17 52P MSR-FX TL",
+    "nbp_gst_18": 1694.89,
+    "cmp_set": 1975
+  },
+  {
+    "category": "MCH",
+    "product_code": "20885560",
+    "product_description": "100/80-17 52P MGP MET-FG TL",
+    "nbp_gst_18": 1681.01,
+    "cmp_set": 2025
+  },
+  {
+    "category": "MCH",
+    "product_code": "20887840",
+    "product_description": "100/80-17 52P ZFYM TL",
+    "nbp_gst_18": 1445.83,
+    "cmp_set": 1750
+  },
+  {
+    "category": "MCH",
+    "product_code": "20893140",
+    "product_description": "130/70-18 63H NGP ZRY TL",
+    "nbp_gst_18": 2125.47,
+    "cmp_set": 2575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20893200",
+    "product_description": "130/70-18 63H ZPR HYKE TL",
+    "nbp_gst_18": 2833.56,
+    "cmp_set": 3300
+  },
+  {
+    "category": "MCH",
+    "product_code": "20894120",
+    "product_description": "130/70-17 62P NGP ZRS TL",
+    "nbp_gst_18": 2028.56,
+    "cmp_set": 2475
+  },
+  {
+    "category": "MCH",
+    "product_code": "20894140",
+    "product_description": "130/70-17 62P NGP ZRQ TL",
+    "nbp_gst_18": 2028.36,
+    "cmp_set": 2475
+  },
+  {
+    "category": "MCH",
+    "product_code": "20894220",
+    "product_description": "130/70-17 62P ZRS1 TL",
+    "nbp_gst_18": 2028.56,
+    "cmp_set": 2475
+  },
+  {
+    "category": "MCH",
+    "product_code": "20897100",
+    "product_description": "150/70-15 67H ZVD TL",
+    "nbp_gst_18": 3364.96,
+    "cmp_set": 4725
+  },
+  {
+    "category": "MCH",
+    "product_code": "20897120",
+    "product_description": "150/70-15 67H ZRY TL",
+    "nbp_gst_18": 2910.27,
+    "cmp_set": 4375
+  },
+  {
+    "category": "MCH",
+    "product_code": "20897140",
+    "product_description": "150/70-15 67H NYLOGRIP EZEERIDE TL",
+    "nbp_gst_18": 3365.67,
+    "cmp_set": 5575
+  },
+  {
+    "category": "MCH",
+    "product_code": "20897200",
+    "product_description": "150/70-17 69H ZPR KURVE TL",
+    "nbp_gst_18": 3112.29,
+    "cmp_set": 3500
+  },
+  {
+    "category": "MCH",
+    "product_code": "20898100",
+    "product_description": "170/70-15 73H ZVD TL",
+    "nbp_gst_18": 4361.58,
+    "cmp_set": 6200
+  },
+  {
+    "category": "MCH",
+    "product_code": "27163020",
+    "product_description": "2.75-18 MGP MOCROSS MMX1 TT",
+    "nbp_gst_18": 2077.66,
+    "cmp_set": 2425
+  },
+  {
+    "category": "MCH",
+    "product_code": "28154120",
+    "product_description": "120/80-16 60P NGP ZRY TL",
+    "nbp_gst_18": 1868.59,
+    "cmp_set": 2150
+  },
+  {
+    "category": "MCH",
+    "product_code": "28157100",
+    "product_description": "120/80-16 60P ZPR KURVE TL",
+    "nbp_gst_18": 1890.23,
+    "cmp_set": 2200
+  },
+  {
+    "category": "MCH",
+    "product_code": "28163200",
+    "product_description": "130/80-17 65S MGP MET M2 TL",
+    "nbp_gst_18": 2692.49,
+    "cmp_set": 3225
+  },
+  {
+    "category": "MCH",
+    "product_code": "28163320",
+    "product_description": "130/80-17 65S ZPR-H TL",
+    "nbp_gst_18": 2549.32,
+    "cmp_set": 3025
+  },
+  {
+    "category": "MCH",
+    "product_code": "28164400",
+    "product_description": "130/80-18 66P NGP ZRQ TT",
+    "nbp_gst_18": 2085.63,
+    "cmp_set": 2525
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174440",
+    "product_description": "140/70-17 66S NGP ZRS TL",
+    "nbp_gst_18": 2565.03,
+    "cmp_set": 2850
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174480",
+    "product_description": "140/70-17 66S NGP ZRS1 TL",
+    "nbp_gst_18": 2568.68,
+    "cmp_set": 3025
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174540",
+    "product_description": "140/70-17 66S MGP MET-M TL",
+    "nbp_gst_18": 2757.54,
+    "cmp_set": 3125
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174580",
+    "product_description": "140/70-17 66S NGP ZRS2 TL",
+    "nbp_gst_18": 2569.15,
+    "cmp_set": 3025
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174680",
+    "product_description": "140/70-17 66P ZAPPER-C TL (J1D)",
+    "nbp_gst_18": 2569.73,
+    "cmp_set": 3025
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174700",
+    "product_description": "140/70-17 66S ZPR KURVE TL",
+    "nbp_gst_18": 2707.40,
+    "cmp_set": 3075
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174760",
+    "product_description": "140/70-17 66S ZPR KURVE TL - MTWL",
+    "nbp_gst_18": 2707.38,
+    "cmp_set": 3075
+  },
+  {
+    "category": "MCH",
+    "product_code": "28174780",
+    "product_description": "140/70-17 66H ZPR HYKE TL",
+    "nbp_gst_18": 3205.37,
+    "cmp_set": 3675
+  },
+  {
+    "category": "MCH",
+    "product_code": "28175020",
+    "product_description": "140/70-17 66H NGP ZRS TL",
+    "nbp_gst_18": 2564.12,
+    "cmp_set": 2850
+  },
+  {
+    "category": "MCH",
+    "product_code": "28175560",
+    "product_description": "140/70-17 66H MSR-X (2) TL",
+    "nbp_gst_18": 3239.37,
+    "cmp_set": 3575
+  },
+  {
+    "category": "MC - R",
+    "product_code": "20325220",
+    "product_description": "110/70R17 REVZ-FC1 TL 54H",
+    "nbp_gst_18": 2526.50,
+    "cmp_set": 2850
+  },
+  {
+    "category": "MC - R",
+    "product_code": "20325240",
+    "product_description": "110/70R17 54S REVZ-FC2 TL",
+    "nbp_gst_18": 2526.44,
+    "cmp_set": 2850
+  },
+  {
+    "category": "MC - R",
+    "product_code": "20325280",
+    "product_description": "110/70R17 54S REVZ-FC1 TL C",
+    "nbp_gst_18": 2525.75,
+    "cmp_set": 2850
+  },
+  {
+    "category": "MC - R",
+    "product_code": "20325720",
+    "product_description": "110/70R17 54H REVZ-FD TL",
+    "nbp_gst_18": 2723.97,
+    "cmp_set": 3075
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28352100",
+    "product_description": "120/70R17 58H REVZ-FH1 TL",
+    "nbp_gst_18": 5684.18,
+    "cmp_set": 7400
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28356100",
+    "product_description": "160/60R17 69H REVZ-H TL",
+    "nbp_gst_18": 6569.48,
+    "cmp_set": 8600
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28360020",
+    "product_description": "140/70R18 67H NYLOHIGH-N TL P5AB",
+    "nbp_gst_18": 3630.10,
+    "cmp_set": 4100
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28361040",
+    "product_description": "140/70R17 66H REVZ-S TL",
+    "nbp_gst_18": 2972.83,
+    "cmp_set": 3400
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28373000",
+    "product_description": "130/70R17 62P REVZ-S TL",
+    "nbp_gst_18": 2547.30,
+    "cmp_set": 2900
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28374460",
+    "product_description": "140/60R17 REVZ-M TL",
+    "nbp_gst_18": 2554.51,
+    "cmp_set": 2900
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28374480",
+    "product_description": "140/60R17 63P REVZ-Y TL",
+    "nbp_gst_18": 2554.66,
+    "cmp_set": 2900
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28374580",
+    "product_description": "140/60R17 63P REVZ-MG TL",
+    "nbp_gst_18": 2602.23,
+    "cmp_set": 2975
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28374660",
+    "product_description": "140/60R17 63H REVZ STEEL SR01 TL",
+    "nbp_gst_18": 2786.13,
+    "cmp_set": 3225
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28375240",
+    "product_description": "150/60R17 66S REVZ-C2 TL",
+    "nbp_gst_18": 3279.75,
+    "cmp_set": 3725
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28375280",
+    "product_description": "150/60R17 66S REVZ-C1 TL C",
+    "nbp_gst_18": 3278.31,
+    "cmp_set": 3725
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28375320",
+    "product_description": "150/60R17 66H REVZ-C1 TL",
+    "nbp_gst_18": 3277.12,
+    "cmp_set": 3725
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28375340",
+    "product_description": "150/60R17 66H REVZ AT-03 TL",
+    "nbp_gst_18": 3576.70,
+    "cmp_set": 4100
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28375640",
+    "product_description": "150/60R17 66H REVZ-D TL",
+    "nbp_gst_18": 3576.21,
+    "cmp_set": 4100
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28378100",
+    "product_description": "140/80R17 69H REVZ-K TL",
+    "nbp_gst_18": 3552.69,
+    "cmp_set": 4000
+  },
+  {
+    "category": "MC - R",
+    "product_code": "28378140",
+    "product_description": "140/80R17 69H NYLOREX TL",
+    "nbp_gst_18": 3551.42,
+    "cmp_set": 4000
+  },
+  {
+    "category": "MC - STEEL RADIAL",
+    "product_code": "20325780",
+    "product_description": "110/70ZR17 54W STEEL BRACE TL",
+    "nbp_gst_18": 4846.45,
+    "cmp_set": 5900
+  },
+  {
+    "category": "MC - STEEL RADIAL",
+    "product_code": "28375720",
+    "product_description": "150/60ZR17 66W STEEL BRACE TL",
+    "nbp_gst_18": 5792.44,
+    "cmp_set": 7000
+  },
+  {
+    "category": "MC - STEEL RADIAL",
+    "product_code": "28375780",
+    "product_description": "150/60ZR17 STEEL BRACE-X TL 66W",
+    "nbp_gst_18": 5143.37,
+    "cmp_set": 6200
+  },
+  {
+    "category": "MOPED",
+    "product_code": "27130010",
+    "product_description": "2.50-16 41L NYLORIB N6 11",
+    "nbp_gst_18": 557.32,
+    "cmp_set": 675
+  },
+  {
+    "category": "MOPED",
+    "product_code": "27135830",
+    "product_description": "2.50-16 NYLOGRIPT1 PLUS N6",
+    "nbp_gst_18": 725.47,
+    "cmp_set": 850
+  },
+  {
+    "category": "MOPED",
+    "product_code": "27139330",
+    "product_description": "2.50-16 MOGRIP MOTO-D N6",
+    "nbp_gst_18": 789.56,
+    "cmp_set": 900
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20240100",
+    "product_description": "100/80-14 4SP ZAPPER-ES TL",
+    "nbp_gst_18": 1364.79,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20816180",
+    "product_description": "110/80-12 61L ZAPPER-N TL",
+    "nbp_gst_18": 1507.68,
+    "cmp_set": 1775
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20874100",
+    "product_description": "120/70-14 55P NGP ZPR TL",
+    "nbp_gst_18": 1597.47,
+    "cmp_set": 1875
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20874420",
+    "product_description": "120/70-14 55P ZPR KURVE-F TL",
+    "nbp_gst_18": 1596.57,
+    "cmp_set": 1875
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20876040",
+    "product_description": "120/70-12 58P NGP ZRN TL",
+    "nbp_gst_18": 1432.53,
+    "cmp_set": 1700
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20878020",
+    "product_description": "100/80-12 56L ZAPPER-FN TL",
+    "nbp_gst_18": 1350.88,
+    "cmp_set": 1600
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20878040",
+    "product_description": "100/80-12 56J ZAPPER-G TL",
+    "nbp_gst_18": 1398.37,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20878060",
+    "product_description": "100/80-12 56J ZAPPER-N TL",
+    "nbp_gst_18": 1398.03,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20878080",
+    "product_description": "100/80-12 56L ZAPPER-G TL",
+    "nbp_gst_18": 1398.37,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "20878160",
+    "product_description": "100/80-12 56J ZPR-N TL LRR-AE",
+    "nbp_gst_18": 1397.91,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21111320",
+    "product_description": "3.50-10 NYLOGRIPPLUS N4",
+    "nbp_gst_18": 799.15,
+    "cmp_set": 925
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21112820",
+    "product_description": "3.50-10 NYLOGRIP(NGE) N4",
+    "nbp_gst_18": 777.47,
+    "cmp_set": 875
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21120100",
+    "product_description": "110/70-11 45L NGP ZFG TL",
+    "nbp_gst_18": 1074.38,
+    "cmp_set": 1275
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21121100",
+    "product_description": "110/70-12 47P ZAPPER-N TL",
+    "nbp_gst_18": 1156.26,
+    "cmp_set": 1425
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21130100",
+    "product_description": "120/70-10 54L NGP ZPR TL",
+    "nbp_gst_18": 1230.91,
+    "cmp_set": 1475
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21151320",
+    "product_description": "3.00-10 NYLOGRIPPLUS N4",
+    "nbp_gst_18": 798.12,
+    "cmp_set": 925
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21151420",
+    "product_description": "3.00-10 NGP PLUS N4 TL",
+    "nbp_gst_18": 843.40,
+    "cmp_set": 975
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21171360",
+    "product_description": "90/90-12 54J NGP+ V2 TL",
+    "nbp_gst_18": 1023.87,
+    "cmp_set": 1175
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21171480",
+    "product_description": "90/100-10 MGP MET-M TL",
+    "nbp_gst_18": 1059.13,
+    "cmp_set": 1250
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21172430",
+    "product_description": "90/100-10 NGP FE+ TT 53J",
+    "nbp_gst_18": 762.47,
+    "cmp_set": 900
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21172440",
+    "product_description": "90/100-10 NGP FE+ TL 53J",
+    "nbp_gst_18": 808.59,
+    "cmp_set": 950
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21173600",
+    "product_description": "90/100-10 NGP ZPR N4 TL",
+    "nbp_gst_18": 1000.22,
+    "cmp_set": 1150
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21173620",
+    "product_description": "90/100-10 NGP ZPR N4 TT",
+    "nbp_gst_18": 935.27,
+    "cmp_set": 1100
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21173760",
+    "product_description": "90/100-10 53J ZAPPER-C1 TL",
+    "nbp_gst_18": 1023.07,
+    "cmp_set": 1175
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21175010",
+    "product_description": "90/90-10 50J NGP PLUS V2 TL",
+    "nbp_gst_18": 872.19,
+    "cmp_set": 1025
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21176100",
+    "product_description": "90/100-10 53J MGP MOTO-D TL",
+    "nbp_gst_18": 1016.60,
+    "cmp_set": 1200
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178010",
+    "product_description": "90/90-12 54J NGP ZFG TT",
+    "nbp_gst_18": 877.40,
+    "cmp_set": 1025
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178040",
+    "product_description": "90/90-12 54J NGP ZFG TL",
+    "nbp_gst_18": 956.52,
+    "cmp_set": 1125
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178060",
+    "product_description": "90/90-12 54J MGP METEOR-M TL",
+    "nbp_gst_18": 1060.70,
+    "cmp_set": 1250
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178120",
+    "product_description": "90/90-12 54J ZAPPER-K TL",
+    "nbp_gst_18": 991.13,
+    "cmp_set": 1175
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178180",
+    "product_description": "90/90-12 54J ZAPPER-N TL",
+    "nbp_gst_18": 990.73,
+    "cmp_set": 1175
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21178660",
+    "product_description": "90/90-12 54J ZPR-N TL LRR-AE",
+    "nbp_gst_18": 990.44,
+    "cmp_set": 1175
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21192040",
+    "product_description": "110/90-10 61J ZAPPER TL",
+    "nbp_gst_18": 1300.07,
+    "cmp_set": 1500
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21220010",
+    "product_description": "90/100-14 49M MGP MOCROSS MMX4 TT",
+    "nbp_gst_18": 3075.30,
+    "cmp_set": 3500
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21635020",
+    "product_description": "110/70-14 50P ZAPPER-ES TL EXP",
+    "nbp_gst_18": 1363.46,
+    "cmp_set": 1650
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21820100",
+    "product_description": "120/80-12 65J ZAPPER-V TL",
+    "nbp_gst_18": 1711.26,
+    "cmp_set": 1975
+  },
+  {
+    "category": "SCOOTER",
+    "product_code": "21830100",
+    "product_description": "130/80-12 69J ZAPPER-V TL",
+    "nbp_gst_18": 1929.75,
+    "cmp_set": 2200
+  },
+  {
+    "category": "TIPPER MINING - BIAS",
+    "product_code": "11111700",
+    "product_description": "12.00-20 MRK XR N20",
+    "nbp_gst_18": 25259.54,
+    "cmp_set": 25800
+  },
+  {
+    "category": "TIPPER MINING - BIAS",
+    "product_code": "25171700",
+    "product_description": "12.00-24 MRK-XR ML HL N20 161/156F",
+    "nbp_gst_18": 29158.54,
+    "cmp_set": 29750
+  },
+  {
+    "category": "16 9 28 MRK",
+    "product_code": "29156160",
+    "product_description": "16.9-28 MUSCLEROK N12 TT",
+    "nbp_gst_18": 29810.22,
+    "cmp_set": 30650
+  },
+  {
+    "category": "16 9 28 MRK",
+    "product_code": "29156360",
+    "product_description": "16.9-28 MUSCLEROK-H N12 TT",
+    "nbp_gst_18": 32182.02,
+    "cmp_set": 33400
+  },
+  {
+    "category": "14 00 25 MRK",
+    "product_code": "29161100",
+    "product_description": "14.00-25 MRK E3/L3 N20 TT",
+    "nbp_gst_18": 41226.69,
+    "cmp_set": 42400
+  },
+  {
+    "category": "14 00 25 MRK",
+    "product_code": "29161700",
+    "product_description": "14.00-25 MRK-XTRA E3/L3 N20 TT",
+    "nbp_gst_18": 36960.99,
+    "cmp_set": 37750
+  },
+  {
+    "category": "OTR BCG",
+    "product_code": "29171160",
+    "product_description": "13.00-24 MRK N12 TT",
+    "nbp_gst_18": 24522.63,
+    "cmp_set": 25200
+  },
+  {
+    "category": "OTR BCG",
+    "product_code": "29171580",
+    "product_description": "13.00-24 MRK CRANE N16 TT",
+    "nbp_gst_18": 25038.94,
+    "cmp_set": 25750
+  },
+  {
+    "category": "OTR BCG",
+    "product_code": "29199580",
+    "product_description": "9.00-16 MRK N16 TT",
+    "nbp_gst_18": 11710.73,
+    "cmp_set": 12000
+  },
+  {
+    "category": "OTR BCG",
+    "product_code": "29199160",
+    "product_description": "12.5/80-18 MRK N12 TT",
+    "nbp_gst_18": 14152.83,
+    "cmp_set": 14700
+  },
+  {
+    "category": "OTR BCG",
+    "product_code": "29199180",
+    "product_description": "12.5/80-18 MRK N16 TT",
+    "nbp_gst_18": 15159.62,
+    "cmp_set": 15750
+  },
+  {
+    "category": "TRACTOR TRAILER",
+    "product_code": "14111420",
+    "product_description": "6.00-16 IMPLEMENT MUSCLE-L N4 TT",
+    "nbp_gst_18": 2620.63,
+    "cmp_set": 2800
+  },
+  {
+    "category": "TRACTOR TRAILER",
+    "product_code": "15137790",
+    "product_description": "9.00-16 TRACTOR T-707 N18",
+    "nbp_gst_18": 11697.35,
+    "cmp_set": 12167
+  },
+  {
+    "category": "TRACTOR TRAILER",
+    "product_code": "15137880",
+    "product_description": "9.00-16 TT 707 N16",
+    "nbp_gst_18": 11406.45,
+    "cmp_set": 11867
+  },
+  {
+    "category": "POWER TILLER",
+    "product_code": "13428710",
+    "product_description": "4.00-8 SHAKTI - PT N2 TT",
+    "nbp_gst_18": 1067.51,
+    "cmp_set": 1100
+  },
+  {
+    "category": "POWER TILLER",
+    "product_code": "13458720",
+    "product_description": "4.50-10 SHAKTI - PT N4",
+    "nbp_gst_18": 1630.34,
+    "cmp_set": 1700
+  },
+  {
+    "category": "POWER TILLER",
+    "product_code": "15158720",
+    "product_description": "6.00-12 SHAKTI PT N4",
+    "nbp_gst_18": 3541.43,
+    "cmp_set": 3750
+  },
+  {
+    "category": "POWER TILLER",
+    "product_code": "15658720",
+    "product_description": "6.00-12 SHAKTI PT N4 EXPORT",
+    "nbp_gst_18": 3541.43,
+    "cmp_set": 3750
+  },
+  {
+    "category": "ADV",
+    "product_code": "22117150",
+    "product_description": "8.00-19 PAHALWAN N10",
+    "nbp_gst_18": 6397.92,
+    "cmp_set": 6775
+  },
+  {
+    "category": "ADV",
+    "product_code": "22121100",
+    "product_description": "7.00-19 IMPLEMENT MUSCLE N10 TT",
+    "nbp_gst_18": 5158.02,
+    "cmp_set": 5480
+  },
+  {
+    "category": "ADV",
+    "product_code": "22121250",
+    "product_description": "7.00-19 IMPLEMENT MUSCLE-R N10",
+    "nbp_gst_18": 5389.82,
+    "cmp_set": 5700
+  },
+  {
+    "category": "ADV",
+    "product_code": "22127150",
+    "product_description": "7.00-19 PAHALWAN N10",
+    "nbp_gst_18": 4551.69,
+    "cmp_set": 4630
+  },
+  {
+    "category": "ADV",
+    "product_code": "22137140",
+    "product_description": "6.00-19 PAHALWAN N8",
+    "nbp_gst_18": 3744.80,
+    "cmp_set": 3950
+  },
+  {
+    "category": "ADV",
+    "product_code": "22147130",
+    "product_description": "5.00-19 PAHALWAN N6",
+    "nbp_gst_18": 2857.61,
+    "cmp_set": 3080
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13088340",
+    "product_description": "8.3-32 SHAKTI LIFE N8 TT",
+    "nbp_gst_18": 9932.75,
+    "cmp_set": 10600
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13122760",
+    "product_description": "12.4-28 SHK XTRA N12",
+    "nbp_gst_18": 15541.51,
+    "cmp_set": 15900
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13122960",
+    "product_description": "12.4-28 SLF PLUS N12",
+    "nbp_gst_18": 15094.16,
+    "cmp_set": 15450
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13128360",
+    "product_description": "12.4-28 SHAKTILIFE N12",
+    "nbp_gst_18": 14817.53,
+    "cmp_set": 15150
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13128960",
+    "product_description": "12.4-28 SHAKTISUPER N12",
+    "nbp_gst_18": 15420.39,
+    "cmp_set": 15750
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13129360",
+    "product_description": "12.4-28 SLF PLUS N12",
+    "nbp_gst_18": 15097.48,
+    "cmp_set": 15450
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13192760",
+    "product_description": "16.9-28 SHK XTRA N12",
+    "nbp_gst_18": 25739.96,
+    "cmp_set": 26400
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13192960",
+    "product_description": "16.9-28 SLF PLUS N12",
+    "nbp_gst_18": 25311.75,
+    "cmp_set": 25800
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13198360",
+    "product_description": "16.9-28 SHAKTILIFE N12",
+    "nbp_gst_18": 24740.9,
+    "cmp_set": 25200
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13198860",
+    "product_description": "16.9-28 SHAKTI GRIP N12 TT",
+    "nbp_gst_18": 24381.56,
+    "cmp_set": 24950
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13199360",
+    "product_description": "16.9-28 SLF PLUS N12",
+    "nbp_gst_18": 25317.47,
+    "cmp_set": 25800
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13199760",
+    "product_description": "16.9-28 SSP N12",
+    "nbp_gst_18": 25553.79,
+    "cmp_set": 26000
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13272760",
+    "product_description": "15.9-28 SHAKTI XTRA N12 TT",
+    "nbp_gst_18": 23079.27,
+    "cmp_set": 23600
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13272960",
+    "product_description": "15.9-28 SLF PLUS N12",
+    "nbp_gst_18": 22705.58,
+    "cmp_set": 23200
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13279360",
+    "product_description": "15.9-28 SHK LIFE PLUS N12",
+    "nbp_gst_18": 22696.28,
+    "cmp_set": 23200
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13288340",
+    "product_description": "8.3-36 SHAKTI LIFE N8 TT",
+    "nbp_gst_18": 10673.72,
+    "cmp_set": 11400
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13289360",
+    "product_description": "17.9-28 SLF PLUS N12",
+    "nbp_gst_18": 26751.45,
+    "cmp_set": 27250
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13310160",
+    "product_description": "380/85R28 FML TT",
+    "nbp_gst_18": 22875.11,
+    "cmp_set": 23350
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13311160",
+    "product_description": "340/85R28 FML TT",
+    "nbp_gst_18": 19798.19,
+    "cmp_set": 20150
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13311360",
+    "product_description": "320/85R28 FML TT",
+    "nbp_gst_18": 16848.88,
+    "cmp_set": 17150
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13311560",
+    "product_description": "420/85R28 FML TT",
+    "nbp_gst_18": 26650.91,
+    "cmp_set": 27200
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "13489360",
+    "product_description": "12.4-32 SLF PLUS N12 TT",
+    "nbp_gst_18": 16230.76,
+    "cmp_set": 17100
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "15209340",
+    "product_description": "9.5-36 SLF PLUS N8 TT",
+    "nbp_gst_18": 12607.28,
+    "cmp_set": 13600
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "15219340",
+    "product_description": "9.5-32 SLF PLUS N8 TT",
+    "nbp_gst_18": 11593.02,
+    "cmp_set": 12250
+  },
+  {
+    "category": "TRACTOR REAR OTHERS",
+    "product_code": "15229360",
+    "product_description": "11.2-36 SLF PLUS N12 TT",
+    "nbp_gst_18": 15780.45,
+    "cmp_set": 17000
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13042620",
+    "product_description": "8-16 KRISHI N4",
+    "nbp_gst_18": 4703.2,
+    "cmp_set": 4850
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13051130",
+    "product_description": "9.5-20 KRISHI-HI LUG N6 TT",
+    "nbp_gst_18": 8925.92,
+    "cmp_set": 9550
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13052630",
+    "product_description": "9.5-20 KRISHI N6",
+    "nbp_gst_18": 8212.26,
+    "cmp_set": 8350
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13061140",
+    "product_description": "8.3-24 KRISHI-HI LUG N8 TT",
+    "nbp_gst_18": 8712.03,
+    "cmp_set": 9200
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13062630",
+    "product_description": "8.3-24 KRISHI N6",
+    "nbp_gst_18": 8497.25,
+    "cmp_set": 8900
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13062640",
+    "product_description": "8.3-24 KRISHI N8",
+    "nbp_gst_18": 8602.27,
+    "cmp_set": 9100
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13071130",
+    "product_description": "8.3-20 KRISHI-HI LUG N6 TT",
+    "nbp_gst_18": 7178.14,
+    "cmp_set": 7550
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13072630",
+    "product_description": "8.3-20 KRISHI N6 TT",
+    "nbp_gst_18": 7126.64,
+    "cmp_set": 7450
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13091140",
+    "product_description": "9.5-24 KRISHI-HI LUG N8 TT",
+    "nbp_gst_18": 10591.01,
+    "cmp_set": 11250
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13091160",
+    "product_description": "9.5-24 KRISHI-HI LUG N12 TT",
+    "nbp_gst_18": 10766.32,
+    "cmp_set": 11450
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13092660",
+    "product_description": "9.5-24 KRISHI N12 TT",
+    "nbp_gst_18": 9902.07,
+    "cmp_set": 10250
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13111140",
+    "product_description": "13.6-28 KRISHI-HI LUG N8 TT",
+    "nbp_gst_18": 21099.2,
+    "cmp_set": 21850
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13112640",
+    "product_description": "13.6-26 KRISHI N8",
+    "nbp_gst_18": 18440.65,
+    "cmp_set": 19300
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13113640",
+    "product_description": "13.6-28 KRISHI N8 TT",
+    "nbp_gst_18": 20610.87,
+    "cmp_set": 21600
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13113660",
+    "product_description": "13.6-28 KRISHI N12 TT",
+    "nbp_gst_18": 20813.72,
+    "cmp_set": 21850
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13131140",
+    "product_description": "11.2-24 KRISHI-HI LUG N8 TT",
+    "nbp_gst_18": 13455.98,
+    "cmp_set": 14000
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13132640",
+    "product_description": "11.2-24 KRISHI N8",
+    "nbp_gst_18": 10913.13,
+    "cmp_set": 11500
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13139140",
+    "product_description": "11.2-28 SHAKTI HR-LUG N8",
+    "nbp_gst_18": 19180.69,
+    "cmp_set": 20600
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13152640",
+    "product_description": "12.4-24 KRISHI N8",
+    "nbp_gst_18": 12833.72,
+    "cmp_set": 13250
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13161160",
+    "product_description": "14.9-28 KRISHI-HI LUG N12",
+    "nbp_gst_18": 24542.86,
+    "cmp_set": 25750
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13162660",
+    "product_description": "14.9-28 KRISHI N12",
+    "nbp_gst_18": 24059.79,
+    "cmp_set": 25200
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13168560",
+    "product_description": "14.9-28 SHAKTI-HR LUG N12 TT",
+    "nbp_gst_18": 26661.93,
+    "cmp_set": 27600
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13181130",
+    "product_description": "8-18 KRISHI-HI LUG N6 TT",
+    "nbp_gst_18": 6437.82,
+    "cmp_set": 6750
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13182630",
+    "product_description": "8-18 KRISHI N6",
+    "nbp_gst_18": 5811.01,
+    "cmp_set": 6050
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13191160",
+    "product_description": "16.9-28 KRISHI-HI LUG N12 TT",
+    "nbp_gst_18": 30317.09,
+    "cmp_set": 31550
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13192660",
+    "product_description": "16.9-28 KRISHI N12",
+    "nbp_gst_18": 28382,
+    "cmp_set": 28900
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13222640",
+    "product_description": "11.2-20 KRISHI N8 TT",
+    "nbp_gst_18": 9524.49,
+    "cmp_set": 10000
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13238530",
+    "product_description": "11-32 SHAKTI HR-LUG N6 TT",
+    "nbp_gst_18": 23923.16,
+    "cmp_set": 25350
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13271160",
+    "product_description": "15.9-28 KRISHI-HI LUG N12 TT",
+    "nbp_gst_18": 25696.8,
+    "cmp_set": 26550
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13291130",
+    "product_description": "9.5-18 KRISHI-HI LUG N6 TT",
+    "nbp_gst_18": 8510.02,
+    "cmp_set": 8850
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "13292630",
+    "product_description": "9.5-18 KRISHI N6 TT",
+    "nbp_gst_18": 7249.77,
+    "cmp_set": 7550
+  },
+  {
+    "category": "FARM PUDDLING",
+    "product_code": "15258240",
+    "product_description": "11.00-16 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 10896.31,
+    "cmp_set": 11400
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13058330",
+    "product_description": "9.5-20 SHAKTHILIFE N6",
+    "nbp_gst_18": 7540.09,
+    "cmp_set": 7850
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13068330",
+    "product_description": "8.3-24 SHAKTI LIFE N6 TT",
+    "nbp_gst_18": 7061.08,
+    "cmp_set": 7300
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13068340",
+    "product_description": "8.3-24 SHAKTI LIFE N8 TT",
+    "nbp_gst_18": 7737.79,
+    "cmp_set": 8000
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13078320",
+    "product_description": "8.3-20 SHAKTI LIFE N4 TT",
+    "nbp_gst_18": 6128.98,
+    "cmp_set": 6350
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13078330",
+    "product_description": "8.3-20 SHAKTI LIFE N6 TT",
+    "nbp_gst_18": 6354.8,
+    "cmp_set": 6600
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13098340",
+    "product_description": "9.5-24 SHAKTI LIFE N8 TT",
+    "nbp_gst_18": 8546.36,
+    "cmp_set": 8800
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13098360",
+    "product_description": "9.5-24 SHAKTI LIFE N12 TT",
+    "nbp_gst_18": 9140.7,
+    "cmp_set": 9450
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13138340",
+    "product_description": "11.2-24 SHAKTI LIFE N8",
+    "nbp_gst_18": 10803.53,
+    "cmp_set": 11100
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13138740",
+    "product_description": "11.2-28 SLF N8",
+    "nbp_gst_18": 11967.7,
+    "cmp_set": 12400
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13158340",
+    "product_description": "12.4-24 SHAKTI LIFE N8",
+    "nbp_gst_18": 12472.49,
+    "cmp_set": 12800
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13158360",
+    "product_description": "12.4-24 SHAKTI LIFE N12",
+    "nbp_gst_18": 13114.46,
+    "cmp_set": 13500
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13188320",
+    "product_description": "8-18 SHAKTI LIFE N4",
+    "nbp_gst_18": 6063.4,
+    "cmp_set": 6300
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13188330",
+    "product_description": "8-18 SHAKTI LIFE N6",
+    "nbp_gst_18": 6216.88,
+    "cmp_set": 6450
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13188340",
+    "product_description": "8-18 SHAKTI LIFE N8",
+    "nbp_gst_18": 6421.9,
+    "cmp_set": 6700
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13228340",
+    "product_description": "11.2-20 SLF N8",
+    "nbp_gst_18": 9211.55,
+    "cmp_set": 9500
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13298330",
+    "product_description": "9.5-18 SHK LIFE N6",
+    "nbp_gst_18": 7223.13,
+    "cmp_set": 7450
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13638340",
+    "product_description": "11.2-24 SHK LIFE N8 EXPORT",
+    "nbp_gst_18": 10803.41,
+    "cmp_set": 11100
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13678330",
+    "product_description": "8.3-20 SLF N6 TT EXPORT",
+    "nbp_gst_18": 6354.79,
+    "cmp_set": 6600
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13688320",
+    "product_description": "8-18 SHAKTI LIFE N4 EXPORT",
+    "nbp_gst_18": 6063.37,
+    "cmp_set": 6300
+  },
+  {
+    "category": "SMALL TRACTOR REAR",
+    "product_code": "13688330",
+    "product_description": "8-18 SHAKTI LIFE N6 EXPORT",
+    "nbp_gst_18": 6216.88,
+    "cmp_set": 6450
+  },
+  {
+    "category": "TRACTOR REAR 13 6 28",
+    "product_code": "13112760",
+    "product_description": "13.6-28 SHAKTI XTRA N12",
+    "nbp_gst_18": 18912.25,
+    "cmp_set": 19300
+  },
+  {
+    "category": "TRACTOR REAR 13 6 28",
+    "product_code": "13112960",
+    "product_description": "13.6-28 SLF PLUS N12",
+    "nbp_gst_18": 18325.7,
+    "cmp_set": 18650
+  },
+  {
+    "category": "TRACTOR REAR 13 6 28",
+    "product_code": "13118360",
+    "product_description": "13.6-28 SHAKTILIFE N12",
+    "nbp_gst_18": 18218.56,
+    "cmp_set": 18600
+  },
+  {
+    "category": "TRACTOR REAR 13 6 28",
+    "product_code": "13119360",
+    "product_description": "13.6-28 SLF PLUS N12",
+    "nbp_gst_18": 18327.43,
+    "cmp_set": 18650
+  },
+  {
+    "category": "TRACTOR REAR 13 6 28",
+    "product_code": "13119760",
+    "product_description": "13.6-28 SHAKTISUPER N12",
+    "nbp_gst_18": 18648.65,
+    "cmp_set": 19000
+  },
+  {
+    "category": "TRACTOR REAR 14 9 28",
+    "product_code": "13162760",
+    "product_description": "14.9-28 SHAKTI XTRA N12",
+    "nbp_gst_18": 21258.93,
+    "cmp_set": 21850
+  },
+  {
+    "category": "TRACTOR REAR 14 9 28",
+    "product_code": "13162960",
+    "product_description": "14.9-28 SLF PLUS N12",
+    "nbp_gst_18": 20809.21,
+    "cmp_set": 21200
+  },
+  {
+    "category": "TRACTOR REAR 14 9 28",
+    "product_code": "13168360",
+    "product_description": "14.9-28 SHAKTILIFE N12",
+    "nbp_gst_18": 20335.78,
+    "cmp_set": 20800
+  },
+  {
+    "category": "TRACTOR REAR 14 9 28",
+    "product_code": "13169360",
+    "product_description": "14.9-28 SLF PLUS N12",
+    "nbp_gst_18": 20813.79,
+    "cmp_set": 21200
+  },
+  {
+    "category": "TRACTOR REAR 14 9 28",
+    "product_code": "13169760",
+    "product_description": "14.9-28 SHAKTISUPER N12",
+    "nbp_gst_18": 20997.4,
+    "cmp_set": 21350
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "13038340",
+    "product_description": "9.5-16 SHAKTILIFE N8",
+    "nbp_gst_18": 6354.73,
+    "cmp_set": 6650
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "13048320",
+    "product_description": "8-16 SHAKTI LIFE N4",
+    "nbp_gst_18": 4810.65,
+    "cmp_set": 4950
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "13218330",
+    "product_description": "7-16 SHAKTI LIFE N6",
+    "nbp_gst_18": 4369.57,
+    "cmp_set": 4550
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "13418620",
+    "product_description": "180/85D12 SHAKTI-TF N4",
+    "nbp_gst_18": 3073.09,
+    "cmp_set": 3250
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "13418630",
+    "product_description": "180/85D12 SHAKTI-TF N6",
+    "nbp_gst_18": 3182.56,
+    "cmp_set": 3400
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14018240",
+    "product_description": "6.50-16 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 4264.51,
+    "cmp_set": 4450
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14019340",
+    "product_description": "6.50-16 SLF PLUS N8",
+    "nbp_gst_18": 4458.76,
+    "cmp_set": 4800
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14019740",
+    "product_description": "6.50-16 SSP N8",
+    "nbp_gst_18": 4435.6,
+    "cmp_set": 4750
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14118240",
+    "product_description": "6.00-16 SHK3 N8",
+    "nbp_gst_18": 3677.61,
+    "cmp_set": 3900
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14118340",
+    "product_description": "6.00-16 SLF N8",
+    "nbp_gst_18": 3504.37,
+    "cmp_set": 3700
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14119340",
+    "product_description": "6.00-16 SLF PLUS N8",
+    "nbp_gst_18": 3871.79,
+    "cmp_set": 4100
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14119740",
+    "product_description": "6.00-16 SSP N8",
+    "nbp_gst_18": 3724.7,
+    "cmp_set": 3950
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14128640",
+    "product_description": "5.50-16 SHK N8",
+    "nbp_gst_18": 3368.77,
+    "cmp_set": 3600
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14138240",
+    "product_description": "6.50-20 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 4911.84,
+    "cmp_set": 5200
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14138340",
+    "product_description": "6.50-20 SLF N8",
+    "nbp_gst_18": 4968.06,
+    "cmp_set": 5300
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14139340",
+    "product_description": "6.50-20 SLF PLUS N8",
+    "nbp_gst_18": 5382.83,
+    "cmp_set": 5650
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14139740",
+    "product_description": "6.50-20 SHAKTI SUPER N8",
+    "nbp_gst_18": 5232.68,
+    "cmp_set": 5550
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14140020",
+    "product_description": "5.00-15 SHK N4",
+    "nbp_gst_18": 2980.78,
+    "cmp_set": 3200
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14148320",
+    "product_description": "5.00-12 SLF N4",
+    "nbp_gst_18": 2581.92,
+    "cmp_set": 2750
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14148620",
+    "product_description": "5-12 SHK TF N4",
+    "nbp_gst_18": 2407.46,
+    "cmp_set": 2500
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "14648620",
+    "product_description": "5-12 SHAKTI-TF N4 EXPORT",
+    "nbp_gst_18": 2407.91,
+    "cmp_set": 2500
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15128330",
+    "product_description": "7-14 SHAKTI LIFE N6 TT",
+    "nbp_gst_18": 4030.17,
+    "cmp_set": 4200
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15138240",
+    "product_description": "9.00-16 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 6609.97,
+    "cmp_set": 7200
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15139340",
+    "product_description": "9.00-16 SLF PLUS N8 TT",
+    "nbp_gst_18": 6776.41,
+    "cmp_set": 7400
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15145140",
+    "product_description": "7.50-16 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 5165.58,
+    "cmp_set": 5350
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15148340",
+    "product_description": "7.50-16 SLF N8",
+    "nbp_gst_18": 5344.71,
+    "cmp_set": 5700
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15149340",
+    "product_description": "7.50-16 SHAKTI LIFE PLUS N8",
+    "nbp_gst_18": 5768.16,
+    "cmp_set": 6150
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15149740",
+    "product_description": "7.50-16 SHAKTISUPER-F2 N8",
+    "nbp_gst_18": 5564.48,
+    "cmp_set": 5900
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15158620",
+    "product_description": "6.00-12 SHAKTI-TF N4",
+    "nbp_gst_18": 3240.63,
+    "cmp_set": 3450
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15168320",
+    "product_description": "6-14 SHAKTI LIFE N4 TT",
+    "nbp_gst_18": 3756.15,
+    "cmp_set": 3950
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15168340",
+    "product_description": "6-14 SHAKTI LIFE N8 TT",
+    "nbp_gst_18": 3954.05,
+    "cmp_set": 4150
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "15248240",
+    "product_description": "10.00-16 SHAKTI-3 N8 TT",
+    "nbp_gst_18": 8132.72,
+    "cmp_set": 8650
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "18128340",
+    "product_description": "5.25-14 SHAKTI LIFE N8",
+    "nbp_gst_18": 2975.69,
+    "cmp_set": 3200
+  },
+  {
+    "category": "TRACTOR FRONT",
+    "product_code": "18628340",
+    "product_description": "5.25-14 SHAKTI LIFE N8 EXPORT",
+    "nbp_gst_18": 2975.56,
+    "cmp_set": 3200
+  },
+  {
+    "category": "HEAVY TRACTOR REAR",
+    "product_code": "13108660",
+    "product_description": "13.6-38 SHAKTI N12 TT",
+    "nbp_gst_18": 24814.8,
+    "cmp_set": 25700
+  },
+  {
+    "category": "HEAVY TRACTOR REAR",
+    "product_code": "13178370",
+    "product_description": "18.4-30 SHAKTILIFE N14",
+    "nbp_gst_18": 36380.82,
+    "cmp_set": 37450
+  },
+  {
+    "category": "HEAVY TRACTOR REAR",
+    "product_code": "13188360",
+    "product_description": "16.9-30 SHAKTI LIFE N12",
+    "nbp_gst_18": 27635.26,
+    "cmp_set": 28550
+  },
+  {
+    "category": "SOLID TYRES",
+    "product_code": null,
+    "product_description": "6.50-10 MLT SOLID",
+    "nbp_gst_18": null,
+    "cmp_set": 10590
+  },
+  {
+    "category": "SOLID TYRES",
+    "product_code": null,
+    "product_description": "7.00-12 MLT SOLID",
+    "nbp_gst_18": null,
+    "cmp_set": 14250
+  },
+  {
+    "category": "SOLID TYRES",
+    "product_code": null,
+    "product_description": "8.15-15 (28X9-15) MLT SOLID",
+    "nbp_gst_18": null
+  }
+]
