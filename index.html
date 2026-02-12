@@ -1,343 +1,327 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyre Quotation Helper</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c; /* Red for the 'red text' */
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 { text-align: center; color: var(--primary-color); margin-bottom: 30px; }
+
+        /* Row Styling */
+        .tyre-row {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr; /* Description gets more space */
+            gap: 15px;
+            align-items: start;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box; /* Fix padding issues */
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* The Red Helper Text */
+        .helper-text {
+            color: var(--accent-color);
+            font-size: 0.9em;
+            margin-top: 5px;
+            font-weight: 600;
+            min-height: 1.2em; /* Prevent jumpiness */
+        }
+
+        /* Autocomplete List Styling */
+        .autocomplete-wrapper {
+            position: relative;
+        }
+
+        .suggestions-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none; /* Hidden by default */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .suggestions-list li {
+            padding: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .suggestions-list li:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: flex-end;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-add {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-add:hover { background-color: #2980b9; }
+
+        .btn-gen {
+            background-color: #27ae60;
+            color: white;
+        }
+        .btn-gen:hover { background-color: #219150; }
+
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Tyre Quotation Helper&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--primary-color: #2c3e50;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--accent-color: #e74c3c; /* Red for the 'red text' */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--bg-color: #f4f7f6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--card-bg: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-color);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--card-bg);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h2 { text-align: center; color: var(--primary-color); margin-bottom: 30px; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Row Styling */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tyre-row {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #eee;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.input-group {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 3fr 1fr 1fr; /* Description gets more space */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: start;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>label {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #7f8c8d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>input {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box; /* Fix padding issues */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>input:focus {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-color);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* The Red Helper Text */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.helper-text {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent-color);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 1.2em; /* Prevent jumpiness */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Autocomplete List Styling */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.autocomplete-wrapper {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.suggestions-list {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>right: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-height: 200px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-y: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: none; /* Hidden by default */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.suggestions-list li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #f1f1f1;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.suggestions-list li:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Buttons */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.button-group {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: flex-end;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-add {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-add:hover { background-color: #2980b9; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-gen {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #27ae60;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-gen:hover { background-color: #219150; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Tyre Quotation Builder&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="rows-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="button-group"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-add" onclick="addNewRow()"&gt;+ Add More Tyres&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-gen" onclick="generateQuotation()"&gt;Generate Quotation&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let tyreDatabase = [];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let rowCount = 0;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 1. Load the Database on Startup</p>
-<p class="p1"><span class="Apple-converted-space">    </span>async function loadDatabase() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>try {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const response = await fetch('database.json');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (!response.ok) throw new Error("Could not load database.json");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>tyreDatabase = await response.json();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>console.log("Database loaded:", tyreDatabase.length, "items.");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>addNewRow(); // Add the first row automatically</p>
-<p class="p1"><span class="Apple-converted-space">        </span>} catch (error) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>alert("Error loading database.json. Make sure the file is in the same folder and you are running this on a server (or GitHub Pages).");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>console.error(error);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 2. Function to Create a New Row</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function addNewRow() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>rowCount++;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const container = document.getElementById('rows-container');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// OPTIONAL: Clear the red text of the PREVIOUS row to keep it clean (as requested)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (rowCount &gt; 1) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const prevRowId = rowCount - 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const prevDescInfo = document.getElementById(`desc-info-${prevRowId}`);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const prevCalcInfo = document.getElementById(`calc-info-${prevRowId}`);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (prevDescInfo) prevDescInfo.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (prevCalcInfo) prevCalcInfo.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const rowHtml = `</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tyre-row" id="row-${rowCount}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="input-group"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="autocomplete-wrapper"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label&gt;Tyre Description / Variant&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="text" id="search-${rowCount}" placeholder="Start typing tyre name..." autocomplete="off"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="suggestions-list" id="suggestions-${rowCount}"&gt;&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="helper-text" id="desc-info-${rowCount}"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="hidden" id="base-price-${rowCount}" value="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="hidden" id="product-code-${rowCount}" value=""&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label&gt;Markup (+/-)&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="markup-${rowCount}" placeholder="0" value="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="helper-text" id="calc-info-${rowCount}"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label&gt;Quantity&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="number" id="qty-${rowCount}" value="1" min="1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Append new row</p>
-<p class="p1"><span class="Apple-converted-space">        </span>container.insertAdjacentHTML('beforeend', rowHtml);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Attach Event Listeners for the new row</p>
-<p class="p1"><span class="Apple-converted-space">        </span>setupRowEvents(rowCount);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 3. Setup Logic for a Specific Row</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function setupRowEvents(id) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const searchInput = document.getElementById(`search-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const suggestionsBox = document.getElementById(`suggestions-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const markupInput = document.getElementById(`markup-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const descInfo = document.getElementById(`desc-info-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const calcInfo = document.getElementById(`calc-info-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const basePriceInput = document.getElementById(`base-price-${id}`);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const productCodeInput = document.getElementById(`product-code-${id}`);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// A. Autocomplete Logic</p>
-<p class="p1"><span class="Apple-converted-space">        </span>searchInput.addEventListener('input', function() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const query = this.value.toLowerCase();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>suggestionsBox.innerHTML = '';</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (query.length &lt; 2) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>suggestionsBox.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Filter database</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const matches = tyreDatabase.filter(item =&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>(item.product_description &amp;&amp; item.product_description.toLowerCase().includes(query)) ||</p>
-<p class="p1"><span class="Apple-converted-space">                </span>(item.product_code &amp;&amp; item.product_code.toString().includes(query))</p>
-<p class="p1"><span class="Apple-converted-space">            </span>).slice(0, 10); // Limit to 10 suggestions</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (matches.length &gt; 0) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>suggestionsBox.style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>matches.forEach(item =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const li = document.createElement('li');</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>li.textContent = `${item.product_description} (Code: ${item.product_code})`;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>li.onclick = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>// User Selects a Tyre</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>searchInput.value = item.product_description;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>basePriceInput.value = item.cmp_set || 0; // Store CMP</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>productCodeInput.value = item.product_code;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>suggestionsBox.style.display = 'none';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>// Show Red Info (Description)</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>descInfo.style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>descInfo.innerText = `Cat: ${item.category} | Code: ${item.product_code} | Base CMP: ${item.cmp_set}`;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>// Trigger price calculation immediately</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>updatePrice(id);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>suggestionsBox.appendChild(li);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>suggestionsBox.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Hide suggestions if clicking outside</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('click', function(e) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (e.target !== searchInput) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>suggestionsBox.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// B. Markup Real-time Calculation</p>
-<p class="p1"><span class="Apple-converted-space">        </span>markupInput.addEventListener('input', () =&gt; updatePrice(id));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 4. Update Price Helper Function</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function updatePrice(id) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const basePrice = parseFloat(document.getElementById(`base-price-${id}`).value) || 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const markup = parseFloat(document.getElementById(`markup-${id}`).value) || 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const calcInfo = document.getElementById(`calc-info-${id}`);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (basePrice &gt; 0) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const finalPrice = basePrice + markup;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>calcInfo.style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>calcInfo.innerText = `Final: ${finalPrice.toFixed(2)}`;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// 5. Placeholder for Step 4 (Generate PDF)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function generateQuotation() {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Gather data</p>
-<p class="p1"><span class="Apple-converted-space">        </span>let quotationData = [];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>for(let i = 1; i &lt;= rowCount; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const desc = document.getElementById(`search-${i}`).value;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if(desc) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>quotationData.push({</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>description: desc,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>code: document.getElementById(`product-code-${i}`).value,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>basePrice: document.getElementById(`base-price-${i}`).value,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>markup: document.getElementById(`markup-${i}`).value,</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>qty: document.getElementById(`qty-${i}`).value</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>console.log("Data Ready for PDF:", quotationData);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>alert("Data captured! ready for PDF generation in the next step.");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Initialize</p>
-<p class="p1"><span class="Apple-converted-space">    </span>loadDatabase();</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<div class="container">
+    <h2>Tyre Quotation Builder</h2>
+    
+    <div id="rows-container">
+        </div>
+
+    <div class="button-group">
+        <button class="btn-add" onclick="addNewRow()">+ Add More Tyres</button>
+        <button class="btn-gen" onclick="generateQuotation()">Generate Quotation</button>
+    </div>
+</div>
+
+<script>
+    let tyreDatabase = [];
+    let rowCount = 0;
+
+    // 1. Load the Database on Startup
+    async function loadDatabase() {
+        try {
+            const response = await fetch('database.json');
+            if (!response.ok) throw new Error("Could not load database.json");
+            tyreDatabase = await response.json();
+            console.log("Database loaded:", tyreDatabase.length, "items.");
+            addNewRow(); // Add the first row automatically
+        } catch (error) {
+            alert("Error loading database.json. Make sure the file is in the same folder and you are running this on a server (or GitHub Pages).");
+            console.error(error);
+        }
+    }
+
+    // 2. Function to Create a New Row
+    function addNewRow() {
+        rowCount++;
+        const container = document.getElementById('rows-container');
+
+        // OPTIONAL: Clear the red text of the PREVIOUS row to keep it clean (as requested)
+        if (rowCount > 1) {
+            const prevRowId = rowCount - 1;
+            const prevDescInfo = document.getElementById(`desc-info-${prevRowId}`);
+            const prevCalcInfo = document.getElementById(`calc-info-${prevRowId}`);
+            if (prevDescInfo) prevDescInfo.style.display = 'none';
+            if (prevCalcInfo) prevCalcInfo.style.display = 'none';
+        }
+
+        const rowHtml = `
+            <div class="tyre-row" id="row-${rowCount}">
+                <div class="input-group">
+                    
+                    <div class="autocomplete-wrapper">
+                        <label>Tyre Description / Variant</label>
+                        <input type="text" id="search-${rowCount}" placeholder="Start typing tyre name..." autocomplete="off">
+                        <ul class="suggestions-list" id="suggestions-${rowCount}"></ul>
+                        <div class="helper-text" id="desc-info-${rowCount}"></div>
+                        <input type="hidden" id="base-price-${rowCount}" value="0">
+                        <input type="hidden" id="product-code-${rowCount}" value="">
+                    </div>
+
+                    <div>
+                        <label>Markup (+/-)</label>
+                        <input type="number" id="markup-${rowCount}" placeholder="0" value="0">
+                        <div class="helper-text" id="calc-info-${rowCount}"></div>
+                    </div>
+
+                    <div>
+                        <label>Quantity</label>
+                        <input type="number" id="qty-${rowCount}" value="1" min="1">
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Append new row
+        container.insertAdjacentHTML('beforeend', rowHtml);
+
+        // Attach Event Listeners for the new row
+        setupRowEvents(rowCount);
+    }
+
+    // 3. Setup Logic for a Specific Row
+    function setupRowEvents(id) {
+        const searchInput = document.getElementById(`search-${id}`);
+        const suggestionsBox = document.getElementById(`suggestions-${id}`);
+        const markupInput = document.getElementById(`markup-${id}`);
+        const descInfo = document.getElementById(`desc-info-${id}`);
+        const calcInfo = document.getElementById(`calc-info-${id}`);
+        const basePriceInput = document.getElementById(`base-price-${id}`);
+        const productCodeInput = document.getElementById(`product-code-${id}`);
+
+        // A. Autocomplete Logic
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            suggestionsBox.innerHTML = '';
+            
+            if (query.length < 2) {
+                suggestionsBox.style.display = 'none';
+                return;
+            }
+
+            // Filter database
+            const matches = tyreDatabase.filter(item => 
+                (item.product_description && item.product_description.toLowerCase().includes(query)) ||
+                (item.product_code && item.product_code.toString().includes(query))
+            ).slice(0, 10); // Limit to 10 suggestions
+
+            if (matches.length > 0) {
+                suggestionsBox.style.display = 'block';
+                matches.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.product_description} (Code: ${item.product_code})`;
+                    li.onclick = () => {
+                        // User Selects a Tyre
+                        searchInput.value = item.product_description;
+                        basePriceInput.value = item.cmp_set || 0; // Store CMP
+                        productCodeInput.value = item.product_code;
+                        suggestionsBox.style.display = 'none';
+
+                        // Show Red Info (Description)
+                        descInfo.style.display = 'block';
+                        descInfo.innerText = `Cat: ${item.category} | Code: ${item.product_code} | Base CMP: ${item.cmp_set}`;
+
+                        // Trigger price calculation immediately
+                        updatePrice(id);
+                    };
+                    suggestionsBox.appendChild(li);
+                });
+            } else {
+                suggestionsBox.style.display = 'none';
+            }
+        });
+
+        // Hide suggestions if clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target !== searchInput) {
+                suggestionsBox.style.display = 'none';
+            }
+        });
+
+        // B. Markup Real-time Calculation
+        markupInput.addEventListener('input', () => updatePrice(id));
+    }
+
+    // 4. Update Price Helper Function
+    function updatePrice(id) {
+        const basePrice = parseFloat(document.getElementById(`base-price-${id}`).value) || 0;
+        const markup = parseFloat(document.getElementById(`markup-${id}`).value) || 0;
+        const calcInfo = document.getElementById(`calc-info-${id}`);
+
+        if (basePrice > 0) {
+            const finalPrice = basePrice + markup;
+            calcInfo.style.display = 'block';
+            calcInfo.innerText = `Final: ${finalPrice.toFixed(2)}`;
+        }
+    }
+
+    // 5. Placeholder for Step 4 (Generate PDF)
+    function generateQuotation() {
+        // Gather data
+        let quotationData = [];
+        for(let i = 1; i <= rowCount; i++) {
+            const desc = document.getElementById(`search-${i}`).value;
+            if(desc) {
+                quotationData.push({
+                    description: desc,
+                    code: document.getElementById(`product-code-${i}`).value,
+                    basePrice: document.getElementById(`base-price-${i}`).value,
+                    markup: document.getElementById(`markup-${i}`).value,
+                    qty: document.getElementById(`qty-${i}`).value
+                });
+            }
+        }
+        
+        console.log("Data Ready for PDF:", quotationData);
+        alert("Data captured! ready for PDF generation in the next step.");
+    }
+
+    // Initialize
+    loadDatabase();
+
+</script>
+
 </body>
 </html>
