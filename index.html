@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyre Quotation Maker</title>
+    <title>Tyre Quotation Helper</title>
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -193,7 +193,7 @@
                     
                     <div class="autocomplete-wrapper">
                         <label>Tyre Description / Variant</label>
-                        <input type="text" id="search-${rowCount}" placeholder="Start typing tyre description..." autocomplete="off">
+                        <input type="text" id="search-${rowCount}" placeholder="Start typing tyre name..." autocomplete="off">
                         <ul class="suggestions-list" id="suggestions-${rowCount}"></ul>
                         <div class="helper-text" id="desc-info-${rowCount}"></div>
                         <input type="hidden" id="base-price-${rowCount}" value="0">
@@ -259,9 +259,9 @@
                         productCodeInput.value = item.product_code;
                         suggestionsBox.style.display = 'none';
 
-                        // Show Red Info (Description)
+                        // Show Red Info (Description) - FINAL FORMAT
                         descInfo.style.display = 'block';
-                        descInfo.innerText = `Cat: ${item.category} | Code: ${item.product_code} | Base CMP: ${item.cmp_set}`;
+                        descInfo.innerText = `${item.category} | Code: ${item.product_code} | NBP: ${item.nbp_gst_18} | Base CMP: ${item.cmp_set}`;
 
                         // Trigger price calculation immediately
                         updatePrice(id);
