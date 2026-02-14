@@ -314,7 +314,7 @@
 
         // Logic
         let transportTerm = transportMode === 'exw' ? "Transportation costs extra." : "Free transportation of material to your site.";
-        let paymentTerm = paymentMethod === 'advance' ? "Advance NEFT; before delivery." : "Credit; Within seven (7) days of material delivery.";
+        let paymentTerm = paymentMethod === 'advance' ? "Advance NEFT; before delivery." : "Credit; within seven (7) days of material delivery.";
 
         // --- HEADER ---
         
@@ -338,8 +338,8 @@
         // Settings for Logo
         const pageWidth = doc.internal.pageSize.getWidth(); // 210mm
         const margin = 14; 
-        const logoHeight = 25; // Matched to address block height
-        const logoWidth = 25;  // ADJUST THIS IF LOGO LOOKS STRETCHED (e.g., make it 40 or 60)
+        const logoHeight = 26; // Matched to address block height
+        const logoWidth = 26;  // ADJUST THIS IF LOGO LOOKS STRETCHED (e.g., make it 40 or 60)
         
         const logoX = pageWidth - margin - logoWidth; // Calculate X to hug right margin
         
