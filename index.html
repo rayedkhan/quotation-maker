@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyre Quotation Helper</title>
+    <title>Tyre Quotation Maker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
     <style>
         :root {
             --primary-color: #2c3e50;
-            --accent-color: #e74c3c; /* Red for the 'red text' */
+            --accent-color: #e74c3c;
             --bg-color: #f4f7f6;
             --card-bg: #ffffff;
         }
@@ -30,6 +33,21 @@
 
         h2 { text-align: center; color: var(--primary-color); margin-bottom: 30px; }
 
+        /* Settings Section */
+        .settings-panel {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            border: 1px solid #bdc3c7;
+        }
+
+        .settings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
         /* Row Styling */
         .tyre-row {
             border-bottom: 1px solid #eee;
@@ -40,7 +58,7 @@
 
         .input-group {
             display: grid;
-            grid-template-columns: 3fr 1fr 1fr; /* Description gets more space */
+            grid-template-columns: 3fr 1fr 1fr;
             gap: 15px;
             align-items: start;
         }
@@ -53,33 +71,31 @@
             margin-bottom: 5px;
         }
 
-        input {
+        input, select {
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 1em;
-            box-sizing: border-box; /* Fix padding issues */
+            box-sizing: border-box;
+            background-color: white;
         }
 
-        input:focus {
+        input:focus, select:focus {
             outline: none;
             border-color: var(--primary-color);
         }
 
-        /* The Red Helper Text */
         .helper-text {
             color: var(--accent-color);
             font-size: 0.9em;
             margin-top: 5px;
             font-weight: 600;
-            min-height: 1.2em; /* Prevent jumpiness */
+            min-height: 1.2em;
         }
 
         /* Autocomplete List Styling */
-        .autocomplete-wrapper {
-            position: relative;
-        }
+        .autocomplete-wrapper { position: relative; }
 
         .suggestions-list {
             position: absolute;
@@ -95,7 +111,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            display: none; /* Hidden by default */
+            display: none;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
@@ -105,11 +121,8 @@
             border-bottom: 1px solid #f1f1f1;
         }
 
-        .suggestions-list li:hover {
-            background-color: #f9f9f9;
-        }
+        .suggestions-list li:hover { background-color: #f9f9f9; }
 
-        /* Buttons */
         .button-group {
             display: flex;
             gap: 15px;
@@ -127,16 +140,10 @@
             transition: background 0.2s;
         }
 
-        .btn-add {
-            background-color: #3498db;
-            color: white;
-        }
+        .btn-add { background-color: #3498db; color: white; }
         .btn-add:hover { background-color: #2980b9; }
 
-        .btn-gen {
-            background-color: #27ae60;
-            color: white;
-        }
+        .btn-gen { background-color: #27ae60; color: white; }
         .btn-gen:hover { background-color: #219150; }
 
     </style>
@@ -145,6 +152,25 @@
 
 <div class="container">
     <h2>Tyre Quotation Maker</h2>
+
+    <div class="settings-panel">
+        <div class="settings-grid">
+            <div>
+                <label>Payment Method</label>
+                <select id="payment-method">
+                    <option value="advance">Advance NEFT</option>
+                    <option value="credit">Credit (7 Days)</option>
+                </select>
+            </div>
+            <div>
+                <label>Transportation</label>
+                <select id="transport-mode">
+                    <option value="exw">Ex Works (EXW)</option>
+                    <option value="included">Included (Free to Site)</option>
+                </select>
+            </div>
+        </div>
+    </div>
     
     <div id="rows-container">
         </div>
@@ -159,26 +185,26 @@
     let tyreDatabase = [];
     let rowCount = 0;
 
-    // 1. Load the Database on Startup
+    // Load Database
     async function loadDatabase() {
         try {
             const response = await fetch('database.json');
             if (!response.ok) throw new Error("Could not load database.json");
             tyreDatabase = await response.json();
             console.log("Database loaded:", tyreDatabase.length, "items.");
-            addNewRow(); // Add the first row automatically
+            addNewRow();
         } catch (error) {
-            alert("Error loading database.json. Make sure the file is in the same folder and you are running this on a server (or GitHub Pages).");
+            alert("Error loading database.json.");
             console.error(error);
         }
     }
 
-    // 2. Function to Create a New Row
+    // Add New Row
     function addNewRow() {
         rowCount++;
         const container = document.getElementById('rows-container');
 
-        // OPTIONAL: Clear the red text of the PREVIOUS row to keep it clean (as requested)
+        // Hide previous row helper text for cleaner look
         if (rowCount > 1) {
             const prevRowId = rowCount - 1;
             const prevDescInfo = document.getElementById(`desc-info-${prevRowId}`);
@@ -190,7 +216,6 @@
         const rowHtml = `
             <div class="tyre-row" id="row-${rowCount}">
                 <div class="input-group">
-                    
                     <div class="autocomplete-wrapper">
                         <label>Tyre Description / Variant</label>
                         <input type="text" id="search-${rowCount}" placeholder="Start typing tyre name..." autocomplete="off">
@@ -199,13 +224,11 @@
                         <input type="hidden" id="base-price-${rowCount}" value="0">
                         <input type="hidden" id="product-code-${rowCount}" value="">
                     </div>
-
                     <div>
                         <label>Markup (+/-)</label>
                         <input type="number" id="markup-${rowCount}" placeholder="0" value="0">
                         <div class="helper-text" id="calc-info-${rowCount}"></div>
                     </div>
-
                     <div>
                         <label>Quantity</label>
                         <input type="number" id="qty-${rowCount}" value="1" min="1">
@@ -213,25 +236,20 @@
                 </div>
             </div>
         `;
-
-        // Append new row
         container.insertAdjacentHTML('beforeend', rowHtml);
-
-        // Attach Event Listeners for the new row
         setupRowEvents(rowCount);
     }
 
-    // 3. Setup Logic for a Specific Row
+    // Setup Row Events
     function setupRowEvents(id) {
         const searchInput = document.getElementById(`search-${id}`);
         const suggestionsBox = document.getElementById(`suggestions-${id}`);
         const markupInput = document.getElementById(`markup-${id}`);
         const descInfo = document.getElementById(`desc-info-${id}`);
-        const calcInfo = document.getElementById(`calc-info-${id}`);
         const basePriceInput = document.getElementById(`base-price-${id}`);
         const productCodeInput = document.getElementById(`product-code-${id}`);
 
-        // A. Autocomplete Logic
+        // Autocomplete
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase();
             suggestionsBox.innerHTML = '';
@@ -241,11 +259,10 @@
                 return;
             }
 
-            // Filter database
             const matches = tyreDatabase.filter(item => 
                 (item.product_description && item.product_description.toLowerCase().includes(query)) ||
                 (item.product_code && item.product_code.toString().includes(query))
-            ).slice(0, 10); // Limit to 10 suggestions
+            ).slice(0, 10);
 
             if (matches.length > 0) {
                 suggestionsBox.style.display = 'block';
@@ -253,17 +270,15 @@
                     const li = document.createElement('li');
                     li.textContent = `${item.product_description} (Code: ${item.product_code})`;
                     li.onclick = () => {
-                        // User Selects a Tyre
                         searchInput.value = item.product_description;
-                        basePriceInput.value = item.cmp_set || 0; // Store CMP
+                        basePriceInput.value = item.cmp_set || 0;
                         productCodeInput.value = item.product_code;
                         suggestionsBox.style.display = 'none';
 
-                        // Show Red Info (Description) - FINAL FORMAT
+                        // Display formatted info: Category | Code | NBP | Base CMP
                         descInfo.style.display = 'block';
-                        descInfo.innerText = `${item.category} | Code: ${item.product_code} | NBP: ${item.nbp_gst_18} | Base CMP: ${item.cmp_set}`;
+                        descInfo.innerText = `${item.category} | Code: ${item.product_code} | NBP: ${item.nbp_gst_18 || 'N/A'} | Base CMP: ${item.cmp_set}`;
 
-                        // Trigger price calculation immediately
                         updatePrice(id);
                     };
                     suggestionsBox.appendChild(li);
@@ -273,18 +288,14 @@
             }
         });
 
-        // Hide suggestions if clicking outside
         document.addEventListener('click', function(e) {
-            if (e.target !== searchInput) {
-                suggestionsBox.style.display = 'none';
-            }
+            if (e.target !== searchInput) suggestionsBox.style.display = 'none';
         });
 
-        // B. Markup Real-time Calculation
         markupInput.addEventListener('input', () => updatePrice(id));
     }
 
-    // 4. Update Price Helper Function
+    // Update Price Helper
     function updatePrice(id) {
         const basePrice = parseFloat(document.getElementById(`base-price-${id}`).value) || 0;
         const markup = parseFloat(document.getElementById(`markup-${id}`).value) || 0;
@@ -297,30 +308,176 @@
         }
     }
 
-    // 5. Placeholder for Step 4 (Generate PDF)
+    // --- GENERATE PDF FUNCTION ---
     function generateQuotation() {
-        // Gather data
-        let quotationData = [];
-        for(let i = 1; i <= rowCount; i++) {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        // 1. Capture Settings
+        const paymentMethod = document.getElementById('payment-method').value;
+        const transportMode = document.getElementById('transport-mode').value;
+        const dateStr = new Date().toLocaleDateString('en-GB'); // DD/MM/YYYY format
+
+        // 2. Determine Terms Text
+        let transportTerm = "";
+        if (transportMode === 'exw') {
+            transportTerm = "Transportation costs extra.";
+        } else {
+            transportTerm = "Free transportation of material to your site";
+        }
+
+        let paymentTerm = "";
+        if (paymentMethod === 'advance') {
+            paymentTerm = "Advance NEFT; before delivery.";
+        } else {
+            paymentTerm = "Credit; Within seven (7) days of material delivery.";
+        }
+
+        // 3. Header Info (Belgaum Tyres)
+        doc.setFontSize(14);
+        doc.setFont("helvetica", "bold");
+        doc.text("BELGAUM TYRES", 14, 15);
+        
+        doc.setFontSize(9);
+        doc.setFont("helvetica", "normal");
+        doc.text("(Unit 1 of Belgaum Tyres & Treads Pvt Ltd.)", 14, 20);
+        doc.text("Plot No. 469/18, Mukt Sainik Society,", 14, 25);
+        doc.text("Opp. Market Yard, Old Bangalore- Pune Road,", 14, 30);
+        doc.text("Kolhapur, Maharashtra-416 005.", 14, 35);
+
+        // Title
+        doc.setFontSize(16);
+        doc.setFont("helvetica", "bold");
+        doc.text("QUOTATION", 150, 25, null, null, "center");
+
+        // Customer Info Placeholder
+        doc.setFontSize(10);
+        doc.setFont("helvetica", "bold");
+        doc.text("To,", 14, 45);
+        doc.text("M/S VIMPEX GLOBAL LLP", 14, 50); // Using sample customer for now, or change to placeholder
+        doc.setFont("helvetica", "normal");
+        doc.text("KARVEER, KOLHAPUR 416229", 14, 55);
+        doc.text("Kind Attn: ____________________", 14, 60);
+
+        doc.text(`DATE: ${dateStr}`, 150, 45);
+
+        doc.text("We are pleased to provide our quotation for new tyre services.", 14, 70);
+        doc.text("Kindly refer to the table below.", 14, 75);
+
+        // 4. Build Table Data
+        let tableBody = [];
+        let grandTotal = 0;
+
+        for (let i = 1; i <= rowCount; i++) {
             const desc = document.getElementById(`search-${i}`).value;
-            if(desc) {
-                quotationData.push({
-                    description: desc,
-                    code: document.getElementById(`product-code-${i}`).value,
-                    basePrice: document.getElementById(`base-price-${i}`).value,
-                    markup: document.getElementById(`markup-${i}`).value,
-                    qty: document.getElementById(`qty-${i}`).value
-                });
+            const basePrice = parseFloat(document.getElementById(`base-price-${i}`).value) || 0;
+            const markup = parseFloat(document.getElementById(`markup-${i}`).value) || 0;
+            const qty = parseFloat(document.getElementById(`qty-${i}`).value) || 1;
+
+            if (desc && basePrice > 0) {
+                // Calculation Logic from Prompt:
+                // Basic = (CMP + Markup) / 1.18
+                const finalCMP = basePrice + markup; // This is the "Total" per unit effectively including GST logic
+                const basicRate = finalCMP / 1.18; 
+                
+                const amount = basicRate * qty;
+                const gst = amount * 0.18;
+                const total = amount + gst; 
+
+                grandTotal += total;
+
+                tableBody.push([
+                    desc,
+                    basicRate.toFixed(2),
+                    qty,
+                    amount.toFixed(2),
+                    gst.toFixed(2),
+                    total.toFixed(2)
+                ]);
             }
         }
+
+        // 5. Create Table
+        doc.autoTable({
+            startY: 80,
+            head: [['ITEM', 'BASIC', 'QTY', 'AMOUNT', 'GST', 'TOTAL']],
+            body: tableBody,
+            theme: 'grid',
+            headStyles: { 
+                fillColor: [255, 255, 255], 
+                textColor: [0, 0, 0],
+                lineColor: [0, 0, 0],
+                lineWidth: 0.1,
+                fontStyle: 'bold'
+            },
+            bodyStyles: {
+                lineColor: [0, 0, 0],
+                lineWidth: 0.1
+            },
+            styles: { fontSize: 9, halign: 'center' },
+            columnStyles: { 0: { halign: 'left' } }, // Align description left
+            foot: [['', '', '', '', 'Grand Total:', Math.round(grandTotal).toFixed(2)]],
+            footStyles: {
+                fillColor: [240, 240, 240],
+                textColor: [0, 0, 0],
+                fontStyle: 'bold'
+            }
+        });
+
+        // 6. Footer & Terms
+        let finalY = doc.lastAutoTable.finalY + 10;
         
-        console.log("Data Ready for PDF:", quotationData);
-        alert("Data captured! ready for PDF generation in the next step.");
+        // Notes
+        doc.setFontSize(9);
+        doc.text("Note:", 14, finalY);
+        finalY += 5;
+        doc.text("1. The above products are perfectly suited to your utility, based on our understanding of your need.", 14, finalY);
+        finalY += 5;
+        doc.text("2. All the above products are under full manufacturer's warranty.", 14, finalY);
+        finalY += 10;
+
+        // Terms and Conditions
+        doc.setFont("helvetica", "bold");
+        doc.text("Terms & Conditions", 14, finalY);
+        doc.setFont("helvetica", "normal");
+        finalY += 5;
+        
+        const terms = [
+            "1. The above rates are indicative of all tax Breakup.",
+            "2. Quotation valid for 7 days from the date of receipt.",
+            `3. Payment Terms: ${paymentTerm}`,
+            `4. ${transportTerm}`
+        ];
+
+        terms.forEach(term => {
+            doc.text(term, 14, finalY);
+            finalY += 5;
+        });
+
+        // Bank Details
+        finalY += 5;
+        doc.setFont("helvetica", "bold");
+        doc.text("Account Name: Belgaum Tyres.", 14, finalY);
+        finalY += 5;
+        doc.text("Bank: Axis Bank, Tarabai Park Branch.", 14, finalY);
+        finalY += 5;
+        doc.text("A/c No.: 920020016291615", 14, finalY);
+        finalY += 5;
+        doc.text("IFSC: UTIB 000 4388", 14, finalY);
+
+        // Signoff
+        finalY += 15;
+        doc.text("Regards,", 14, finalY);
+        finalY += 5;
+        doc.text("Belgaum Tyres,", 14, finalY);
+        finalY += 5;
+        doc.text("+91-7026615005", 14, finalY);
+
+        // 7. Output
+        window.open(doc.output('bloburl'), '_blank');
     }
 
-    // Initialize
     loadDatabase();
-
 </script>
 
 </body>
