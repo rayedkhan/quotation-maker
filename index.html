@@ -503,9 +503,8 @@
         finalY += 5;
         doc.text("+91-7026615005", 14, finalY);
 
-        // Output with Save
-        const filename = `Quotation_${dateStr.replace(/\//g, '-')}.pdf`;
-        doc.save(filename);
+        // Output
+        window.open(doc.output('bloburl'), '_blank');
     }
 
     loadDatabase();
