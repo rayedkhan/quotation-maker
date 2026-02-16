@@ -335,7 +335,7 @@
         // Add Watermark (Low Opacity)
         if (watermarkBase64 && watermarkBase64.length > 100) {
             doc.saveGraphicsState();
-            doc.setGState(new doc.GState({opacity: 0.15})); // 15% Opacity
+            doc.setGState(new doc.GState({opacity: 0.10})); // 15% Opacity
             // Center the watermark (approx 100x100 size, centered)
             const wmWidth = 200; 
             const wmHeight = 200;
@@ -434,14 +434,14 @@
             body: tableBody,
             theme: 'grid',
             headStyles: { 
-                fillColor: [255, 245, 245], // MATCHED PAGE BACKGROUND
+                fillColor: [255, 250, 250], // Slightly lighter (more white) than page
                 textColor: [0, 0, 0],
                 lineColor: [0, 0, 0],
                 lineWidth: 0.1,
                 fontStyle: 'bold'
             },
             bodyStyles: {
-                fillColor: [255, 245, 245], // MATCHED PAGE BACKGROUND
+                fillColor: [255, 250, 250], // Slightly lighter (more white) than page
                 lineColor: [0, 0, 0],
                 lineWidth: 0.1
             },
@@ -451,7 +451,7 @@
             // FOOTER STYLING (Grand Total Row)
             foot: [['', '', '', '', 'Grand Total:', Math.round(grandTotal).toFixed(2)]],
             footStyles: {
-                fillColor: [255, 209, 209], // Slightly darker red for contrast
+                fillColor: [255, 209, 209], // Keeping the footer distinct and darker
                 textColor: [0, 0, 0],
                 fontStyle: 'bold',
                 halign: 'center'
