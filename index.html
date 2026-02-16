@@ -337,8 +337,8 @@
             doc.saveGraphicsState();
             doc.setGState(new doc.GState({opacity: 0.15})); // 15% Opacity
             // Center the watermark (approx 100x100 size, centered)
-            const wmWidth = 120; 
-            const wmHeight = 120;
+            const wmWidth = 160; 
+            const wmHeight = 160;
             const wmX = (pageWidth - wmWidth) / 2;
             const wmY = (pageHeight - wmHeight) / 2;
             doc.addImage(watermarkBase64, 'PNG', wmX, wmY, wmWidth, wmHeight);
@@ -361,8 +361,8 @@
 
         // Logo (Right)
         const margin = 14; 
-        const logoHeight = 25; 
-        const logoWidth = 50;  
+        const logoHeight = 26; 
+        const logoWidth = 26;  
         const logoX = pageWidth - margin - logoWidth; 
         
         if (logoBase64 && logoBase64.length > 100) {
