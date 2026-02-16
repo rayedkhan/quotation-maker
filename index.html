@@ -44,7 +44,7 @@
 
         .settings-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; /* 3 Columns now */
             gap: 20px;
         }
 
@@ -156,6 +156,10 @@
     <div class="settings-panel">
         <div class="settings-grid">
             <div>
+                <label>Customer ID</label>
+                <input type="text" id="customer-id" placeholder="Enter Customer ID">
+            </div>
+            <div>
                 <label>Payment Method</label>
                 <select id="payment-method">
                     <option value="advance">Advance NEFT</option>
@@ -183,6 +187,7 @@
 
 <script>
     let tyreDatabase = [];
+    let customerDataMap = {}; // New variable to store customers
     let rowCount = 0;
 
     // Load Database
@@ -196,6 +201,41 @@
         } catch (error) {
             alert("Error loading database.json.");
             console.error(error);
+        }
+    }
+
+    // 2. Load Customer Database (Live Sheet)
+    async function loadCustomerDatabase() {
+        // PASTE YOUR GOOGLE SHEET CSV LINK HERE LATER
+        const CUSTOMER_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmTRm3Y2kD0PN2cK6cFu7ZDaY3n7QByadLmCNIbttIC2RHmASWkALM3RPQqExcn74og2L4o14ObRFJ/pub?gid=0&single=true&output=csv"; 
+        
+        if (CUSTOMER_SHEET_URL.includes("YOUR_GOOGLE_SHEET")) return;
+
+        try {
+            const response = await fetch(CUSTOMER_SHEET_URL);
+            const data = await response.text();
+            
+            // Split by new line to get rows, skip the first row (headers)
+            const rows = data.split('\n').slice(1);
+            
+            rows.forEach(row => {
+                // Split by comma
+                const cols = row.split(',').map(c => c.trim());
+                if (cols.length >= 6) {
+                    const id = cols[0];
+                    // Map columns to data
+                    customerDataMap[id] = {
+                        name: cols[1],
+                        taluk: cols[2],
+                        district: cols[3],
+                        state: cols[4],
+                        pincode: cols[5]
+                    };
+                }
+            });
+            console.log("Customers loaded:", Object.keys(customerDataMap).length);
+        } catch (error) {
+            console.error("Error loading customer sheet:", error);
         }
     }
 
@@ -304,6 +344,19 @@
 
     // --- GENERATE PDF FUNCTION ---
     function generateQuotation() {
+        // --- NEW VALIDATION LOGIC ---
+        const custId = document.getElementById('customer-id').value.trim();
+        if(!custId) {
+            alert("Please enter a Customer ID");
+            return;
+        }
+        
+        const customer = customerDataMap[custId];
+        if(!customer) {
+            alert(`Customer ID "${custId}" not found in database!`);
+            return;
+        }
+        
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
 
@@ -383,11 +436,13 @@
         doc.setFontSize(10);
         doc.setFont("helvetica", "bold");
         
-        // "To" Section (Left)
+        // "To" Section (Left) - DYNAMIC
         doc.text("To,", 14, 65);
-        doc.text("M/S VIMPEX GLOBAL LLP", 14, 70); 
+        // Use the Name from the sheet
+        doc.text(customer.name, 14, 70); 
         doc.setFont("helvetica", "normal");
-        doc.text("KARVEER, KOLHAPUR 416229", 14, 75);
+        // Combine address parts
+        doc.text(`${customer.taluk}, ${customer.district}, ${customer.state} ${customer.pincode}`, 14, 75);
         
         // "Date" Section (Right)
         doc.setFont("helvetica", "bold");
@@ -509,6 +564,7 @@
     }
 
     loadDatabase();
+    loadCustomerDatabase(); // Start fetching customers immediately
 </script>
 
 </body>
