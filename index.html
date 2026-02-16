@@ -337,8 +337,8 @@
             doc.saveGraphicsState();
             doc.setGState(new doc.GState({opacity: 0.15})); // 15% Opacity
             // Center the watermark (approx 100x100 size, centered)
-            const wmWidth = 160; 
-            const wmHeight = 160;
+            const wmWidth = 200; 
+            const wmHeight = 200;
             const wmX = (pageWidth - wmWidth) / 2;
             const wmY = (pageHeight - wmHeight) / 2;
             doc.addImage(watermarkBase64, 'PNG', wmX, wmY, wmWidth, wmHeight);
@@ -434,13 +434,14 @@
             body: tableBody,
             theme: 'grid',
             headStyles: { 
-                fillColor: [255, 255, 255], 
+                fillColor: [255, 245, 245], // MATCHED PAGE BACKGROUND
                 textColor: [0, 0, 0],
                 lineColor: [0, 0, 0],
                 lineWidth: 0.1,
                 fontStyle: 'bold'
             },
             bodyStyles: {
+                fillColor: [255, 245, 245], // MATCHED PAGE BACKGROUND
                 lineColor: [0, 0, 0],
                 lineWidth: 0.1
             },
@@ -450,13 +451,13 @@
             // FOOTER STYLING (Grand Total Row)
             foot: [['', '', '', '', 'Grand Total:', Math.round(grandTotal).toFixed(2)]],
             footStyles: {
-                fillColor: [255, 209, 209], // Light Red Row Background (Darker than Page BG)
+                fillColor: [255, 209, 209], // Slightly darker red for contrast
                 textColor: [0, 0, 0],
                 fontStyle: 'bold',
                 halign: 'center'
             }
         });
-
+        
         // --- FOOTER SECTION ---
         let finalY = doc.lastAutoTable.finalY + 10;
         
