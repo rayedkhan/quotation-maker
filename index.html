@@ -249,33 +249,42 @@
         }
     }
 
-    // 2. Load Customer Database (Live Sheet)
+    // 2. Load Customer Database (Live Sheet) - ROBUST VERSION
     async function loadCustomerDatabase() {
-        // PASTE YOUR GOOGLE SHEET CSV LINK HERE LATER
-        const CUSTOMER_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmTRm3Y2kD0PN2cK6cFu7ZDaY3n7QByadLmCNIbttIC2RHmASWkALM3RPQqExcn74og2L4o14ObRFJ/pub?gid=0&single=true&output=csv"; 
+        // --- PASTE YOUR GOOGLE SHEET CSV LINK BELOW ---
+        const CUSTOMER_SHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmTRm3Y2kD0PN2cK6cFu7ZDaY3n7QByadLmCNIbttIC2RHmASWkALM3RPQqExcn74og2L4o14ObRFJ/pub?gid=0&single=true&output=csv";  
         
         if (CUSTOMER_SHEET_URL.includes("YOUR_GOOGLE_SHEET")) return;
 
         try {
-            const response = await fetch(CUSTOMER_SHEET_URL);
+            // Add timestamp to URL to prevent caching (Forces fresh data)
+            const urlWithCacheBust = CUSTOMER_SHEET_URL + "&t=" + new Date().getTime();
+            
+            const response = await fetch(urlWithCacheBust);
             const data = await response.text();
             
-            // Split by new line to get rows, skip the first row (headers)
+            // Split by new line
             const rows = data.split('\n').slice(1);
             
             rows.forEach(row => {
-                // Warning: This simple split fails if cells contain commas
-                const cols = row.split(',').map(c => c.trim());
+                // 1. Split by comma
+                // 2. Trim whitespace
+                // 3. Remove surrounding quotes (The Fix!)
+                const cols = row.split(',').map(c => c.trim().replace(/^"|"$/g, ''));
+                
                 if (cols.length >= 6) {
-                    // Mapping: Phone, Name, Taluk, District, State, Pincode
-                    const phone = cols[0]; // Phone is now the key
-                    customerDataMap[phone] = {
-                        name: cols[1],
-                        taluk: cols[2],
-                        district: cols[3],
-                        state: cols[4],
-                        pincode: cols[5]
-                    };
+                    const phone = cols[0]; // Phone is the key
+                    
+                    // Only add if phone number is valid/not empty
+                    if(phone && phone.length > 5) {
+                        customerDataMap[phone] = {
+                            name: cols[1],
+                            taluk: cols[2],
+                            district: cols[3],
+                            state: cols[4],
+                            pincode: cols[5]
+                        };
+                    }
                 }
             });
             console.log("Customers loaded:", Object.keys(customerDataMap).length);
