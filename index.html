@@ -180,8 +180,8 @@
     <div class="settings-panel">
         <div class="settings-grid">
             <div>
-                <label>Customer ID</label>
-                <input type="text" id="customer-id" placeholder="Enter Customer ID">
+                <label>Customer Phone</label>
+                <input type="number" id="customer-phone" placeholder="Enter 10-digit Phone">
             </div>
             <div>
                 <label>Payment Method</label>
@@ -212,6 +212,10 @@
     <div id="customerModal" class="modal">
     <div class="modal-content">
         <h3>Register New Customer</h3>
+        <div class="form-group">
+            <label>Phone Number (10-digit)</label>
+            <input type="number" id="new-phone" placeholder="9876543210">
+        </div>
         <div class="form-group"><label>Organization Name</label><input type="text" id="new-name"></div>
         <div class="form-group"><label>Taluk</label><input type="text" id="new-taluk"></div>
         <div class="form-group"><label>District</label><input type="text" id="new-dist"></div>
@@ -260,12 +264,12 @@
             const rows = data.split('\n').slice(1);
             
             rows.forEach(row => {
-                // Split by comma
+                // Warning: This simple split fails if cells contain commas
                 const cols = row.split(',').map(c => c.trim());
                 if (cols.length >= 6) {
-                    const id = cols[0];
-                    // Map columns to data
-                    customerDataMap[id] = {
+                    // Mapping: Phone, Name, Taluk, District, State, Pincode
+                    const phone = cols[0]; // Phone is now the key
+                    customerDataMap[phone] = {
                         name: cols[1],
                         taluk: cols[2],
                         district: cols[3],
@@ -291,8 +295,8 @@
 
     function closeModal() {
         document.getElementById('customerModal').style.display = 'none';
-        // Clear fields
-        ['new-name','new-taluk','new-dist','new-state','new-pin'].forEach(id => document.getElementById(id).value = '');
+        // Clear fields (added new-phone)
+        ['new-phone', 'new-name','new-taluk','new-dist','new-state','new-pin'].forEach(id => document.getElementById(id).value = '');
     }
 
     async function saveNewCustomer() {
@@ -301,7 +305,18 @@
         btn.innerText = "Saving...";
         btn.disabled = true;
 
+        const phone = document.getElementById('new-phone').value.toString().trim();
+        
+        // Basic Validation
+        if(phone.length !== 10) {
+            alert("Please enter a valid 10-digit phone number.");
+            btn.innerText = originalText;
+            btn.disabled = false;
+            return;
+        }
+
         const payload = {
+            phone: phone, // Send Phone
             name: document.getElementById('new-name').value,
             taluk: document.getElementById('new-taluk').value,
             district: document.getElementById('new-dist').value,
@@ -310,7 +325,6 @@
         };
 
         try {
-            // Send data to Google Sheet
             const response = await fetch(APPS_SCRIPT_URL, {
                 method: "POST",
                 body: JSON.stringify(payload)
@@ -319,30 +333,35 @@
             const result = await response.json();
             
             if(result.result === 'success') {
-                const newId = result.id;
+                const savedPhone = result.phone;
                 
-                // 1. Update Local Data Immediately (No wait for CSV cache)
-                customerDataMap[newId] = payload;
+                // 1. Update Local Data Immediately
+                customerDataMap[savedPhone] = payload;
                 
-                // 2. Fill the ID field on main form
-                document.getElementById('customer-id').value = newId;
+                // 2. Fill the Phone field on main form
+                document.getElementById('customer-phone').value = savedPhone;
                 
                 // 3. Close and Reset
                 closeModal();
-                alert(`Success! Customer ID ${newId} created and selected.`);
-            } else {
-                alert("Error saving data: " + result.error);
+                alert(`Success! Customer ${savedPhone} registered and selected.`);
+                
+            } else if (result.result === 'error') {
+                // DUPLICATE FOUND
+                alert(result.message); // "Phone number already registered!"
+                closeModal(); // Take user back to main tool
+                // Optionally fill the field with the duplicate number so they can just use it
+                document.getElementById('customer-phone').value = phone;
             }
 
         } catch (error) {
             console.error(error);
-            alert("Failed to connect to Google Sheet. Check your Script URL.");
+            alert("Failed to connect. Check internet or script URL.");
         } finally {
             btn.innerText = originalText;
             btn.disabled = false;
         }
     }
-
+    
     // Add New Row
     function addNewRow() {
         rowCount++;
@@ -449,15 +468,16 @@
     // --- GENERATE PDF FUNCTION ---
     function generateQuotation() {
         // --- NEW VALIDATION LOGIC ---
-        const custId = document.getElementById('customer-id').value.trim();
-        if(!custId) {
-            alert("Please enter a Customer ID");
+        // 1. Validate Customer
+        const custPhone = document.getElementById('customer-phone').value.trim();
+        if(!custPhone) {
+            alert("Please enter a Customer Phone Number");
             return;
         }
         
-        const customer = customerDataMap[custId];
+        const customer = customerDataMap[custPhone];
         if(!customer) {
-            alert(`Customer ID "${custId}" not found in database!`);
+            alert(`Customer Phone "${custPhone}" not found in database!`);
             return;
         }
         
