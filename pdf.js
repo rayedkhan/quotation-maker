@@ -202,7 +202,7 @@ function generateQuotation() {
     doc.text("IFSC: UTIB 000 4388", 14, finalY);
 
     doc.setFont("helvetica", "bold"); 
-    finalY += 15;
+    finalY += 10;
     doc.text("Regards,", 14, finalY);
     finalY += 5;
     doc.text("Belgaum Tyres,", 14, finalY);
