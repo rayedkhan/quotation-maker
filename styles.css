@@ -141,15 +141,21 @@ button {
 }
 .modal-content {
     background-color: white;
-    margin: 5% auto; /* Reduced top margin */
     padding: 25px;
     border-radius: 8px;
     width: 400px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     
-    /* NEW: Enables Scrolling */
-    max-height: 85vh; /* Maximum height is 85% of screen */
-    overflow-y: auto; /* Add scrollbar if content is too tall */
+    /* CENTERING MAGIC */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove old margins */
+    
+    /* SCROLLING LOGIC */
+    max-height: 90vh; /* Max height is 90% of screen */
+    overflow-y: auto; /* Scrollbar appears inside if content is too long */
 }
 
 .modal h3 { margin-top: 0; color: var(--primary-color); }
@@ -195,9 +201,12 @@ button {
 .toast.success { background-color: #27ae60; }
 
 /* --- Fix Dropdown Z-Index in Modal --- */
-/* Ensures the list floats ABOVE the modal content */
+/* Fix Dropdown in Modal */
 .modal .suggestions-list {
     z-index: 1500; 
     border: 1px solid #bdc3c7;
-    max-height: 150px;
+    max-height: 180px; /* Slightly taller */
+    background: white;
+    width: 100%; /* Match input width */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
