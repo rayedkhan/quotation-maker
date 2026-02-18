@@ -71,22 +71,30 @@ function generateQuotation() {
     doc.setFont("helvetica", "bold");
     doc.text("QUOTATION", 105, 55, null, null, "center");
 
-    // To Section
+    // --- TO SECTION (Updated) ---
     doc.setFontSize(10);
     doc.setFont("helvetica", "bold");
     doc.text("To,", 14, 65);
+    
+    // Customer Name
     doc.text(customer.name, 14, 70); 
+    
     doc.setFont("helvetica", "normal");
+    // Address Line
     doc.text(`${customer.taluk}, ${customer.district}, ${customer.state} ${customer.pincode}`, 14, 75);
+    
+    // Phone Number (Formatted: +91 12345 67891)
+    const formattedPhone = "+91 " + custPhone.substring(0, 5) + " " + custPhone.substring(5);
+    doc.text(formattedPhone, 14, 80);
     
     // Date
     doc.setFont("helvetica", "bold");
     doc.text(`DATE: ${dateStr}`, pageWidth - 14, 65, null, null, "right");
 
-    // Intro
+    // Intro (Shifted down slightly to accommodate phone number)
     doc.setFont("helvetica", "normal");
-    doc.text("We are pleased to provide our quotation for new tyre services.", 14, 85);
-    doc.text("Kindly refer to the table below.", 14, 90);
+    doc.text("We are pleased to provide our quotation for new tyre services.", 14, 90);
+    doc.text("Kindly refer to the table below.", 14, 95);
 
     // Table
     let tableBody = [];
@@ -119,7 +127,7 @@ function generateQuotation() {
     }
 
     doc.autoTable({
-        startY: 95,
+        startY: 100, // Adjusted startY for new spacing
         head: [['ITEM', 'BASIC', 'QTY', 'AMOUNT', 'GST', 'TOTAL']],
         body: tableBody,
         theme: 'grid',
@@ -175,8 +183,16 @@ function generateQuotation() {
         finalY += 5;
     });
 
+    // --- BANK DETAILS SECTION (Updated) ---
     finalY += 5;
+    
+    // Header Line (Bold)
     doc.setFont("helvetica", "bold");
+    doc.text("Our account details for your reference:", 14, finalY);
+    finalY += 5;
+
+    // Bank Details (Unbolded / Normal)
+    doc.setFont("helvetica", "normal");
     doc.text("Account Name: Belgaum Tyres.", 14, finalY);
     finalY += 5;
     doc.text("Bank: Axis Bank, Tarabai Park Branch.", 14, finalY);
