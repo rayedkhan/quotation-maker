@@ -3,11 +3,63 @@ let rowCount = 0;
 // --- MODAL FUNCTIONS ---
 function openModal() {
     document.getElementById('customerModal').style.display = 'block';
+    populateStates(); // Load states when modal opens
 }
 
 function closeModal() {
     document.getElementById('customerModal').style.display = 'none';
-    ['new-phone', 'new-name','new-taluk','new-dist','new-state','new-pin'].forEach(id => document.getElementById(id).value = '');
+    // Clear all new fields
+    ['new-name', 'new-gender', 'new-phone', 'new-org', 'new-state', 'new-dist', 'new-taluk', 'new-pin'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.value = '';
+    });
+}
+
+// --- LOCATION LOGIC ---
+function populateStates() {
+    const stateList = document.getElementById('state-list');
+    stateList.innerHTML = ''; // Clear existing
+    for (let state in locationData) {
+        let option = document.createElement('option');
+        option.value = state;
+        stateList.appendChild(option);
+    }
+}
+
+function populateDistricts() {
+    const stateInput = document.getElementById('new-state').value;
+    const distList = document.getElementById('district-list');
+    const talukInput = document.getElementById('new-taluk');
+    
+    distList.innerHTML = ''; // Clear districts
+    document.getElementById('new-dist').value = ''; // Reset selection
+    talukInput.value = ''; // Reset taluk selection
+    
+    if (locationData[stateInput]) {
+        for (let dist in locationData[stateInput]) {
+            let option = document.createElement('option');
+            option.value = dist;
+            distList.appendChild(option);
+        }
+    }
+}
+
+function populateTaluks() {
+    const stateInput = document.getElementById('new-state').value;
+    const distInput = document.getElementById('new-dist').value;
+    const talukList = document.getElementById('taluk-list');
+    
+    talukList.innerHTML = ''; // Clear taluks
+    document.getElementById('new-taluk').value = ''; // Reset selection
+
+    if (locationData[stateInput] && locationData[stateInput][distInput]) {
+        const taluks = locationData[stateInput][distInput];
+        taluks.forEach(taluk => {
+            let option = document.createElement('option');
+            option.value = taluk;
+            talukList.appendChild(option);
+        });
+    }
 }
 
 async function saveNewCustomer() {
@@ -18,6 +70,7 @@ async function saveNewCustomer() {
 
     const phone = document.getElementById('new-phone').value.toString().trim();
     
+    // Basic Validation
     if(phone.length !== 10) {
         alert("Please enter a valid 10-digit phone number.");
         btn.innerText = originalText;
@@ -25,14 +78,25 @@ async function saveNewCustomer() {
         return;
     }
 
+    // Gather all fields
     const payload = {
         phone: phone,
         name: document.getElementById('new-name').value,
-        taluk: document.getElementById('new-taluk').value,
-        district: document.getElementById('new-dist').value,
+        gender: document.getElementById('new-gender').value,
+        org: document.getElementById('new-org').value, // Optional
         state: document.getElementById('new-state').value,
+        district: document.getElementById('new-dist').value,
+        taluk: document.getElementById('new-taluk').value,
         pincode: document.getElementById('new-pin').value
     };
+
+    // Validate required location fields
+    if(!payload.name || !payload.state || !payload.district || !payload.taluk || !payload.pincode) {
+        alert("Please fill in all required fields (Name, State, District, Taluk, Pincode).");
+        btn.innerText = originalText;
+        btn.disabled = false;
+        return;
+    }
 
     try {
         const response = await fetch(APPS_SCRIPT_URL, {
@@ -44,7 +108,18 @@ async function saveNewCustomer() {
         
         if(result.result === 'success') {
             const savedPhone = result.phone;
-            customerDataMap[savedPhone] = payload;
+            
+            // Map the new data structure for local use
+            customerDataMap[savedPhone] = {
+                name: payload.name,
+                gender: payload.gender,
+                orgName: payload.org,
+                taluk: payload.taluk,
+                district: payload.district,
+                state: payload.state,
+                pincode: payload.pincode
+            };
+
             document.getElementById('customer-phone').value = savedPhone;
             closeModal();
             alert(`Success! Customer ${savedPhone} registered and selected.`);
