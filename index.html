@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<div id="toast-container"></div>
+
 <div class="container">
     <h2>Tyre Quotation Maker</h2>
 
@@ -76,20 +78,26 @@
 
             <div class="form-group">
                 <label>State</label>
-                <input list="state-list" id="new-state" placeholder="Select State" onchange="populateDistricts()">
-                <datalist id="state-list"></datalist>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="new-state" placeholder="Select State" autocomplete="off">
+                    <ul class="suggestions-list" id="state-suggestions"></ul>
+                </div>
             </div>
 
             <div class="form-group">
                 <label>District</label>
-                <input list="district-list" id="new-dist" placeholder="Select District" onchange="populateTaluks()">
-                <datalist id="district-list"></datalist>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="new-dist" placeholder="Select District" autocomplete="off">
+                    <ul class="suggestions-list" id="dist-suggestions"></ul>
+                </div>
             </div>
 
             <div class="form-group">
                 <label>Taluk</label>
-                <input list="taluk-list" id="new-taluk" placeholder="Select Taluk">
-                <datalist id="taluk-list"></datalist>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="new-taluk" placeholder="Select Taluk" autocomplete="off">
+                    <ul class="suggestions-list" id="taluk-suggestions"></ul>
+                </div>
             </div>
 
             <div class="form-group">
