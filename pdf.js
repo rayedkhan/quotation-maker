@@ -71,30 +71,37 @@ function generateQuotation() {
     doc.setFont("helvetica", "bold");
     doc.text("QUOTATION", 105, 55, null, null, "center");
 
-    // --- TO SECTION (Updated) ---
+   // --- TO SECTION (Updated) ---
     doc.setFontSize(10);
     doc.setFont("helvetica", "bold");
     doc.text("To,", 14, 65);
     
-    // Customer Name
-    doc.text(customer.name, 14, 70); 
+    // Logic: Use Organization Name if present, otherwise use Person's Name
+    const toName = customer.orgName ? customer.orgName : customer.name;
+    doc.text(toName, 14, 70); 
     
     doc.setFont("helvetica", "normal");
     // Address Line
-    doc.text(`${customer.taluk}, ${customer.district}, ${customer.state} ${customer.pincode}`, 14, 75);
+    doc.text(`${customer.taluk}, ${customer.district}, ${customer.state} - ${customer.pincode}`, 14, 75);
     
-    // Phone Number (Formatted: +91 12345 67891)
+    // Kind Attention Logic
+    let prefix = "";
+    const g = customer.gender ? customer.gender.toLowerCase() : "";
+    if (g.startsWith("m") && !g.startsWith("ms")) prefix = "Mr.";
+    else if (g.startsWith("f") || g.startsWith("ms")) prefix = "Ms.";
+    
     const formattedPhone = "+91 " + custPhone.substring(0, 5) + " " + custPhone.substring(5);
-    doc.text(formattedPhone, 14, 80);
+    
+    // "Kind Attention: Mr. Name (+91 ...)"
+    doc.text(`Kind Attention: ${prefix} ${customer.name} (${formattedPhone})`, 14, 82);
     
     // Date
     doc.setFont("helvetica", "bold");
     doc.text(`DATE: ${dateStr}`, pageWidth - 14, 65, null, null, "right");
 
-    // Intro (Shifted down slightly to accommodate phone number)
+    // Intro
     doc.setFont("helvetica", "normal");
     doc.text("We are pleased to provide our quotation for new tyre services.", 14, 90);
-    doc.text("Kindly refer to the table below.", 14, 95);
 
     // Table
     let tableBody = [];
