@@ -92,11 +92,23 @@ function generateQuotation() {
     
     const formattedPhone = "+91 " + custPhone.substring(0, 5) + " " + custPhone.substring(5);
     
-    doc.setFont("helvetica", "bold");
-    doc.text(`Kind Attention: ${prefix} ${customer.name} (${formattedPhone})`, 14, 82);
+    // --- MIXED STYLING FOR KIND ATTENTION ---
     
-    // RESET to Normal for the Date and Body
+    // Part 1: "Kind Attention: Mr./Ms. " (Normal)
     doc.setFont("helvetica", "normal");
+    const textPart1 = `Kind Attention: ${prefix} `;
+    doc.text(textPart1, 14, 82);
+    const width1 = doc.getTextWidth(textPart1);
+
+    // Part 2: Customer Name (BOLD)
+    doc.setFont("helvetica", "bold");
+    doc.text(customer.name, 14 + width1, 82);
+    const width2 = doc.getTextWidth(customer.name);
+
+    // Part 3: " (+91 XXXXX...)" (Normal)
+    doc.setFont("helvetica", "normal");
+    const textPart3 = ` (${formattedPhone})`;
+    doc.text(textPart3, 14 + width1 + width2, 82);
 
     // Intro
     doc.setFont("helvetica", "normal");
