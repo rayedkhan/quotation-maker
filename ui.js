@@ -29,11 +29,16 @@ function openModal() {
 
 function closeModal() {
     document.getElementById('customerModal').style.display = 'none';
-    // Clear all fields
-    ['new-name', 'new-gender', 'new-phone', 'new-org', 'new-state', 'new-dist', 'new-taluk', 'new-pin'].forEach(id => {
+    
+    // Clear text fields (Removed 'new-gender' from this list)
+    ['new-name', 'new-phone', 'new-org', 'new-state', 'new-dist', 'new-taluk', 'new-pin'].forEach(id => {
         const el = document.getElementById(id);
         if(el) el.value = '';
     });
+
+    // Reset Gender specifically to 'M'
+    document.getElementById('new-gender').value = 'M';
+
     // Clear suggestions
     document.querySelectorAll('.modal .suggestions-list').forEach(ul => ul.innerHTML = '');
 }
