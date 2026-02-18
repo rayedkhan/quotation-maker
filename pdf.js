@@ -79,8 +79,7 @@ function generateQuotation() {
     // Logic: Use Organization Name if present, otherwise use Person's Name
     const toName = customer.orgName ? customer.orgName : customer.name;
     doc.text(toName, 14, 70); 
-    
-    doc.setFont("helvetica", "normal");
+
     // Address Line
     doc.text(`${customer.taluk}, ${customer.district}, ${customer.state} - ${customer.pincode}`, 14, 75);
     
@@ -93,22 +92,17 @@ function generateQuotation() {
     const formattedPhone = "+91 " + custPhone.substring(0, 5) + " " + custPhone.substring(5);
     
     // --- MIXED STYLING FOR KIND ATTENTION ---
-    
-    // Part 1: "Kind Attention: Mr./Ms. " (Normal)
+        
+    // Part 1: "Kind Attention: " (Normal)
     doc.setFont("helvetica", "normal");
-    const textPart1 = `Kind Attention: ${prefix} `;
+    const textPart1 = "Kind Attention: ";
     doc.text(textPart1, 14, 82);
     const width1 = doc.getTextWidth(textPart1);
 
-    // Part 2: Customer Name (BOLD)
+    // Part 2: "Prefix Name (Phone)" (BOLD)
     doc.setFont("helvetica", "bold");
-    doc.text(customer.name, 14 + width1, 82);
-    const width2 = doc.getTextWidth(customer.name);
-
-    // Part 3: " (+91 XXXXX...)" (Normal)
-    doc.setFont("helvetica", "normal");
-    const textPart3 = ` (${formattedPhone})`;
-    doc.text(textPart3, 14 + width1 + width2, 82);
+    const textPart2 = `${prefix} ${customer.name} (${formattedPhone})`;
+    doc.text(textPart2, 14 + width1, 82);
 
     // Intro
     doc.setFont("helvetica", "normal");
