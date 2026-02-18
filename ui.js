@@ -1,67 +1,128 @@
 let rowCount = 0;
 
+// --- TOAST NOTIFICATION SYSTEM ---
+function showToast(message, type = 'error') {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerText = message;
+    
+    container.appendChild(toast);
+    
+    // Animate in
+    requestAnimationFrame(() => {
+        toast.classList.add('show');
+    });
+
+    // Remove after 3 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
 // --- MODAL FUNCTIONS ---
 function openModal() {
     document.getElementById('customerModal').style.display = 'block';
-    populateStates(); // Load states when modal opens
+    setupLocationAutocomplete(); // Initialize listeners
 }
 
 function closeModal() {
     document.getElementById('customerModal').style.display = 'none';
-    // Clear all new fields
+    // Clear all fields
     ['new-name', 'new-gender', 'new-phone', 'new-org', 'new-state', 'new-dist', 'new-taluk', 'new-pin'].forEach(id => {
         const el = document.getElementById(id);
         if(el) el.value = '';
     });
+    // Clear suggestions
+    document.querySelectorAll('.modal .suggestions-list').forEach(ul => ul.innerHTML = '');
 }
 
-// --- LOCATION LOGIC ---
-function populateStates() {
-    const stateList = document.getElementById('state-list');
-    stateList.innerHTML = ''; // Clear existing
-    for (let state in locationData) {
-        let option = document.createElement('option');
-        option.value = state;
-        stateList.appendChild(option);
-    }
-}
-
-function populateDistricts() {
-    const stateInput = document.getElementById('new-state').value;
-    const distList = document.getElementById('district-list');
+// --- CUSTOM AUTOCOMPLETE LOGIC ---
+function setupLocationAutocomplete() {
+    const stateInput = document.getElementById('new-state');
+    const distInput = document.getElementById('new-dist');
     const talukInput = document.getElementById('new-taluk');
-    
-    distList.innerHTML = ''; // Clear districts
-    document.getElementById('new-dist').value = ''; // Reset selection
-    talukInput.value = ''; // Reset taluk selection
-    
-    if (locationData[stateInput]) {
-        for (let dist in locationData[stateInput]) {
-            let option = document.createElement('option');
-            option.value = dist;
-            distList.appendChild(option);
-        }
-    }
-}
 
-function populateTaluks() {
-    const stateInput = document.getElementById('new-state').value;
-    const distInput = document.getElementById('new-dist').value;
-    const talukList = document.getElementById('taluk-list');
-    
-    talukList.innerHTML = ''; // Clear taluks
-    document.getElementById('new-taluk').value = ''; // Reset selection
+    // 1. State Listener
+    stateInput.oninput = function() {
+        const query = this.value.toLowerCase();
+        const list = document.getElementById('state-suggestions');
+        list.innerHTML = '';
+        
+        if (!query) return;
 
-    if (locationData[stateInput] && locationData[stateInput][distInput]) {
-        const taluks = locationData[stateInput][distInput];
-        taluks.forEach(taluk => {
-            let option = document.createElement('option');
-            option.value = taluk;
-            talukList.appendChild(option);
+        Object.keys(locationData).forEach(state => {
+            if (state.toLowerCase().includes(query)) {
+                addSuggestionItem(list, state, () => {
+                    stateInput.value = state;
+                    list.innerHTML = ''; // Hide list
+                    distInput.value = ''; // Reset child fields
+                    talukInput.value = '';
+                });
+            }
         });
-    }
+        list.style.display = list.innerHTML ? 'block' : 'none';
+    };
+
+    // 2. District Listener
+    distInput.oninput = function() {
+        const query = this.value.toLowerCase();
+        const stateName = stateInput.value;
+        const list = document.getElementById('dist-suggestions');
+        list.innerHTML = '';
+
+        if (!query || !stateName || !locationData[stateName]) return;
+
+        Object.keys(locationData[stateName]).forEach(dist => {
+            if (dist.toLowerCase().includes(query)) {
+                addSuggestionItem(list, dist, () => {
+                    distInput.value = dist;
+                    list.innerHTML = '';
+                    talukInput.value = '';
+                });
+            }
+        });
+        list.style.display = list.innerHTML ? 'block' : 'none';
+    };
+
+    // 3. Taluk Listener
+    talukInput.oninput = function() {
+        const query = this.value.toLowerCase();
+        const stateName = stateInput.value;
+        const distName = distInput.value;
+        const list = document.getElementById('taluk-suggestions');
+        list.innerHTML = '';
+
+        if (!query || !stateName || !distName || !locationData[stateName][distName]) return;
+
+        locationData[stateName][distName].forEach(taluk => {
+            if (taluk.toLowerCase().includes(query)) {
+                addSuggestionItem(list, taluk, () => {
+                    talukInput.value = taluk;
+                    list.innerHTML = '';
+                });
+            }
+        });
+        list.style.display = list.innerHTML ? 'block' : 'none';
+    };
+
+    // Close lists when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.autocomplete-wrapper')) {
+            document.querySelectorAll('.modal .suggestions-list').forEach(ul => ul.style.display = 'none');
+        }
+    });
 }
 
+function addSuggestionItem(listElement, text, onClick) {
+    const li = document.createElement('li');
+    li.textContent = text;
+    li.onclick = onClick;
+    listElement.appendChild(li);
+}
+
+// --- SAVE CUSTOMER ---
 async function saveNewCustomer() {
     const btn = document.querySelector('.btn-save');
     const originalText = btn.innerText;
@@ -70,29 +131,26 @@ async function saveNewCustomer() {
 
     const phone = document.getElementById('new-phone').value.toString().trim();
     
-    // Basic Validation
     if(phone.length !== 10) {
-        alert("Please enter a valid 10-digit phone number.");
+        showToast("Please enter a valid 10-digit phone number.");
         btn.innerText = originalText;
         btn.disabled = false;
         return;
     }
 
-    // Gather all fields
     const payload = {
         phone: phone,
         name: document.getElementById('new-name').value,
         gender: document.getElementById('new-gender').value,
-        org: document.getElementById('new-org').value, // Optional
+        org: document.getElementById('new-org').value, 
         state: document.getElementById('new-state').value,
         district: document.getElementById('new-dist').value,
         taluk: document.getElementById('new-taluk').value,
         pincode: document.getElementById('new-pin').value
     };
 
-    // Validate required location fields
     if(!payload.name || !payload.state || !payload.district || !payload.taluk || !payload.pincode) {
-        alert("Please fill in all required fields (Name, State, District, Taluk, Pincode).");
+        showToast("Please fill in all required fields.");
         btn.innerText = originalText;
         btn.disabled = false;
         return;
@@ -108,8 +166,6 @@ async function saveNewCustomer() {
         
         if(result.result === 'success') {
             const savedPhone = result.phone;
-            
-            // Map the new data structure for local use
             customerDataMap[savedPhone] = {
                 name: payload.name,
                 gender: payload.gender,
@@ -122,27 +178,31 @@ async function saveNewCustomer() {
 
             document.getElementById('customer-phone').value = savedPhone;
             closeModal();
-            alert(`Success! Customer ${savedPhone} registered and selected.`);
+            showToast(`Success! Customer ${savedPhone} registered.`, 'success');
         } else if (result.result === 'error') {
-            alert(result.message);
+            showToast(result.message);
             closeModal();
             document.getElementById('customer-phone').value = phone;
         }
 
     } catch (error) {
         console.error(error);
-        alert("Failed to connect. Check internet or script URL.");
+        showToast("Failed to connect. Check internet.");
     } finally {
         btn.innerText = originalText;
         btn.disabled = false;
     }
 }
 
-// --- ROW MANAGEMENT ---
+// --- ROW MANAGEMENT (Kept same, just minimal structure) ---
 function addNewRow() {
     rowCount++;
     const container = document.getElementById('rows-container');
 
+    // ... (This part of logic remains identical to previous, just re-pasting for context if needed, 
+    // but focusing on the toast/dropdown changes requested) ...
+    // Note: Assuming the rest of addNewRow and setupRowEvents is unchanged.
+    
     if (rowCount > 1) {
         const prevRowId = rowCount - 1;
         const prevDescInfo = document.getElementById(`desc-info-${prevRowId}`);
