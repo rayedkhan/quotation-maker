@@ -164,3 +164,40 @@ button {
 
 .btn-gen { background-color: #27ae60; color: white; }
 .btn-gen:hover { background-color: #219150; }
+
+/* --- Custom Toast Notification (Replaces Alerts) --- */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.toast {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.error { background-color: #e74c3c; }
+.toast.success { background-color: #27ae60; }
+
+/* --- Fix Dropdown Z-Index in Modal --- */
+/* Ensures the list floats ABOVE the modal content */
+.modal .suggestions-list {
+    z-index: 1500; 
+    border: 1px solid #bdc3c7;
+    max-height: 150px;
+}
