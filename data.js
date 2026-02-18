@@ -26,20 +26,22 @@ async function loadCustomerDatabase() {
         const rows = data.split('\n').slice(1);
         
         rows.forEach(row => {
-            const cols = row.split(',').map(c => c.trim().replace(/^"|"$/g, ''));
-            if (cols.length >= 6) {
-                const phone = cols[0];
-                if(phone && phone.length > 5) {
-                    customerDataMap[phone] = {
-                        name: cols[1],
-                        taluk: cols[2],
-                        district: cols[3],
-                        state: cols[4],
-                        pincode: cols[5]
-                    };
+                const cols = row.split(',').map(c => c.trim().replace(/^"|"$/g, ''));
+                if (cols.length >= 8) { // Updated to check for 8 columns
+                    const phone = cols[0];
+                    if(phone && phone.length > 5) {
+                        customerDataMap[phone] = {
+                            name: cols[1],
+                            gender: cols[2],
+                            orgName: cols[3], // Optional Organization
+                            taluk: cols[4],
+                            district: cols[5],
+                            state: cols[6],
+                            pincode: cols[7]
+                        };
+                    }
                 }
-            }
-        });
+            });
         console.log("Customers loaded:", Object.keys(customerDataMap).length);
     } catch (error) {
         console.error("Error loading customer sheet:", error);
