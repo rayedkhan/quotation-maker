@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyre Quotation Maker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Tyre Quotation Maker</h2>
+
+    <div class="settings-panel">
+        <div class="settings-grid">
+            <div>
+                <label>Customer Phone</label>
+                <input type="number" id="customer-phone" placeholder="Enter 10-digit Phone">
+            </div>
+            <div>
+                <label>Payment Method</label>
+                <select id="payment-method">
+                    <option value="advance">Advance NEFT</option>
+                    <option value="credit">Credit (7 Days)</option>
+                </select>
+            </div>
+            <div>
+                <label>Transportation</label>
+                <select id="transport-mode">
+                    <option value="exw">Ex Works (EXW)</option>
+                    <option value="included">Included (Free to Site)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rows-container">
+        </div>
+
+    <div class="button-group">
+        <button class="btn-add" style="background-color: #8e44ad;" onclick="openModal()">+ Add New Customer</button>
+        <button class="btn-add" onclick="addNewRow()">+ Add More Tyres</button>
+        <button class="btn-gen" onclick="generateQuotation()">Generate Quotation</button>
+    </div>
+
+    <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <h3>Register New Customer</h3>
+            <div class="form-group">
+                <label>Phone Number (10-digit)</label>
+                <input type="number" id="new-phone" placeholder="9876543210">
+            </div>
+            <div class="form-group"><label>Organization Name</label><input type="text" id="new-name"></div>
+            <div class="form-group"><label>Taluk</label><input type="text" id="new-taluk"></div>
+            <div class="form-group"><label>District</label><input type="text" id="new-dist"></div>
+            <div class="form-group"><label>State</label><input type="text" id="new-state"></div>
+            <div class="form-group"><label>Pincode</label><input type="text" id="new-pin"></div>
+            
+            <div class="modal-buttons">
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn-save" onclick="saveNewCustomer()">Save & Select</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="ui.js"></script>
+<script src="pdf.js"></script>
+
+<script>
+    loadDatabase();
+    loadCustomerDatabase(); 
+</script>
+
+</body>
+</html>
