@@ -141,12 +141,17 @@ button {
 }
 .modal-content {
     background-color: white;
-    margin: 10% auto;
+    margin: 5% auto; /* Reduced top margin */
     padding: 25px;
     border-radius: 8px;
     width: 400px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+    /* NEW: Enables Scrolling */
+    max-height: 85vh; /* Maximum height is 85% of screen */
+    overflow-y: auto; /* Add scrollbar if content is too tall */
 }
+
 .modal h3 { margin-top: 0; color: var(--primary-color); }
 .form-group { margin-bottom: 15px; }
 .form-group input { width: 100%; padding: 8px; box-sizing: border-box; }
