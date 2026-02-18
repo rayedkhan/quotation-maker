@@ -92,17 +92,16 @@ function generateQuotation() {
     
     const formattedPhone = "+91 " + custPhone.substring(0, 5) + " " + custPhone.substring(5);
     
-    // "Kind Attention: Mr. Name (+91 ...)"
-    doc.text(`Kind Attention: ${prefix} ${customer.name} (${formattedPhone}),`, 14, 82);
-    
-    // Date
     doc.setFont("helvetica", "bold");
-    doc.text(`DATE: ${dateStr}`, pageWidth - 14, 65, null, null, "right");
+    doc.text(`Kind Attention: ${prefix} ${customer.name} (${formattedPhone})`, 14, 82);
+    
+    // RESET to Normal for the Date and Body
+    doc.setFont("helvetica", "normal");
 
     // Intro
     doc.setFont("helvetica", "normal");
     doc.text("We are pleased to provide our quotation for new tyre services.", 14, 90);
-    doc.text("Kindly refer to the table below.", 14, 90);
+    doc.text("Kindly refer to the table below.", 14, 95);
 
     // Table
     let tableBody = [];
