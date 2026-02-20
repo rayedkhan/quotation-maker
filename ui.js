@@ -143,11 +143,20 @@ async function saveNewCustomer() {
         return;
     }
 
+    // Capture individual name and org name
+    const individualName = document.getElementById('new-name').value.trim();
+    let orgName = document.getElementById('new-org').value.trim();
+    
+    // IF org name is left blank, automatically fill it with the individual name
+    if (orgName === "") {
+        orgName = individualName;
+    }
+
     const payload = {
         phone: phone,
-        name: document.getElementById('new-name').value,
+        name: individualName,
         gender: document.getElementById('new-gender').value,
-        org: document.getElementById('new-org').value, 
+        org: orgName, // Now uses the filled/fallback value
         state: document.getElementById('new-state').value,
         district: document.getElementById('new-dist').value,
         taluk: document.getElementById('new-taluk').value,
