@@ -48,9 +48,23 @@ h2 { text-align: center; color: var(--primary-color); margin-bottom: 30px; }
 
 .input-group {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr auto; /* Added 'auto' for delete button */
     gap: 15px;
     align-items: start;
+}
+        
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+        
+.btn-delete:hover {
+    background-color: #c0392b;
 }
 
 label {
