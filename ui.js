@@ -178,7 +178,7 @@ async function saveNewCustomer() {
         
         const result = await response.json();
         
-        if(result.result === 'success') {
+       if(result.result === 'success') {
             const savedPhone = result.phone;
             customerDataMap[savedPhone] = {
                 name: payload.name,
@@ -190,7 +190,11 @@ async function saveNewCustomer() {
                 pincode: payload.pincode
             };
 
+            // Update both the visible search bar and the hidden phone input
+            const displayText = (payload.org && payload.org !== payload.name) ? `${payload.org} (${payload.name})` : payload.name;
+            document.getElementById('customer-search').value = displayText;
             document.getElementById('customer-phone').value = savedPhone;
+            
             closeModal();
             showToast(`Success! Customer ${savedPhone} registered.`, 'success');
         } else if (result.result === 'error') {
@@ -313,3 +317,67 @@ function updatePrice(id) {
         calcInfo.innerText = `Final: ${finalPrice.toFixed(2)}`;
     }
 }
+
+// --- CUSTOMER SEARCH AUTOCOMPLETE ---
+function setupCustomerSearch() {
+    const searchInput = document.getElementById('customer-search');
+    const suggestionsBox = document.getElementById('customer-suggestions');
+    const hiddenPhoneInput = document.getElementById('customer-phone');
+
+    if (!searchInput) return;
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        suggestionsBox.innerHTML = '';
+        
+        // Clear the hidden phone if they start typing a new search
+        hiddenPhoneInput.value = ''; 
+        
+        if (query.length < 2) {
+            suggestionsBox.style.display = 'none';
+            return;
+        }
+
+        // Convert the customer object into an array we can filter
+        const customers = Object.entries(customerDataMap).map(([phone, data]) => ({ phone, ...data }));
+        
+        // Filter by Organization Name OR Individual Name
+        const matches = customers.filter(c => 
+            (c.orgName && c.orgName.toLowerCase().includes(query)) || 
+            (c.name && c.name.toLowerCase().includes(query))
+        ).slice(0, 10); // Show top 10 matches
+
+        if (matches.length > 0) {
+            suggestionsBox.style.display = 'block';
+            matches.forEach(c => {
+                const li = document.createElement('li');
+                
+                // Format: Organization Name (Individual Name)
+                // If they are identical (because org was left blank), just show the name once.
+                const displayText = (c.orgName && c.orgName !== c.name) ? `${c.orgName} (${c.name})` : c.name;
+                
+                li.textContent = displayText;
+                
+                // When clicked, fill the visible input and the hidden phone input
+                li.onclick = () => {
+                    searchInput.value = displayText;
+                    hiddenPhoneInput.value = c.phone; 
+                    suggestionsBox.style.display = 'none';
+                };
+                suggestionsBox.appendChild(li);
+            });
+        } else {
+            suggestionsBox.style.display = 'none';
+        }
+    });
+
+    // Hide list when clicking anywhere else on the page
+    document.addEventListener('click', function(e) {
+        if (e.target !== searchInput && suggestionsBox) {
+            suggestionsBox.style.display = 'none';
+        }
+    });
+}
+
+// Initialize the search box listener immediately
+setupCustomerSearch();
