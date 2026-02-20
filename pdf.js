@@ -116,7 +116,11 @@ function generateQuotation() {
     let grandTotal = 0;
 
     for (let i = 1; i <= rowCount; i++) {
-        const desc = document.getElementById(`search-${i}`).value;
+        // If row was deleted, getElementById will return null. Skip it.
+        const searchInput = document.getElementById(`search-${i}`);
+        if (!searchInput) continue;
+
+        const desc = searchInput.value;
         const basePrice = parseFloat(document.getElementById(`base-price-${i}`).value) || 0;
         const markup = parseFloat(document.getElementById(`markup-${i}`).value) || 0;
         const qty = parseFloat(document.getElementById(`qty-${i}`).value) || 1;
