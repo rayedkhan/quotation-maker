@@ -143,9 +143,9 @@ async function saveNewCustomer() {
         return;
     }
 
-    // Capture individual name and org name
-    const individualName = document.getElementById('new-name').value.trim();
-    let orgName = document.getElementById('new-org').value.trim();
+    // Capture individual name and org name, and convert to UPPERCASE
+    const individualName = document.getElementById('new-name').value.trim().toUpperCase();
+    let orgName = document.getElementById('new-org').value.trim().toUpperCase();
     
     // IF org name is left blank, automatically fill it with the individual name
     if (orgName === "") {
@@ -155,14 +155,14 @@ async function saveNewCustomer() {
     const payload = {
         phone: phone,
         name: individualName,
-        gender: document.getElementById('new-gender').value,
-        org: orgName, // Now uses the filled/fallback value
-        state: document.getElementById('new-state').value,
-        district: document.getElementById('new-dist').value,
-        taluk: document.getElementById('new-taluk').value,
-        pincode: document.getElementById('new-pin').value
+        gender: document.getElementById('new-gender').value.toUpperCase(),
+        org: orgName, 
+        state: document.getElementById('new-state').value.trim().toUpperCase(),
+        district: document.getElementById('new-dist').value.trim().toUpperCase(),
+        taluk: document.getElementById('new-taluk').value.trim().toUpperCase(),
+        pincode: document.getElementById('new-pin').value.trim() // Numbers don't need uppercase
     };
-
+    
     if(!payload.name || !payload.state || !payload.district || !payload.taluk || !payload.pincode) {
         showToast("Please fill in all required fields.");
         btn.innerText = originalText;
