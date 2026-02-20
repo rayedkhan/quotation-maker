@@ -106,6 +106,12 @@ function generateQuotation() {
     const textPart2 = `${prefix} ${customer.name} (${formattedPhone})`;
     doc.text(textPart2, 14 + width1, 82);
 
+    // --- DATE SECTION (Fixed) ---
+    const dateText = `Date: ${dateStr}`;
+    const dateWidth = doc.getTextWidth(dateText);
+    // Explicitly place it on the right margin (Page Width - 14mm margin - Text Width)
+    doc.text(dateText, pageWidth - 14 - dateWidth, 65); 
+
     // Intro
     doc.setFont("helvetica", "normal");
     doc.text("We are pleased to provide our quotation for new tyre services.", 14, 90);
