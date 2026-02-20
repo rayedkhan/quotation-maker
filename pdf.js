@@ -1,7 +1,9 @@
 function generateQuotation() {
     const custPhone = document.getElementById('customer-phone').value.trim();
     if(!custPhone) {
-        alert("Please enter a Customer Phone Number");
+        // CHANGED: alert -> showToast
+        if(typeof showToast === "function") showToast("Please search and select a Customer / Organization");
+        else alert("Please search and select a Customer");
         return;
     }
     
