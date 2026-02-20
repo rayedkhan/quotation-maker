@@ -249,11 +249,22 @@ function addNewRow() {
                     <label>Quantity</label>
                     <input type="number" id="qty-${rowCount}" value="1" min="1">
                 </div>
+                <div>
+                    <label>&nbsp;</label>
+                    <button class="btn-delete" title="Delete Tyre" onclick="deleteRow(${rowCount})">X</button>
+                </div>
             </div>
         </div>
     `;
     container.insertAdjacentHTML('beforeend', rowHtml);
     setupRowEvents(rowCount);
+}
+
+function deleteRow(id) {
+    const row = document.getElementById(`row-${id}`);
+    if (row) {
+        row.remove();
+    }
 }
 
 function setupRowEvents(id) {
