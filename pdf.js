@@ -1,7 +1,6 @@
-function generateQuotation() {
+async function generateQuotation() {
     const custPhone = document.getElementById('customer-phone').value.trim();
     if(!custPhone) {
-        // CHANGED: alert -> showToast
         if(typeof showToast === "function") showToast("Please search and select a Customer / Organization");
         else alert("Please search and select a Customer");
         return;
@@ -9,9 +8,57 @@ function generateQuotation() {
     
     const customer = customerDataMap[custPhone];
     if(!customer) {
-        alert(`Customer Phone "${custPhone}" not found in database!`);
+        if(typeof showToast === "function") showToast(`Customer Phone "${custPhone}" not found!`);
+        else alert("Customer not found!");
         return;
     }
+
+    // --- DATABASE SYNC FOR QUOTATION ---
+    let itemsData = [];
+    for (let i = 1; i <= rowCount; i++) {
+        const searchInput = document.getElementById(`search-${i}`);
+        if (!searchInput) continue;
+        
+        let desc = searchInput.value;
+        const customInput = document.getElementById(`custom-desc-${i}`);
+        if (desc === "MANUAL ENTRY" && customInput && customInput.style.display !== 'none') {
+            desc = customInput.value.trim().toUpperCase() || "CUSTOM ITEM";
+        }
+        
+        const basePrice = parseFloat(document.getElementById(`base-price-${i}`).value) || 0;
+        const markup = parseFloat(document.getElementById(`markup-${i}`).value) || 0;
+        const qty = parseFloat(document.getElementById(`qty-${i}`).value) || 1;
+        
+        if (desc && (basePrice > 0 || markup > 0)) {
+            itemsData.push({ id: i, desc, basePrice, markup, qty });
+        }
+    }
+
+    if(itemsData.length === 0) {
+        if(typeof showToast === "function") showToast("Please add at least one valid item.");
+        return;
+    }
+
+    let refNumber = "BTK/25-26/XXXX"; // Fallback
+    try {
+        if(typeof showToast === "function") showToast("Syncing quotation to database...", "success");
+        const response = await fetch(APPS_SCRIPT_URL, {
+            method: "POST",
+            body: JSON.stringify({
+                action: 'saveQuotation',
+                phone: custPhone,
+                itemsJSON: JSON.stringify(itemsData)
+            })
+        });
+        const result = await response.json();
+        if(result.result === 'success') {
+            refNumber = result.refNumber;
+        }
+    } catch (error) {
+        console.error("DB Save Error:", error);
+        if(typeof showToast === "function") showToast("Offline Mode: Reference number won't sync.", "error");
+    }
+    // --- END DATABASE SYNC ---
     
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
@@ -107,10 +154,27 @@ function generateQuotation() {
     doc.text(textPart2, 14 + width1, 82);
 
     // --- DATE SECTION (Fixed) ---
+    doc.setFont("helvetica", "bold");
     const dateText = `Date: ${dateStr}`;
     const dateWidth = doc.getTextWidth(dateText);
-    // Explicitly place it on the right margin (Page Width - 14mm margin - Text Width)
     doc.text(dateText, pageWidth - 14 - dateWidth, 65); 
+
+    // --- REFERENCE NUMBER (New) ---
+    const refPrefix = "Ref. # ";
+    doc.setFont("helvetica", "bold");
+    const refLabelWidth = doc.getTextWidth(refPrefix);
+    
+    doc.setFont("helvetica", "normal");
+    const refValWidth = doc.getTextWidth(refNumber);
+    
+    // Calculate total width to ensure flawless right alignment
+    const totalRefWidth = refLabelWidth + refValWidth;
+    
+    doc.setFont("helvetica", "bold");
+    doc.text(refPrefix, pageWidth - 14 - totalRefWidth, 70); // Drop 5mm below date
+    
+    doc.setFont("helvetica", "normal");
+    doc.text(refNumber, pageWidth - 14 - totalRefWidth + refLabelWidth, 70);
 
     // Intro
     doc.setFont("helvetica", "normal");
