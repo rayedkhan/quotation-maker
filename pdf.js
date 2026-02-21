@@ -42,12 +42,19 @@ async function generateQuotation() {
     let refNumber = "BTK/25-26/XXXX"; // Fallback
     try {
         if(typeof showToast === "function") showToast("Syncing quotation to database...", "success");
+        
+        // Grab the selected values from the dropdowns using your exact HTML IDs
+        const paymentVal = document.getElementById('payment-method') ? document.getElementById('payment-method').value : "";
+        const transportVal = document.getElementById('transport-mode') ? document.getElementById('transport-mode').value : "";
+
         const response = await fetch(APPS_SCRIPT_URL, {
             method: "POST",
             body: JSON.stringify({
                 action: 'saveQuotation',
                 phone: custPhone,
-                itemsJSON: JSON.stringify(itemsData)
+                itemsJSON: JSON.stringify(itemsData),
+                paymentTerms: paymentVal,
+                transportation: transportVal
             })
         });
         const result = await response.json();
