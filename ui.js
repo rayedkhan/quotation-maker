@@ -236,6 +236,9 @@ function addNewRow() {
                     <label>Tyre Description / Variant</label>
                     <input type="text" id="search-${rowCount}" placeholder="Start typing tyre name..." autocomplete="off">
                     <ul class="suggestions-list" id="suggestions-${rowCount}"></ul>
+                    
+                    <input type="text" id="custom-desc-${rowCount}" placeholder="Enter manual item description..." style="display: none; margin-top: 10px; border: 1px solid #e67e22;">
+                    
                     <div class="helper-text" id="desc-info-${rowCount}"></div>
                     <input type="hidden" id="base-price-${rowCount}" value="0">
                     <input type="hidden" id="product-code-${rowCount}" value="">
@@ -289,25 +292,50 @@ function setupRowEvents(id) {
             (item.product_code && item.product_code.toString().includes(query))
         ).slice(0, 10);
 
-        if (matches.length > 0) {
-            suggestionsBox.style.display = 'block';
-            matches.forEach(item => {
-                const li = document.createElement('li');
+        // ALWAYS add MANUAL ENTRY as an option at the bottom of the list
+        matches.push({
+            product_description: "MANUAL ENTRY",
+            product_code: "CUSTOM",
+            cmp_set: 0,
+            category: "Custom Item",
+            nbp_gst_18: "N/A"
+        });
+
+        suggestionsBox.style.display = 'block';
+        matches.forEach(item => {
+            const li = document.createElement('li');
+            
+            // Highlight the manual entry text differently
+            if(item.product_code === "CUSTOM") {
+                li.innerHTML = `<strong>+ ${item.product_description}</strong>`;
+                li.style.color = "#e67e22";
+            } else {
                 li.textContent = `${item.product_description} (Code: ${item.product_code})`;
-                li.onclick = () => {
-                    searchInput.value = item.product_description;
-                    basePriceInput.value = item.cmp_set || 0;
-                    productCodeInput.value = item.product_code;
-                    suggestionsBox.style.display = 'none';
+            }
+            
+            li.onclick = () => {
+                searchInput.value = item.product_description;
+                basePriceInput.value = item.cmp_set || 0;
+                productCodeInput.value = item.product_code;
+                suggestionsBox.style.display = 'none';
+                
+                const customInput = document.getElementById(`custom-desc-${id}`);
+                
+                // Toggle the custom input box based on selection
+                if (item.product_code === "CUSTOM") {
+                    descInfo.style.display = 'none';
+                    customInput.style.display = 'block';
+                    customInput.focus();
+                } else {
+                    customInput.style.display = 'none';
+                    customInput.value = ''; // Clear it
                     descInfo.style.display = 'block';
                     descInfo.innerText = `${item.category} | Code: ${item.product_code} | NBP: ${item.nbp_gst_18 || 'N/A'} | Base CMP: ${item.cmp_set}`;
-                    updatePrice(id);
-                };
-                suggestionsBox.appendChild(li);
-            });
-        } else {
-            suggestionsBox.style.display = 'none';
-        }
+                }
+                updatePrice(id);
+            };
+            suggestionsBox.appendChild(li);
+        });
     });
 
     document.addEventListener('click', function(e) {
