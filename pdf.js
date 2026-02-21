@@ -126,12 +126,20 @@ function generateQuotation() {
         const searchInput = document.getElementById(`search-${i}`);
         if (!searchInput) continue;
 
-        const desc = searchInput.value;
+        let desc = searchInput.value;
+        const customInput = document.getElementById(`custom-desc-${i}`);
+        
+        // If MANUAL ENTRY was selected, use the custom description instead
+        if (desc === "MANUAL ENTRY" && customInput && customInput.style.display !== 'none') {
+            desc = customInput.value.trim().toUpperCase() || "CUSTOM ITEM"; 
+        }
+
         const basePrice = parseFloat(document.getElementById(`base-price-${i}`).value) || 0;
         const markup = parseFloat(document.getElementById(`markup-${i}`).value) || 0;
         const qty = parseFloat(document.getElementById(`qty-${i}`).value) || 1;
 
-        if (desc && basePrice > 0) {
+        // Ensure the row is added if there is ANY value (Base Price OR Markup)
+        if (desc && (basePrice > 0 || markup > 0)) {
             const finalCMP = basePrice + markup; 
             const basicRate = finalCMP / 1.18; 
             const amount = basicRate * qty;
